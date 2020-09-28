@@ -1,0 +1,1049 @@
+2020-09-24 12:35:29 INFO  Manager:29 - init
+2020-09-24 12:35:29 INFO  Manager:42 - doGet
+2020-09-24 12:35:29 INFO  ShowAction:18 - ShowAction execute is start
+2020-09-24 12:35:29 INFO  Manager:36 - service
+2020-09-24 12:35:35 INFO  Manager:48 - doPost
+2020-09-24 12:35:35 ERROR Manager:60 - Some error : 
+org.apache.jasper.JasperException: javax.el.PropertyNotFoundException: Property 'name' not found on type ua.kram.tolm.db.entity.User
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:549)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:470)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:749)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:487)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:412)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:339)
+	at ua.kram.tolm.web.servlet.Manager.perform(Manager.java:58)
+	at ua.kram.tolm.web.servlet.Manager.doPost(Manager.java:49)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at ua.kram.tolm.web.servlet.Manager.service(Manager.java:35)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: javax.el.PropertyNotFoundException: Property 'name' not found on type ua.kram.tolm.db.entity.User
+	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:229)
+	at javax.el.BeanELResolver$BeanProperties.access$400(BeanELResolver.java:206)
+	at javax.el.BeanELResolver.property(BeanELResolver.java:317)
+	at javax.el.BeanELResolver.getValue(BeanELResolver.java:85)
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:104)
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:183)
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:185)
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:1026)
+	at org.apache.jsp.some_jsp._jspx_meth_c_005fout_005f0(some_jsp.java:171)
+	at org.apache.jsp.some_jsp._jspx_meth_c_005fforEach_005f0(some_jsp.java:134)
+	at org.apache.jsp.some_jsp._jspService(some_jsp.java:79)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	... 36 more
+2020-09-24 12:35:35 INFO  Manager:36 - service
+2020-09-24 12:36:29 INFO  Manager:42 - doGet
+2020-09-24 12:36:29 INFO  ShowAction:18 - ShowAction execute is start
+2020-09-24 12:36:29 INFO  Manager:36 - service
+2020-09-24 12:36:48 INFO  Manager:48 - doPost
+2020-09-24 12:36:48 ERROR Manager:60 - Some error : 
+java.io.IOException: Hi
+	at ua.kram.tolm.web.action.RegisterAction.execute(RegisterAction.java:18)
+	at ua.kram.tolm.web.servlet.Manager.perform(Manager.java:56)
+	at ua.kram.tolm.web.servlet.Manager.doPost(Manager.java:49)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at ua.kram.tolm.web.servlet.Manager.service(Manager.java:35)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-24 12:36:48 INFO  Manager:36 - service
+2020-09-24 12:38:50 INFO  Manager:29 - init
+2020-09-24 12:38:50 INFO  Manager:42 - doGet
+2020-09-24 12:38:50 INFO  ShowAction:18 - ShowAction execute is start
+2020-09-24 12:38:50 INFO  Manager:36 - service
+2020-09-24 12:38:54 INFO  Manager:48 - doPost
+2020-09-24 12:38:54 ERROR Manager:60 - Some error : 
+java.io.IOException: Hi
+	at ua.kram.tolm.web.action.RegisterAction.execute(RegisterAction.java:18)
+	at ua.kram.tolm.web.servlet.Manager.perform(Manager.java:56)
+	at ua.kram.tolm.web.servlet.Manager.doPost(Manager.java:49)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at ua.kram.tolm.web.servlet.Manager.service(Manager.java:35)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-24 12:38:54 INFO  Manager:36 - service
+2020-09-24 12:40:10 INFO  Manager:29 - init
+2020-09-24 12:40:10 INFO  Manager:42 - doGet
+2020-09-24 12:40:10 INFO  ShowAction:18 - ShowAction execute is start
+2020-09-24 12:40:10 INFO  Manager:36 - service
+2020-09-24 12:40:11 INFO  Manager:48 - doPost
+2020-09-24 12:40:11 INFO  Manager:36 - service
+2020-09-24 12:40:19 INFO  Manager:48 - doPost
+2020-09-24 12:40:19 INFO  Manager:36 - service
+2020-09-24 12:41:21 INFO  Manager:48 - doPost
+2020-09-24 12:41:21 INFO  Manager:36 - service
+2020-09-24 12:41:22 INFO  Manager:48 - doPost
+2020-09-24 12:41:22 INFO  Manager:36 - service
+2020-09-24 12:44:28 INFO  Manager:29 - init
+2020-09-24 12:44:28 INFO  Manager:42 - doGet
+2020-09-24 12:44:28 INFO  ShowAction:18 - ShowAction execute is start
+2020-09-24 12:44:32 INFO  Manager:36 - service
+2020-09-24 12:45:09 INFO  Manager:48 - doPost
+2020-09-24 12:45:09 INFO  Manager:36 - service
+2020-09-24 12:54:08 INFO  Manager:29 - init
+2020-09-24 12:54:08 INFO  Manager:48 - doPost
+2020-09-24 12:54:11 INFO  Manager:36 - service
+2020-09-24 12:54:19 INFO  Manager:48 - doPost
+2020-09-24 12:54:19 INFO  Manager:36 - service
+2020-09-24 12:55:03 INFO  Manager:48 - doPost
+2020-09-24 12:55:03 INFO  Manager:36 - service
+2020-09-24 12:55:07 INFO  Manager:48 - doPost
+2020-09-24 12:55:07 INFO  Manager:36 - service
+2020-09-24 12:55:08 INFO  Manager:48 - doPost
+2020-09-24 12:55:08 INFO  Manager:36 - service
+2020-09-24 12:55:10 INFO  Manager:48 - doPost
+2020-09-24 12:55:10 INFO  Manager:36 - service
+2020-09-24 12:57:55 INFO  Manager:29 - init
+2020-09-24 12:57:55 INFO  Manager:42 - doGet
+2020-09-24 12:57:55 INFO  ShowAction:18 - ShowAction execute is start
+2020-09-24 12:57:55 INFO  Manager:36 - service
+2020-09-24 12:57:57 INFO  Manager:48 - doPost
+2020-09-24 12:57:57 INFO  Manager:36 - service
+2020-09-24 12:58:03 INFO  Manager:48 - doPost
+2020-09-24 12:58:03 INFO  Manager:36 - service
+2020-09-24 12:59:25 INFO  Manager:48 - doPost
+2020-09-24 12:59:25 INFO  Manager:36 - service
+2020-09-24 15:00:39 INFO  Manager:24 - init
+2020-09-24 15:00:39 INFO  Manager:37 - doGet
+2020-09-24 15:00:39 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 15:00:39 INFO  Manager:31 - service
+2020-09-24 15:51:14 INFO  Manager:24 - init
+2020-09-24 15:51:14 INFO  Manager:37 - doGet
+2020-09-24 15:51:14 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 15:51:15 INFO  Manager:31 - service
+2020-09-24 15:51:33 INFO  Manager:43 - doPost
+2020-09-24 15:51:33 ERROR DBManager:75 - Some test for errors
+2020-09-24 15:51:33 INFO  Manager:31 - service
+2020-09-24 15:56:08 INFO  Manager:24 - init
+2020-09-24 15:56:08 INFO  Manager:37 - doGet
+2020-09-24 15:56:08 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 15:56:09 INFO  Manager:31 - service
+2020-09-24 15:56:17 INFO  Manager:37 - doGet
+2020-09-24 15:56:17 ERROR DBManager:75 - Some test for errors
+2020-09-24 15:56:17 INFO  Manager:31 - service
+2020-09-24 15:57:33 INFO  Manager:43 - doPost
+2020-09-24 15:57:33 INFO  Manager:31 - service
+2020-09-24 15:57:37 INFO  Manager:37 - doGet
+2020-09-24 15:57:37 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 15:57:37 INFO  Manager:31 - service
+2020-09-24 15:58:22 INFO  Manager:37 - doGet
+2020-09-24 15:58:22 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 15:58:22 INFO  Manager:31 - service
+2020-09-24 15:58:39 INFO  Manager:37 - doGet
+2020-09-24 15:58:39 ERROR DBManager:75 - Some test for errors
+2020-09-24 15:58:39 INFO  Manager:31 - service
+2020-09-24 15:58:41 INFO  Manager:37 - doGet
+2020-09-24 15:58:41 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 15:58:41 INFO  Manager:31 - service
+2020-09-24 15:58:46 INFO  Manager:37 - doGet
+2020-09-24 15:58:46 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 15:58:46 INFO  Manager:31 - service
+2020-09-24 15:58:51 INFO  Manager:37 - doGet
+2020-09-24 15:58:51 ERROR DBManager:75 - Some test for errors
+2020-09-24 15:58:51 INFO  Manager:31 - service
+2020-09-24 15:59:07 INFO  Manager:37 - doGet
+2020-09-24 15:59:07 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 15:59:07 INFO  Manager:31 - service
+2020-09-24 16:06:42 INFO  Manager:24 - init
+2020-09-24 16:06:42 INFO  Manager:37 - doGet
+2020-09-24 16:06:42 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 16:06:44 INFO  Manager:31 - service
+2020-09-24 16:06:54 INFO  Manager:37 - doGet
+2020-09-24 16:06:54 ERROR DBManager:78 - Some test for errors
+2020-09-24 16:06:54 INFO  Manager:31 - service
+2020-09-24 16:07:14 INFO  Manager:43 - doPost
+2020-09-24 16:07:14 INFO  Manager:31 - service
+2020-09-24 16:07:20 INFO  Manager:37 - doGet
+2020-09-24 16:07:20 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 16:07:20 INFO  Manager:31 - service
+2020-09-24 16:23:55 INFO  Manager:37 - doGet
+2020-09-24 16:23:55 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 16:23:55 INFO  Manager:31 - service
+2020-09-24 16:27:22 INFO  Manager:37 - doGet
+2020-09-24 16:27:22 ERROR DBManager:78 - Some test for errors
+2020-09-24 16:27:22 INFO  Manager:31 - service
+2020-09-24 16:27:32 INFO  Manager:43 - doPost
+2020-09-24 16:27:32 ERROR DBManager:78 - Some test for errors
+2020-09-24 16:27:32 INFO  Manager:31 - service
+2020-09-24 16:27:33 INFO  Manager:37 - doGet
+2020-09-24 16:27:33 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 16:27:33 INFO  Manager:31 - service
+2020-09-24 16:28:18 INFO  Manager:37 - doGet
+2020-09-24 16:28:18 ERROR DBManager:78 - Some test for errors
+2020-09-24 16:28:18 INFO  Manager:31 - service
+2020-09-24 16:28:40 INFO  Manager:43 - doPost
+2020-09-24 16:28:40 INFO  Manager:31 - service
+2020-09-24 16:28:51 INFO  Manager:37 - doGet
+2020-09-24 16:28:51 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 16:28:52 INFO  Manager:31 - service
+2020-09-24 16:28:59 INFO  Manager:37 - doGet
+2020-09-24 16:28:59 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 16:28:59 INFO  Manager:31 - service
+2020-09-24 17:21:43 INFO  Manager:24 - init
+2020-09-24 17:21:43 INFO  Manager:37 - doGet
+2020-09-24 17:21:43 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 17:21:43 INFO  Manager:31 - service
+2020-09-24 17:21:46 INFO  Manager:37 - doGet
+2020-09-24 17:21:46 ERROR DBManager:78 - Some test for errors
+2020-09-24 17:21:46 INFO  Manager:31 - service
+2020-09-24 17:21:58 INFO  Manager:43 - doPost
+2020-09-24 17:21:58 INFO  Manager:31 - service
+2020-09-24 17:22:01 INFO  Manager:37 - doGet
+2020-09-24 17:22:01 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 17:22:01 INFO  Manager:31 - service
+2020-09-24 17:41:59 INFO  Manager:24 - init
+2020-09-24 17:41:59 INFO  Manager:37 - doGet
+2020-09-24 17:41:59 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 17:42:00 INFO  Manager:31 - service
+2020-09-24 17:42:04 INFO  Manager:37 - doGet
+2020-09-24 17:42:04 ERROR DBManager:78 - Some test for errors
+2020-09-24 17:42:04 INFO  Manager:31 - service
+2020-09-24 17:42:12 INFO  Manager:43 - doPost
+2020-09-24 17:42:12 INFO  Manager:31 - service
+2020-09-24 17:42:14 INFO  Manager:37 - doGet
+2020-09-24 17:42:14 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 17:42:14 INFO  Manager:31 - service
+2020-09-24 17:45:11 INFO  Manager:24 - init
+2020-09-24 17:45:11 INFO  Manager:37 - doGet
+2020-09-24 17:45:11 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 17:45:11 INFO  Manager:31 - service
+2020-09-24 17:45:16 INFO  Manager:37 - doGet
+2020-09-24 17:45:16 ERROR DBManager:78 - Some test for errors
+2020-09-24 17:45:16 INFO  Manager:31 - service
+2020-09-24 17:45:23 INFO  Manager:43 - doPost
+2020-09-24 17:45:23 INFO  Manager:31 - service
+2020-09-24 17:45:23 INFO  Manager:37 - doGet
+2020-09-24 17:45:23 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 17:45:23 INFO  Manager:31 - service
+2020-09-24 17:47:50 INFO  Manager:24 - init
+2020-09-24 17:47:50 INFO  Manager:43 - doPost
+2020-09-24 17:47:50 INFO  Manager:31 - service
+2020-09-24 17:47:52 INFO  Manager:37 - doGet
+2020-09-24 17:47:52 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 17:47:52 INFO  Manager:31 - service
+2020-09-24 17:51:35 INFO  Manager:24 - init
+2020-09-24 17:51:35 INFO  Manager:37 - doGet
+2020-09-24 17:52:05 INFO  Manager:37 - doGet
+2020-09-24 17:52:05 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 17:52:05 INFO  Manager:31 - service
+2020-09-24 17:52:10 INFO  Manager:37 - doGet
+2020-09-24 17:52:11 ERROR DBManager:78 - Some test for errors
+2020-09-24 17:52:11 INFO  Manager:31 - service
+2020-09-24 17:52:20 INFO  Manager:43 - doPost
+2020-09-24 17:52:20 INFO  Manager:31 - service
+2020-09-24 17:52:21 INFO  Manager:37 - doGet
+2020-09-24 17:52:21 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 17:52:21 INFO  Manager:31 - service
+2020-09-24 17:53:14 INFO  Manager:24 - init
+2020-09-24 17:53:14 INFO  Manager:43 - doPost
+2020-09-24 17:53:15 INFO  Manager:31 - service
+2020-09-24 17:53:31 INFO  Manager:37 - doGet
+2020-09-24 17:53:31 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 17:53:32 INFO  Manager:31 - service
+2020-09-24 17:59:57 INFO  Manager:25 - init
+2020-09-24 17:59:57 INFO  Manager:38 - doGet
+2020-09-24 17:59:57 ERROR DBManager:78 - Some test for errors
+2020-09-24 17:59:57 INFO  Manager:32 - service
+2020-09-24 18:00:05 INFO  Manager:44 - doPost
+2020-09-24 18:00:05 INFO  Manager:32 - service
+2020-09-24 18:00:07 INFO  Manager:38 - doGet
+2020-09-24 18:00:07 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 18:00:07 INFO  Manager:32 - service
+2020-09-24 18:00:57 INFO  Manager:25 - init
+2020-09-24 18:00:57 INFO  Manager:38 - doGet
+2020-09-24 18:00:57 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 18:00:57 INFO  Manager:32 - service
+2020-09-24 18:01:03 INFO  Manager:38 - doGet
+2020-09-24 18:01:03 ERROR DBManager:78 - Some test for errors
+2020-09-24 18:01:03 INFO  Manager:32 - service
+2020-09-24 18:01:11 INFO  Manager:44 - doPost
+2020-09-24 18:01:11 INFO  Manager:32 - service
+2020-09-24 18:01:13 INFO  Manager:38 - doGet
+2020-09-24 18:01:13 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 18:01:13 INFO  Manager:32 - service
+2020-09-24 18:05:12 INFO  Manager:24 - init
+2020-09-24 18:05:12 INFO  Manager:37 - doGet
+2020-09-24 18:05:12 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 18:05:12 INFO  Manager:31 - service
+2020-09-24 18:05:38 INFO  Manager:37 - doGet
+2020-09-24 18:05:38 ERROR DBManager:78 - Some test for errors
+java.sql.SQLIntegrityConstraintViolationException: Column 'login' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at ua.kram.tolm.db.DBManager.insertUser(DBManager.java:74)
+	at ua.kram.tolm.web.action.RegisterAction.execute(RegisterAction.java:28)
+	at ua.kram.tolm.web.servlet.Manager.perform(Manager.java:54)
+	at ua.kram.tolm.web.servlet.Manager.doGet(Manager.java:38)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at ua.kram.tolm.web.servlet.Manager.service(Manager.java:30)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-24 18:05:38 INFO  Manager:31 - service
+2020-09-24 18:06:55 INFO  Manager:43 - doPost
+2020-09-24 18:06:55 INFO  Manager:31 - service
+2020-09-24 18:06:56 INFO  Manager:37 - doGet
+2020-09-24 18:06:56 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 18:06:56 INFO  Manager:31 - service
+2020-09-24 19:35:25 INFO  Manager:24 - init
+2020-09-24 19:35:25 INFO  Manager:37 - doGet
+2020-09-24 19:35:25 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 19:35:26 INFO  Manager:31 - service
+2020-09-24 19:35:49 INFO  Manager:43 - doPost
+2020-09-24 19:35:49 ERROR DBManager:78 - Some test for errors
+com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'telephone' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at ua.kram.tolm.db.DBManager.insertUser(DBManager.java:74)
+	at ua.kram.tolm.web.action.RegisterAction.execute(RegisterAction.java:27)
+	at ua.kram.tolm.web.servlet.Manager.perform(Manager.java:55)
+	at ua.kram.tolm.web.servlet.Manager.doPost(Manager.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at ua.kram.tolm.web.servlet.Manager.service(Manager.java:30)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-24 19:35:49 INFO  Manager:31 - service
+2020-09-24 19:36:22 INFO  Manager:43 - doPost
+2020-09-24 19:36:22 INFO  Manager:31 - service
+2020-09-24 19:36:24 INFO  Manager:37 - doGet
+2020-09-24 19:36:24 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 19:36:24 INFO  Manager:31 - service
+2020-09-24 22:05:33 INFO  Manager:24 - init
+2020-09-24 22:05:33 INFO  Manager:37 - doGet
+2020-09-24 22:05:33 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:05:35 INFO  Manager:31 - service
+2020-09-24 22:05:55 INFO  Manager:43 - doPost
+2020-09-24 22:05:55 INFO  RegisterAction:17 - RegisterAction #execute start
+2020-09-24 22:05:55 INFO  Manager:31 - service
+2020-09-24 22:05:59 INFO  Manager:37 - doGet
+2020-09-24 22:05:59 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:05:59 INFO  Manager:31 - service
+2020-09-24 22:06:02 INFO  Manager:37 - doGet
+2020-09-24 22:06:02 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-24 22:06:02 INFO  Manager:31 - service
+2020-09-24 22:06:06 INFO  Manager:37 - doGet
+2020-09-24 22:06:06 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:06:06 INFO  Manager:31 - service
+2020-09-24 22:06:48 INFO  Manager:43 - doPost
+2020-09-24 22:06:48 INFO  RegisterAction:17 - RegisterAction #execute start
+2020-09-24 22:06:48 INFO  Manager:31 - service
+2020-09-24 22:06:53 INFO  Manager:37 - doGet
+2020-09-24 22:06:53 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:06:53 INFO  Manager:31 - service
+2020-09-24 22:07:00 INFO  Manager:37 - doGet
+2020-09-24 22:07:00 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-24 22:07:00 INFO  Manager:31 - service
+2020-09-24 22:09:37 INFO  Manager:43 - doPost
+2020-09-24 22:09:37 INFO  RegisterAction:17 - RegisterAction #execute start
+2020-09-24 22:09:37 INFO  Manager:31 - service
+2020-09-24 22:09:38 INFO  Manager:37 - doGet
+2020-09-24 22:09:38 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:09:38 INFO  Manager:31 - service
+2020-09-24 22:10:21 INFO  Manager:37 - doGet
+2020-09-24 22:10:21 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-24 22:10:21 INFO  Manager:31 - service
+2020-09-24 22:13:03 INFO  Manager:24 - init
+2020-09-24 22:13:03 INFO  Manager:37 - doGet
+2020-09-24 22:13:03 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:13:03 INFO  Manager:31 - service
+2020-09-24 22:13:13 INFO  Manager:43 - doPost
+2020-09-24 22:13:13 INFO  RegisterAction:17 - RegisterAction #execute start
+2020-09-24 22:13:14 INFO  Manager:31 - service
+2020-09-24 22:16:22 INFO  Manager:43 - doPost
+2020-09-24 22:16:22 INFO  RegisterAction:17 - RegisterAction #execute start
+2020-09-24 22:16:22 ERROR DBManager:101 - Some test for errors
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'jjjj' for key 'users.login'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at ua.kram.tolm.db.DBManager.insertUser(DBManager.java:97)
+	at ua.kram.tolm.web.action.RegisterAction.execute(RegisterAction.java:28)
+	at ua.kram.tolm.web.servlet.Manager.perform(Manager.java:55)
+	at ua.kram.tolm.web.servlet.Manager.doPost(Manager.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at ua.kram.tolm.web.servlet.Manager.service(Manager.java:30)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-24 22:16:22 INFO  Manager:31 - service
+2020-09-24 22:16:27 INFO  Manager:37 - doGet
+2020-09-24 22:16:41 INFO  Manager:37 - doGet
+2020-09-24 22:16:41 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:16:41 INFO  Manager:31 - service
+2020-09-24 22:16:44 INFO  Manager:37 - doGet
+2020-09-24 22:16:44 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-24 22:16:44 INFO  Manager:31 - service
+2020-09-24 22:16:47 INFO  Manager:37 - doGet
+2020-09-24 22:16:47 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:16:47 INFO  Manager:31 - service
+2020-09-24 22:19:34 INFO  Manager:24 - init
+2020-09-24 22:19:34 INFO  Manager:37 - doGet
+2020-09-24 22:19:34 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:19:35 INFO  Manager:31 - service
+2020-09-24 22:19:42 INFO  Manager:43 - doPost
+2020-09-24 22:19:42 INFO  RegisterAction:17 - RegisterAction #execute start
+2020-09-24 22:19:42 INFO  Manager:31 - service
+2020-09-24 22:19:46 INFO  Manager:37 - doGet
+2020-09-24 22:19:46 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:19:46 INFO  Manager:31 - service
+2020-09-24 22:19:49 INFO  Manager:37 - doGet
+2020-09-24 22:19:49 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-24 22:19:49 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:19:49 INFO  Manager:31 - service
+2020-09-24 22:22:03 INFO  Manager:24 - init
+2020-09-24 22:22:03 INFO  Manager:37 - doGet
+2020-09-24 22:22:03 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:22:03 INFO  Manager:31 - service
+2020-09-24 22:22:18 INFO  Manager:43 - doPost
+2020-09-24 22:22:18 INFO  RegisterAction:18 - RegisterAction #execute start
+2020-09-24 22:22:18 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:22:18 INFO  Manager:31 - service
+2020-09-24 22:22:28 INFO  Manager:43 - doPost
+2020-09-24 22:22:28 INFO  RegisterAction:18 - RegisterAction #execute start
+2020-09-24 22:22:28 ERROR DBManager:101 - Some test for errors
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'users.email'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at ua.kram.tolm.db.DBManager.insertUser(DBManager.java:97)
+	at ua.kram.tolm.web.action.RegisterAction.execute(RegisterAction.java:29)
+	at ua.kram.tolm.web.servlet.Manager.perform(Manager.java:55)
+	at ua.kram.tolm.web.servlet.Manager.doPost(Manager.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at ua.kram.tolm.web.servlet.Manager.service(Manager.java:30)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-24 22:22:28 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:22:28 INFO  Manager:31 - service
+2020-09-24 22:22:46 INFO  Manager:37 - doGet
+2020-09-24 22:22:46 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:22:46 INFO  Manager:31 - service
+2020-09-24 22:22:52 INFO  Manager:37 - doGet
+2020-09-24 22:22:52 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-24 22:22:52 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:22:52 INFO  Manager:31 - service
+2020-09-24 22:22:59 INFO  Manager:43 - doPost
+2020-09-24 22:22:59 INFO  RegisterAction:18 - RegisterAction #execute start
+2020-09-24 22:22:59 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:22:59 INFO  Manager:31 - service
+2020-09-24 22:23:05 INFO  Manager:43 - doPost
+2020-09-24 22:23:05 INFO  RegisterAction:18 - RegisterAction #execute start
+2020-09-24 22:23:05 ERROR DBManager:101 - Some test for errors
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'users.email'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at ua.kram.tolm.db.DBManager.insertUser(DBManager.java:97)
+	at ua.kram.tolm.web.action.RegisterAction.execute(RegisterAction.java:29)
+	at ua.kram.tolm.web.servlet.Manager.perform(Manager.java:55)
+	at ua.kram.tolm.web.servlet.Manager.doPost(Manager.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at ua.kram.tolm.web.servlet.Manager.service(Manager.java:30)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-24 22:23:05 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:23:05 INFO  Manager:31 - service
+2020-09-24 22:23:28 INFO  Manager:43 - doPost
+2020-09-24 22:23:28 INFO  RegisterAction:18 - RegisterAction #execute start
+2020-09-24 22:23:28 ERROR DBManager:101 - Some test for errors
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'users.telephone'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at ua.kram.tolm.db.DBManager.insertUser(DBManager.java:97)
+	at ua.kram.tolm.web.action.RegisterAction.execute(RegisterAction.java:29)
+	at ua.kram.tolm.web.servlet.Manager.perform(Manager.java:55)
+	at ua.kram.tolm.web.servlet.Manager.doPost(Manager.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at ua.kram.tolm.web.servlet.Manager.service(Manager.java:30)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-24 22:23:28 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:23:28 INFO  Manager:31 - service
+2020-09-24 22:23:46 INFO  Manager:43 - doPost
+2020-09-24 22:23:46 INFO  RegisterAction:18 - RegisterAction #execute start
+2020-09-24 22:23:46 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:23:46 INFO  Manager:31 - service
+2020-09-24 22:23:57 INFO  Manager:43 - doPost
+2020-09-24 22:23:57 INFO  RegisterAction:18 - RegisterAction #execute start
+2020-09-24 22:23:57 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:23:57 INFO  Manager:31 - service
+2020-09-24 22:24:33 INFO  Manager:37 - doGet
+2020-09-24 22:24:33 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-24 22:24:33 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:24:33 INFO  Manager:31 - service
+2020-09-24 22:41:04 INFO  Manager:24 - init
+2020-09-24 22:41:04 INFO  Manager:37 - doGet
+2020-09-24 22:41:04 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-24 22:41:04 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:41:07 INFO  Manager:31 - service
+2020-09-24 22:41:13 INFO  Manager:37 - doGet
+2020-09-24 22:41:13 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-24 22:42:45 INFO  Manager:37 - doGet
+2020-09-24 22:42:45 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-24 22:42:45 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:42:45 INFO  Manager:31 - service
+2020-09-24 22:45:47 INFO  Manager:37 - doGet
+2020-09-24 22:45:47 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-24 22:45:47 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:45:47 INFO  Manager:31 - service
+2020-09-24 22:51:28 INFO  Manager:24 - init
+2020-09-24 22:51:28 INFO  Manager:37 - doGet
+2020-09-24 22:51:28 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-24 22:51:28 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:51:28 INFO  Manager:31 - service
+2020-09-24 22:55:01 INFO  Manager:37 - doGet
+2020-09-24 22:55:01 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-24 22:55:01 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:55:01 INFO  Manager:31 - service
+2020-09-24 22:58:28 INFO  Manager:24 - init
+2020-09-24 22:58:28 INFO  Manager:37 - doGet
+2020-09-24 22:58:28 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-24 22:58:28 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:58:29 INFO  Manager:31 - service
+2020-09-24 22:58:54 INFO  Manager:37 - doGet
+2020-09-24 22:58:54 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-24 22:58:54 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 22:58:54 INFO  Manager:31 - service
+2020-09-24 23:48:24 INFO  Manager:24 - init
+2020-09-24 23:48:24 INFO  Manager:37 - doGet
+2020-09-24 23:48:24 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-24 23:48:24 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 23:48:25 INFO  Manager:31 - service
+2020-09-24 23:50:00 INFO  Manager:24 - init
+2020-09-24 23:50:00 INFO  Manager:37 - doGet
+2020-09-24 23:50:00 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-24 23:50:00 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 23:50:01 INFO  Manager:31 - service
+2020-09-24 23:53:59 INFO  Manager:37 - doGet
+2020-09-24 23:53:59 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-24 23:53:59 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 23:53:59 INFO  Manager:31 - service
+2020-09-24 23:55:23 INFO  Manager:24 - init
+2020-09-24 23:55:23 INFO  Manager:37 - doGet
+2020-09-24 23:55:23 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-24 23:55:23 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 23:55:23 INFO  Manager:31 - service
+2020-09-24 23:55:31 INFO  Manager:37 - doGet
+2020-09-24 23:55:31 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-24 23:55:31 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 23:55:31 INFO  Manager:31 - service
+2020-09-24 23:55:47 INFO  Manager:43 - doPost
+2020-09-24 23:55:47 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-24 23:55:47 INFO  RegisterAction:18 - RegisterAction #execute start
+2020-09-24 23:55:47 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 23:55:47 INFO  Manager:31 - service
+2020-09-24 23:57:27 INFO  Manager:24 - init
+2020-09-24 23:57:27 INFO  Manager:37 - doGet
+2020-09-24 23:57:27 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-24 23:57:27 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-24 23:57:27 INFO  Manager:31 - service
+2020-09-26 18:26:28 INFO  Manager:24 - init
+2020-09-26 18:26:28 INFO  Manager:37 - doGet
+2020-09-26 18:26:28 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 18:26:28 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 18:26:29 INFO  Manager:31 - service
+2020-09-26 18:26:49 INFO  Manager:43 - doPost
+2020-09-26 18:26:49 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 18:26:49 INFO  RegisterAction:18 - RegisterAction #execute start
+2020-09-26 18:26:49 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 18:26:49 INFO  Manager:31 - service
+2020-09-26 18:26:57 INFO  Manager:37 - doGet
+2020-09-26 18:26:57 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 18:26:57 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 18:26:57 INFO  Manager:31 - service
+2020-09-26 18:26:59 INFO  Manager:37 - doGet
+2020-09-26 18:26:59 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 18:26:59 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-26 18:26:59 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 18:26:59 INFO  Manager:31 - service
+2020-09-26 18:27:11 INFO  Manager:37 - doGet
+2020-09-26 18:27:11 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 18:27:11 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-26 18:27:11 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 18:27:11 INFO  Manager:31 - service
+2020-09-26 18:27:15 INFO  Manager:37 - doGet
+2020-09-26 18:27:15 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 18:27:15 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-26 18:27:15 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 18:27:15 INFO  Manager:31 - service
+2020-09-26 18:30:36 INFO  Manager:24 - init
+2020-09-26 18:30:36 INFO  Manager:37 - doGet
+2020-09-26 18:30:36 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 18:30:36 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-26 18:30:36 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 18:30:36 INFO  Manager:31 - service
+2020-09-26 18:30:48 INFO  Manager:43 - doPost
+2020-09-26 18:30:48 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 18:30:48 INFO  RegisterAction:18 - RegisterAction #execute start
+2020-09-26 18:30:48 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 18:30:48 INFO  Manager:31 - service
+2020-09-26 18:31:04 INFO  Manager:37 - doGet
+2020-09-26 18:31:04 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 18:31:04 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-26 18:31:04 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 18:31:04 INFO  Manager:31 - service
+2020-09-26 18:31:09 INFO  Manager:37 - doGet
+2020-09-26 18:31:09 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 18:31:09 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-26 18:31:09 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 18:31:09 INFO  Manager:31 - service
+2020-09-26 18:31:17 INFO  Manager:37 - doGet
+2020-09-26 18:31:17 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 18:31:17 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-26 18:31:17 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 18:31:17 INFO  Manager:31 - service
+2020-09-26 18:31:37 INFO  Manager:37 - doGet
+2020-09-26 18:31:37 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 18:31:37 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 18:31:37 INFO  Manager:31 - service
+2020-09-26 18:49:22 INFO  Manager:23 - init
+2020-09-26 18:49:22 INFO  Manager:36 - doGet
+2020-09-26 18:49:22 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 18:49:22 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 18:49:22 INFO  Manager:30 - service
+2020-09-26 18:49:36 INFO  Manager:42 - doPost
+2020-09-26 18:49:36 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 18:49:36 INFO  RegisterAction:18 - RegisterAction #execute start
+2020-09-26 18:49:36 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 18:49:36 INFO  Manager:30 - service
+2020-09-26 18:49:40 INFO  Manager:36 - doGet
+2020-09-26 18:49:40 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 18:49:40 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 18:49:40 INFO  Manager:30 - service
+2020-09-26 18:49:48 INFO  Manager:36 - doGet
+2020-09-26 18:49:48 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 18:49:48 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-26 18:49:48 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 18:49:48 INFO  Manager:30 - service
+2020-09-26 23:08:23 INFO  Manager:23 - init
+2020-09-26 23:08:23 INFO  Manager:36 - doGet
+2020-09-26 23:08:23 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:08:23 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:08:25 INFO  Manager:30 - service
+2020-09-26 23:08:45 INFO  Manager:42 - doPost
+2020-09-26 23:08:45 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:08:45 INFO  RegisterAction:18 - RegisterAction #execute start
+2020-09-26 23:08:45 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:08:46 INFO  Manager:30 - service
+2020-09-26 23:08:47 INFO  Manager:36 - doGet
+2020-09-26 23:08:47 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:08:47 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:08:47 INFO  Manager:30 - service
+2020-09-26 23:08:49 INFO  Manager:36 - doGet
+2020-09-26 23:08:49 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:08:49 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-26 23:08:49 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:08:49 INFO  Manager:30 - service
+2020-09-26 23:09:50 INFO  Manager:23 - init
+2020-09-26 23:09:50 INFO  Manager:36 - doGet
+2020-09-26 23:09:50 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:09:50 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:09:52 INFO  Manager:30 - service
+2020-09-26 23:10:58 INFO  Manager:23 - init
+2020-09-26 23:10:58 INFO  Manager:36 - doGet
+2020-09-26 23:10:58 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:10:58 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:11:01 INFO  Manager:30 - service
+2020-09-26 23:11:20 INFO  Manager:42 - doPost
+2020-09-26 23:11:20 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:11:20 INFO  RegisterAction:18 - RegisterAction #execute start
+2020-09-26 23:11:20 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:11:20 INFO  Manager:30 - service
+2020-09-26 23:11:23 INFO  Manager:36 - doGet
+2020-09-26 23:11:23 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:11:23 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:11:23 INFO  Manager:30 - service
+2020-09-26 23:11:25 INFO  Manager:36 - doGet
+2020-09-26 23:11:25 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:11:25 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-26 23:11:25 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:11:25 INFO  Manager:30 - service
+2020-09-26 23:11:35 INFO  Manager:42 - doPost
+2020-09-26 23:11:35 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:11:35 INFO  RegisterAction:18 - RegisterAction #execute start
+2020-09-26 23:11:35 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:11:35 INFO  Manager:30 - service
+2020-09-26 23:11:36 INFO  Manager:36 - doGet
+2020-09-26 23:11:36 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:11:36 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:11:36 INFO  Manager:30 - service
+2020-09-26 23:12:20 INFO  Manager:23 - init
+2020-09-26 23:12:20 INFO  Manager:36 - doGet
+2020-09-26 23:12:20 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:12:20 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:12:22 INFO  Manager:30 - service
+2020-09-26 23:12:28 INFO  Manager:36 - doGet
+2020-09-26 23:12:28 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:12:28 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:12:28 INFO  Manager:30 - service
+2020-09-26 23:12:36 INFO  Manager:36 - doGet
+2020-09-26 23:12:36 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:12:36 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-26 23:12:36 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:12:36 INFO  Manager:30 - service
+2020-09-26 23:13:21 INFO  Manager:23 - init
+2020-09-26 23:13:21 INFO  Manager:36 - doGet
+2020-09-26 23:13:21 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:13:21 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:13:23 INFO  Manager:30 - service
+2020-09-26 23:14:49 INFO  Manager:23 - init
+2020-09-26 23:14:49 INFO  Manager:36 - doGet
+2020-09-26 23:14:49 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:14:49 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:14:51 INFO  Manager:30 - service
+2020-09-26 23:16:05 INFO  Manager:23 - init
+2020-09-26 23:16:05 INFO  Manager:36 - doGet
+2020-09-26 23:16:05 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:16:05 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:16:07 INFO  Manager:30 - service
+2020-09-26 23:16:24 INFO  Manager:36 - doGet
+2020-09-26 23:16:24 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:16:24 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-26 23:16:24 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:16:24 INFO  Manager:30 - service
+2020-09-26 23:16:31 INFO  Manager:42 - doPost
+2020-09-26 23:16:31 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:16:31 INFO  RegisterAction:18 - RegisterAction #execute start
+2020-09-26 23:16:31 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:16:31 INFO  Manager:30 - service
+2020-09-26 23:16:32 INFO  Manager:36 - doGet
+2020-09-26 23:16:32 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:16:32 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:16:32 INFO  Manager:30 - service
+2020-09-26 23:16:42 INFO  Manager:36 - doGet
+2020-09-26 23:16:42 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:16:42 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-26 23:16:42 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:16:42 INFO  Manager:30 - service
+2020-09-26 23:17:53 INFO  Manager:23 - init
+2020-09-26 23:17:53 INFO  Manager:36 - doGet
+2020-09-26 23:17:53 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:17:53 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:17:56 INFO  Manager:30 - service
+2020-09-26 23:19:45 INFO  Manager:23 - init
+2020-09-26 23:19:45 INFO  Manager:36 - doGet
+2020-09-26 23:19:45 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:19:45 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:19:48 INFO  Manager:30 - service
+2020-09-26 23:21:02 INFO  Manager:23 - init
+2020-09-26 23:21:02 INFO  Manager:36 - doGet
+2020-09-26 23:21:02 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:21:02 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:21:04 INFO  Manager:30 - service
+2020-09-26 23:25:12 INFO  Manager:23 - init
+2020-09-26 23:25:12 INFO  Manager:36 - doGet
+2020-09-26 23:25:12 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:25:12 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:25:15 INFO  Manager:30 - service
+2020-09-26 23:25:59 INFO  Manager:42 - doPost
+2020-09-26 23:25:59 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:25:59 INFO  RegisterAction:18 - RegisterAction #execute start
+2020-09-26 23:25:59 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:25:59 INFO  Manager:30 - service
+2020-09-26 23:26:00 INFO  Manager:36 - doGet
+2020-09-26 23:26:00 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:26:00 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:26:01 INFO  Manager:30 - service
+2020-09-26 23:26:03 INFO  Manager:36 - doGet
+2020-09-26 23:26:03 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:26:03 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-26 23:26:03 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:26:03 INFO  Manager:30 - service
+2020-09-26 23:26:17 INFO  Manager:36 - doGet
+2020-09-26 23:26:17 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:26:17 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-26 23:26:17 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:26:17 INFO  Manager:30 - service
+2020-09-26 23:26:26 INFO  Manager:36 - doGet
+2020-09-26 23:26:26 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:26:26 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:26:26 INFO  Manager:30 - service
+2020-09-26 23:26:36 INFO  Manager:36 - doGet
+2020-09-26 23:26:36 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:26:36 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:26:36 INFO  Manager:30 - service
+2020-09-26 23:29:35 INFO  Manager:23 - init
+2020-09-26 23:29:35 INFO  Manager:36 - doGet
+2020-09-26 23:29:35 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-26 23:29:35 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-26 23:29:38 INFO  Manager:30 - service
+2020-09-27 22:02:00 INFO  Manager:23 - init
+2020-09-27 22:02:00 INFO  Manager:36 - doGet
+2020-09-27 22:02:00 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-27 22:02:00 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-27 22:02:02 INFO  Manager:30 - service
+2020-09-27 22:02:54 INFO  Manager:23 - init
+2020-09-27 22:02:54 INFO  Manager:36 - doGet
+2020-09-27 22:02:54 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-27 22:02:54 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-27 22:02:56 INFO  Manager:30 - service
+2020-09-27 22:08:52 INFO  Manager:23 - init
+2020-09-27 22:08:52 INFO  Manager:36 - doGet
+2020-09-27 22:08:52 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-27 22:08:52 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-27 22:08:52 INFO  Manager:30 - service
+2020-09-27 22:13:19 INFO  Manager:23 - init
+2020-09-27 22:13:19 INFO  Manager:42 - doPost
+2020-09-27 22:13:19 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-27 22:13:19 INFO  RegisterAction:18 - RegisterAction #execute start
+2020-09-27 22:13:19 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-27 22:13:19 INFO  Manager:30 - service
+2020-09-27 22:13:20 INFO  Manager:36 - doGet
+2020-09-27 22:13:20 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-27 22:13:20 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-27 22:13:20 INFO  Manager:30 - service
+2020-09-27 22:13:23 INFO  Manager:36 - doGet
+2020-09-27 22:13:23 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-27 22:13:23 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-27 22:13:23 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-27 22:13:23 INFO  Manager:30 - service
+2020-09-27 22:21:12 INFO  Manager:42 - doPost
+2020-09-27 22:21:12 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-27 22:21:12 INFO  RegisterAction:18 - RegisterAction #execute start
+2020-09-27 22:21:12 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-27 22:21:12 INFO  Manager:30 - service
+2020-09-27 22:21:14 INFO  Manager:36 - doGet
+2020-09-27 22:21:14 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-27 22:21:14 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-27 22:21:14 INFO  Manager:30 - service
+2020-09-27 22:21:21 INFO  Manager:36 - doGet
+2020-09-27 22:21:21 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-27 22:21:21 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-27 22:21:21 INFO  Manager:30 - service
+2020-09-27 22:21:24 INFO  Manager:36 - doGet
+2020-09-27 22:21:24 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-27 22:21:24 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-27 22:21:24 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-27 22:21:24 INFO  Manager:30 - service
+2020-09-27 23:52:30 INFO  Manager:23 - init
+2020-09-27 23:52:30 INFO  Manager:36 - doGet
+2020-09-27 23:52:30 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-27 23:52:30 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-27 23:52:30 INFO  Manager:30 - service
+2020-09-28 16:01:00 INFO  Manager:23 - init
+2020-09-28 16:01:00 INFO  Manager:42 - doPost
+2020-09-28 16:01:00 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-28 16:01:00 INFO  RegisterAction:18 - RegisterAction #execute start
+2020-09-28 16:01:01 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-28 16:01:01 INFO  Manager:30 - service
+2020-09-28 16:01:02 INFO  Manager:36 - doGet
+2020-09-28 16:01:02 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-28 16:01:02 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-28 16:01:02 INFO  Manager:30 - service
+2020-09-28 16:01:06 INFO  Manager:36 - doGet
+2020-09-28 16:01:06 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-28 16:01:06 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-28 16:01:06 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-28 16:01:06 INFO  Manager:30 - service

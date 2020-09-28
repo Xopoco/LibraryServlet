@@ -1,0 +1,79 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Buttons</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+          integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+          crossorigin="anonymous">
+    <style>
+        body {
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn btn-default">Standard</button>
+    <input type="submit" class="btn btn-primary" value="Main">
+    <input type="button" class="btn btn-success" value="Confirm">
+    <a href="#" class="btn btn-info" role="button">Notification</a>
+    <button class="btn btn-warning">Warning</button>
+    <button class="btn btn-danger">Danger</button>
+    <button class="btn btn-link">Link</button>
+<br><br>
+    <button class="btn btn-default btn-lg">Lg button</button>
+    <button class="btn btn-default btn-md">Md button</button>
+    <button class="btn btn-default btn-sm">Sm button</button>
+    <button class="btn btn-default btn-xs">Xs button</button>
+<br><br>
+    <button class="btn btn-success btn-md btn-block">block button</button>
+<br><br>
+    <button class="btn btn-default btn-lg active">active button</button>
+    <button class="btn btn-default btn-lg disabled">disabled button</button>
+<br><br>
+<!--    <div class="btn-toolbar" role="toolbar">-->
+    <div class="btn-group btn-group-justified">
+        <div class="btn-group btn-group-lg" data-toggle="buttons">
+            <lable class="btn btn-primary">
+                <input type="checkbox"> Parameter 1
+            </lable>
+            <lable class="btn btn-danger">
+                <input type="checkbox"> Parameter 2
+            </lable>
+            <lable class="btn btn-info">
+                <input type="checkbox"> Parameter 3
+            </lable>
+        </div>
+        <div class="btn-group btn-group-lg" data-toggle="buttons">
+            <lable class="btn btn-primary">
+                <input type="radio"> Parameter 1
+            </lable>
+            <lable class="btn btn-danger">
+                <input type="radio"> Parameter 2
+            </lable>
+            <lable class="btn btn-info">
+                <input type="radio"> Parameter 3
+            </lable>
+        </div>
+    </div>
+<br><br>
+    <div class="btn-group-vertical btn-group-lg" data-toggle="buttons">
+        <lable class="btn btn-primary">
+            <input type="radio"> Parameter 1
+        </lable>
+        <lable class="btn btn-danger">
+            <input type="radio"> Parameter 2
+        </lable>
+        <lable class="btn btn-info">
+            <input type="radio"> Parameter 3
+        </lable>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<Context>
+
+    <Resource name="jdbc/library"
+            auth="Container"
+            type="javax.sql.DataSource"
+            testWhileIdle="true"
+            testOnReturn="false"
+            validationQuery="SELECT 1"
+            validationInterval="30000"
+            timeBetweenEvictionRunsMillis="30000"
+            maxActive="100"
+            minIdle="10"
+            maxWait="10000"
+            initialSize="10"
+            minEvictableIdleTimeMillis="30000"
+            jmxEnabled="true"
+            username="addmin"
+            password="12345"
+            driverClassName="com.mysql.cj.jdbc.Driver"
+            url="jdbc:mysql://localhost:3306/library"
+            connectionProperties="useUnicode=yes;characterEncoding=utf8;serverTimezone=UTC;"/>
+
+</Context>
