@@ -1047,3 +1047,41 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'u
 2020-09-28 16:01:06 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
 2020-09-28 16:01:06 INFO  ShowAction:19 - ShowAction execute is start
 2020-09-28 16:01:06 INFO  Manager:30 - service
+2020-09-28 16:37:18 INFO  Manager:23 - init
+2020-09-28 16:37:18 INFO  Manager:36 - doGet
+2020-09-28 16:37:18 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-28 16:37:18 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-28 16:37:19 INFO  Manager:30 - service
+2020-09-28 16:37:25 INFO  Manager:42 - doPost
+2020-09-28 16:37:25 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-28 16:37:25 INFO  RegisterAction:18 - RegisterAction #execute start
+2020-09-28 16:37:25 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-28 16:37:25 INFO  Manager:30 - service
+2020-09-28 16:37:26 INFO  Manager:36 - doGet
+2020-09-28 16:37:26 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-28 16:37:26 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-28 16:37:26 INFO  Manager:30 - service
+2020-09-28 16:37:30 INFO  Manager:36 - doGet
+2020-09-28 16:37:30 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-28 16:37:30 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-28 16:37:30 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-28 16:37:30 INFO  Manager:30 - service
+2020-09-28 16:39:34 INFO  Manager:23 - init
+2020-09-28 16:39:34 INFO  Manager:36 - doGet
+2020-09-28 16:39:34 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-28 16:39:34 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-28 16:39:34 INFO  Manager:30 - service
+2020-09-28 16:39:45 INFO  Manager:42 - doPost
+2020-09-28 16:39:45 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-28 16:39:45 INFO  RegisterAction:18 - RegisterAction #execute start
+2020-09-28 16:39:45 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-28 16:39:45 INFO  Manager:30 - service
+2020-09-28 16:39:53 INFO  Manager:36 - doGet
+2020-09-28 16:39:53 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-28 16:39:53 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-28 16:39:53 INFO  Manager:30 - service
+2020-09-28 16:39:59 INFO  Manager:36 - doGet
+2020-09-28 16:39:59 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-28 16:39:59 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
+2020-09-28 16:39:59 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-28 16:39:59 INFO  Manager:30 - service
