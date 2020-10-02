@@ -21,12 +21,12 @@
       <br/>
       <form action="manager">
         <input type="number" hidden name="id" value="${user.id}" />
-        <button type="submit" name="action" value="removeUser">Remove user</button>
+        <button type="submit" name="command" value="removeUser">Remove user</button>
       </form>
 
-      <form action="manager">
-        <input type="number" hidden name="id" value="${user.id}" />
-        <button type="submit" name="action" value="updateUser">Update user</button>
+      <form action="jsp/updateUser.jsp">
+        <input type="number" hidden name="user" value="${user}" />
+        <button type="submit" name="command" value="updateUser">Update user</button>
       </form>
     </ul>
     <hr />

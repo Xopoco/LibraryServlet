@@ -1,12 +1,20 @@
 package ua.kram.tolm.db.entity;
 
 public class Order extends Entity {
-    private static final long serialVersionUID = -1736257727058175895L;
 
     private int userId;
     private int bookId;
     private int price;
+    private int dayCount;
     private String date;
+
+    public int getDayCount() {
+        return dayCount;
+    }
+
+    public void setDayCount(int dayCount) {
+        this.dayCount = dayCount;
+    }
 
     public int getUserId() {
         return userId;

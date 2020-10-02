@@ -5,7 +5,37 @@
     <title>Library Registration</title>
 </head>
 <body>
-<div class="container" style="background-color: #99CCFF">
+
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+            <i class="fas fa-archway"></i> Library
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <form action="manager">
+                        <a href="/"  class="nav-link">Main</a>
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="jsp/register.jsp" class="nav-link  active">Command</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container" style="background-color: #999">
     <h2>Create account</h2> <br />
     <form method="post" action="/manager">
         <h4>Login</h4>
@@ -21,7 +51,7 @@
         <h4>Telephone</h4>
         <label><input type="text" name="telephone"></label>
         <br />
-        <input type="submit" value="register" name="action" /><br />
+        <input type="submit" value="register" name="command" /><br />
     </form>
 
     <br />

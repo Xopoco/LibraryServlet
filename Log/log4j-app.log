@@ -19,10 +19,10 @@ org.apache.jasper.JasperException: javax.el.PropertyNotFoundException: Property 
 	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:487)
 	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:412)
 	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:339)
-	at ua.kram.tolm.web.servlet.Manager.perform(Manager.java:58)
-	at ua.kram.tolm.web.servlet.Manager.doPost(Manager.java:49)
+	at ua.kram.tolm.web.servlet.Controller.perform(Manager.java:58)
+	at ua.kram.tolm.web.servlet.Controller.doPost(Manager.java:49)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at ua.kram.tolm.web.servlet.Manager.service(Manager.java:35)
+	at ua.kram.tolm.web.servlet.Controller.service(Manager.java:35)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
@@ -66,11 +66,11 @@ Caused by: javax.el.PropertyNotFoundException: Property 'name' not found on type
 2020-09-24 12:36:48 INFO  Manager:48 - doPost
 2020-09-24 12:36:48 ERROR Manager:60 - Some error : 
 java.io.IOException: Hi
-	at ua.kram.tolm.web.action.RegisterAction.execute(RegisterAction.java:18)
-	at ua.kram.tolm.web.servlet.Manager.perform(Manager.java:56)
-	at ua.kram.tolm.web.servlet.Manager.doPost(Manager.java:49)
+	at ua.kram.tolm.web.command.RegisterCommand.execute(RegisterAction.java:18)
+	at ua.kram.tolm.web.servlet.Controller.perform(Manager.java:56)
+	at ua.kram.tolm.web.servlet.Controller.doPost(Manager.java:49)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at ua.kram.tolm.web.servlet.Manager.service(Manager.java:35)
+	at ua.kram.tolm.web.servlet.Controller.service(Manager.java:35)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
@@ -99,11 +99,11 @@ java.io.IOException: Hi
 2020-09-24 12:38:54 INFO  Manager:48 - doPost
 2020-09-24 12:38:54 ERROR Manager:60 - Some error : 
 java.io.IOException: Hi
-	at ua.kram.tolm.web.action.RegisterAction.execute(RegisterAction.java:18)
-	at ua.kram.tolm.web.servlet.Manager.perform(Manager.java:56)
-	at ua.kram.tolm.web.servlet.Manager.doPost(Manager.java:49)
+	at ua.kram.tolm.web.command.RegisterCommand.execute(RegisterAction.java:18)
+	at ua.kram.tolm.web.servlet.Controller.perform(Manager.java:56)
+	at ua.kram.tolm.web.servlet.Controller.doPost(Manager.java:49)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at ua.kram.tolm.web.servlet.Manager.service(Manager.java:35)
+	at ua.kram.tolm.web.servlet.Controller.service(Manager.java:35)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
@@ -342,11 +342,11 @@ java.sql.SQLIntegrityConstraintViolationException: Column 'login' cannot be null
 	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
 	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
 	at ua.kram.tolm.db.DBManager.insertUser(DBManager.java:74)
-	at ua.kram.tolm.web.action.RegisterAction.execute(RegisterAction.java:28)
-	at ua.kram.tolm.web.servlet.Manager.perform(Manager.java:54)
-	at ua.kram.tolm.web.servlet.Manager.doGet(Manager.java:38)
+	at ua.kram.tolm.web.command.RegisterCommand.execute(RegisterAction.java:28)
+	at ua.kram.tolm.web.servlet.Controller.perform(Manager.java:54)
+	at ua.kram.tolm.web.servlet.Controller.doGet(Manager.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
-	at ua.kram.tolm.web.servlet.Manager.service(Manager.java:30)
+	at ua.kram.tolm.web.servlet.Controller.service(Manager.java:30)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
@@ -389,11 +389,11 @@ com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long
 	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
 	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
 	at ua.kram.tolm.db.DBManager.insertUser(DBManager.java:74)
-	at ua.kram.tolm.web.action.RegisterAction.execute(RegisterAction.java:27)
-	at ua.kram.tolm.web.servlet.Manager.perform(Manager.java:55)
-	at ua.kram.tolm.web.servlet.Manager.doPost(Manager.java:44)
+	at ua.kram.tolm.web.command.RegisterCommand.execute(RegisterAction.java:27)
+	at ua.kram.tolm.web.servlet.Controller.perform(Manager.java:55)
+	at ua.kram.tolm.web.servlet.Controller.doPost(Manager.java:44)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at ua.kram.tolm.web.servlet.Manager.service(Manager.java:30)
+	at ua.kram.tolm.web.servlet.Controller.service(Manager.java:30)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
@@ -476,11 +476,11 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'jjjj' for ke
 	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
 	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
 	at ua.kram.tolm.db.DBManager.insertUser(DBManager.java:97)
-	at ua.kram.tolm.web.action.RegisterAction.execute(RegisterAction.java:28)
-	at ua.kram.tolm.web.servlet.Manager.perform(Manager.java:55)
-	at ua.kram.tolm.web.servlet.Manager.doPost(Manager.java:44)
+	at ua.kram.tolm.web.command.RegisterCommand.execute(RegisterAction.java:28)
+	at ua.kram.tolm.web.servlet.Controller.perform(Manager.java:55)
+	at ua.kram.tolm.web.servlet.Controller.doPost(Manager.java:44)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at ua.kram.tolm.web.servlet.Manager.service(Manager.java:30)
+	at ua.kram.tolm.web.servlet.Controller.service(Manager.java:30)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
@@ -549,11 +549,11 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'u
 	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
 	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
 	at ua.kram.tolm.db.DBManager.insertUser(DBManager.java:97)
-	at ua.kram.tolm.web.action.RegisterAction.execute(RegisterAction.java:29)
-	at ua.kram.tolm.web.servlet.Manager.perform(Manager.java:55)
-	at ua.kram.tolm.web.servlet.Manager.doPost(Manager.java:44)
+	at ua.kram.tolm.web.command.RegisterCommand.execute(RegisterAction.java:29)
+	at ua.kram.tolm.web.servlet.Controller.perform(Manager.java:55)
+	at ua.kram.tolm.web.servlet.Controller.doPost(Manager.java:44)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at ua.kram.tolm.web.servlet.Manager.service(Manager.java:30)
+	at ua.kram.tolm.web.servlet.Controller.service(Manager.java:30)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
@@ -602,11 +602,11 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'u
 	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
 	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
 	at ua.kram.tolm.db.DBManager.insertUser(DBManager.java:97)
-	at ua.kram.tolm.web.action.RegisterAction.execute(RegisterAction.java:29)
-	at ua.kram.tolm.web.servlet.Manager.perform(Manager.java:55)
-	at ua.kram.tolm.web.servlet.Manager.doPost(Manager.java:44)
+	at ua.kram.tolm.web.command.RegisterCommand.execute(RegisterAction.java:29)
+	at ua.kram.tolm.web.servlet.Controller.perform(Manager.java:55)
+	at ua.kram.tolm.web.servlet.Controller.doPost(Manager.java:44)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at ua.kram.tolm.web.servlet.Manager.service(Manager.java:30)
+	at ua.kram.tolm.web.servlet.Controller.service(Manager.java:30)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
@@ -644,11 +644,11 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'u
 	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
 	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
 	at ua.kram.tolm.db.DBManager.insertUser(DBManager.java:97)
-	at ua.kram.tolm.web.action.RegisterAction.execute(RegisterAction.java:29)
-	at ua.kram.tolm.web.servlet.Manager.perform(Manager.java:55)
-	at ua.kram.tolm.web.servlet.Manager.doPost(Manager.java:44)
+	at ua.kram.tolm.web.command.RegisterCommand.execute(RegisterAction.java:29)
+	at ua.kram.tolm.web.servlet.Controller.perform(Manager.java:55)
+	at ua.kram.tolm.web.servlet.Controller.doPost(Manager.java:44)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at ua.kram.tolm.web.servlet.Manager.service(Manager.java:30)
+	at ua.kram.tolm.web.servlet.Controller.service(Manager.java:30)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
@@ -1047,41 +1047,128 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'u
 2020-09-28 16:01:06 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
 2020-09-28 16:01:06 INFO  ShowAction:19 - ShowAction execute is start
 2020-09-28 16:01:06 INFO  Manager:30 - service
-2020-09-28 16:37:18 INFO  Manager:23 - init
-2020-09-28 16:37:18 INFO  Manager:36 - doGet
-2020-09-28 16:37:18 INFO  ActionHolder:21 - ActionHolder #getCommand
-2020-09-28 16:37:18 INFO  ShowAction:19 - ShowAction execute is start
-2020-09-28 16:37:19 INFO  Manager:30 - service
-2020-09-28 16:37:25 INFO  Manager:42 - doPost
-2020-09-28 16:37:25 INFO  ActionHolder:21 - ActionHolder #getCommand
-2020-09-28 16:37:25 INFO  RegisterAction:18 - RegisterAction #execute start
-2020-09-28 16:37:25 INFO  ShowAction:19 - ShowAction execute is start
-2020-09-28 16:37:25 INFO  Manager:30 - service
-2020-09-28 16:37:26 INFO  Manager:36 - doGet
-2020-09-28 16:37:26 INFO  ActionHolder:21 - ActionHolder #getCommand
-2020-09-28 16:37:26 INFO  ShowAction:19 - ShowAction execute is start
-2020-09-28 16:37:26 INFO  Manager:30 - service
-2020-09-28 16:37:30 INFO  Manager:36 - doGet
-2020-09-28 16:37:30 INFO  ActionHolder:21 - ActionHolder #getCommand
-2020-09-28 16:37:30 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
-2020-09-28 16:37:30 INFO  ShowAction:19 - ShowAction execute is start
-2020-09-28 16:37:30 INFO  Manager:30 - service
-2020-09-28 16:39:34 INFO  Manager:23 - init
-2020-09-28 16:39:34 INFO  Manager:36 - doGet
-2020-09-28 16:39:34 INFO  ActionHolder:21 - ActionHolder #getCommand
-2020-09-28 16:39:34 INFO  ShowAction:19 - ShowAction execute is start
-2020-09-28 16:39:34 INFO  Manager:30 - service
-2020-09-28 16:39:45 INFO  Manager:42 - doPost
-2020-09-28 16:39:45 INFO  ActionHolder:21 - ActionHolder #getCommand
-2020-09-28 16:39:45 INFO  RegisterAction:18 - RegisterAction #execute start
-2020-09-28 16:39:45 INFO  ShowAction:19 - ShowAction execute is start
-2020-09-28 16:39:45 INFO  Manager:30 - service
-2020-09-28 16:39:53 INFO  Manager:36 - doGet
-2020-09-28 16:39:53 INFO  ActionHolder:21 - ActionHolder #getCommand
-2020-09-28 16:39:53 INFO  ShowAction:19 - ShowAction execute is start
-2020-09-28 16:39:53 INFO  Manager:30 - service
-2020-09-28 16:39:59 INFO  Manager:36 - doGet
-2020-09-28 16:39:59 INFO  ActionHolder:21 - ActionHolder #getCommand
-2020-09-28 16:39:59 INFO  RemoveUserAction:17 - RemoveUserAction #execute is started
-2020-09-28 16:39:59 INFO  ShowAction:19 - ShowAction execute is start
-2020-09-28 16:39:59 INFO  Manager:30 - service
+2020-09-30 12:16:04 INFO  Manager:23 - init
+2020-09-30 12:16:04 INFO  Manager:36 - doGet
+2020-09-30 12:16:04 INFO  ActionHolder:21 - ActionHolder #getCommand
+2020-09-30 12:16:04 INFO  ShowAction:19 - ShowAction execute is start
+2020-09-30 12:16:05 INFO  Manager:30 - service
+2020-09-30 19:26:04 INFO  Controller:23 - init
+2020-09-30 19:26:04 INFO  Controller:36 - doGet
+2020-09-30 19:26:04 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-09-30 19:26:04 INFO  ShowCommand:19 - ShowAction execute is start
+2020-09-30 19:26:06 INFO  Controller:30 - service
+2020-09-30 19:26:15 INFO  Controller:42 - doPost
+2020-09-30 19:26:15 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-09-30 19:26:15 INFO  RegisterCommand:18 - RegisterAction #execute start
+2020-09-30 19:26:15 INFO  ShowCommand:19 - ShowAction execute is start
+2020-09-30 19:26:15 INFO  Controller:30 - service
+2020-09-30 19:26:16 INFO  Controller:36 - doGet
+2020-09-30 19:26:16 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-09-30 19:26:16 INFO  ShowCommand:19 - ShowAction execute is start
+2020-09-30 19:26:16 INFO  Controller:30 - service
+2020-09-30 19:26:19 INFO  Controller:36 - doGet
+2020-09-30 19:26:19 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-09-30 19:26:19 INFO  RemoveUserCommand:17 - RemoveUserAction #execute is started
+2020-09-30 19:26:19 INFO  ShowCommand:19 - ShowAction execute is start
+2020-09-30 19:26:19 INFO  Controller:30 - service
+2020-09-30 19:29:23 INFO  Controller:23 - init
+2020-09-30 19:29:23 INFO  Controller:36 - doGet
+2020-09-30 19:29:23 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-09-30 19:29:23 INFO  ShowCommand:19 - ShowAction execute is start
+2020-09-30 19:29:23 INFO  Controller:30 - service
+2020-09-30 19:29:27 INFO  Controller:36 - doGet
+2020-09-30 19:29:27 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-09-30 19:30:44 INFO  Controller:23 - init
+2020-09-30 19:30:44 INFO  Controller:36 - doGet
+2020-09-30 19:30:44 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-09-30 19:30:51 INFO  Controller:36 - doGet
+2020-09-30 19:30:51 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-09-30 19:30:51 INFO  ShowCommand:19 - ShowAction execute is start
+2020-09-30 19:30:52 INFO  Controller:30 - service
+2020-10-01 22:24:39 INFO  Controller:24 - init
+2020-10-01 22:24:39 INFO  Controller:37 - doGet
+2020-10-01 22:24:39 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-10-01 22:24:39 INFO  ShowCommand:18 - ShowAction execute is start
+2020-10-01 22:24:39 INFO  Controller:31 - service
+2020-10-01 22:24:46 INFO  Controller:43 - doPost
+2020-10-01 22:24:46 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-10-01 22:24:46 INFO  RegisterCommand:18 - RegisterAction #execute start
+2020-10-01 22:24:46 INFO  ShowCommand:18 - ShowAction execute is start
+2020-10-01 22:24:46 INFO  Controller:31 - service
+2020-10-01 22:24:47 INFO  Controller:37 - doGet
+2020-10-01 22:24:47 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-10-01 22:24:47 INFO  ShowCommand:18 - ShowAction execute is start
+2020-10-01 22:24:47 INFO  Controller:31 - service
+2020-10-01 22:24:51 INFO  Controller:37 - doGet
+2020-10-01 22:24:51 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-10-01 22:24:51 INFO  RemoveUserCommand:16 - RemoveUserAction #execute is started
+2020-10-01 22:24:51 INFO  ShowCommand:18 - ShowAction execute is start
+2020-10-01 22:24:51 INFO  Controller:31 - service
+2020-10-01 22:27:44 INFO  Controller:24 - init
+2020-10-01 22:27:45 INFO  Controller:37 - doGet
+2020-10-01 22:27:45 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-10-01 22:27:45 INFO  ShowCommand:18 - ShowAction execute is start
+2020-10-01 22:27:45 INFO  Controller:31 - service
+2020-10-01 22:27:50 INFO  Controller:43 - doPost
+2020-10-01 22:27:50 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-10-01 22:27:50 INFO  RegisterCommand:18 - RegisterAction #execute start
+2020-10-01 22:27:50 INFO  ShowCommand:18 - ShowAction execute is start
+2020-10-01 22:27:50 INFO  Controller:31 - service
+2020-10-01 22:27:52 INFO  Controller:37 - doGet
+2020-10-01 22:27:52 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-10-01 22:27:52 INFO  ShowCommand:18 - ShowAction execute is start
+2020-10-01 22:27:52 INFO  Controller:31 - service
+2020-10-01 22:27:55 INFO  Controller:37 - doGet
+2020-10-01 22:27:55 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-10-01 22:27:55 INFO  RemoveUserCommand:16 - RemoveUserAction #execute is started
+2020-10-01 22:27:55 INFO  ShowCommand:18 - ShowAction execute is start
+2020-10-01 22:27:55 INFO  Controller:31 - service
+2020-10-01 23:45:11 INFO  Controller:24 - init
+2020-10-01 23:45:11 INFO  Controller:37 - doGet
+2020-10-01 23:45:11 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-10-01 23:45:11 INFO  ShowCommand:18 - ShowAction execute is start
+2020-10-01 23:45:11 INFO  Controller:31 - service
+2020-10-01 23:51:07 INFO  Controller:24 - init
+2020-10-01 23:51:07 INFO  Controller:43 - doPost
+2020-10-01 23:51:07 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-10-01 23:51:07 INFO  RegisterCommand:18 - RegisterAction #execute start
+2020-10-01 23:51:08 INFO  ShowCommand:18 - ShowAction execute is start
+2020-10-01 23:51:08 INFO  Controller:31 - service
+2020-10-01 23:51:10 INFO  Controller:37 - doGet
+2020-10-01 23:51:10 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-10-01 23:51:10 INFO  ShowCommand:18 - ShowAction execute is start
+2020-10-01 23:51:10 INFO  Controller:31 - service
+2020-10-01 23:51:13 INFO  Controller:37 - doGet
+2020-10-01 23:51:13 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-10-01 23:51:13 INFO  RemoveUserCommand:16 - RemoveUserAction #execute is started
+2020-10-01 23:51:13 INFO  ShowCommand:18 - ShowAction execute is start
+2020-10-01 23:51:13 INFO  Controller:31 - service
+2020-10-02 01:14:55 INFO  Controller:24 - init
+2020-10-02 01:14:55 INFO  Controller:37 - doGet
+2020-10-02 01:14:55 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-10-02 01:14:55 INFO  ShowCommand:18 - ShowAction execute is start
+2020-10-02 01:14:57 INFO  Controller:31 - service
+2020-10-02 01:15:05 INFO  Controller:43 - doPost
+2020-10-02 01:15:05 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-10-02 01:15:05 INFO  RegisterCommand:18 - RegisterAction #execute start
+2020-10-02 01:15:05 INFO  ShowCommand:18 - ShowAction execute is start
+2020-10-02 01:15:05 INFO  Controller:31 - service
+2020-10-02 01:15:08 INFO  Controller:37 - doGet
+2020-10-02 01:15:08 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-10-02 01:15:08 INFO  ShowCommand:18 - ShowAction execute is start
+2020-10-02 01:15:08 INFO  Controller:31 - service
+2020-10-02 01:15:52 INFO  Controller:43 - doPost
+2020-10-02 01:15:52 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-10-02 01:15:52 INFO  UpdateUserCommand:16 - UpdateUserAction #execute
+2020-10-02 01:19:44 INFO  Controller:24 - init
+2020-10-02 01:19:44 INFO  Controller:37 - doGet
+2020-10-02 01:19:44 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-10-02 01:19:44 INFO  ShowCommand:18 - ShowAction execute is start
+2020-10-02 01:19:46 INFO  Controller:31 - service
+2020-10-02 01:20:01 INFO  Controller:43 - doPost
+2020-10-02 01:20:01 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-10-02 01:20:01 INFO  UpdateUserCommand:20 - UpdateUserAction #execute
+2020-10-02 01:21:26 INFO  Controller:24 - init
+2020-10-02 01:21:26 INFO  Controller:43 - doPost
+2020-10-02 01:21:26 INFO  CommandContainer:21 - CommandContainer #getCommand
+2020-10-02 01:21:26 INFO  UpdateUserCommand:20 - UpdateUserAction #execute

@@ -15,7 +15,7 @@
         <br/>
         <form action="manager">
             <input type="number" hidden name="id" value="${user.id}" />
-            <button type="submit" name="action" value="removeUser">Remove user</button>
+            <button type="submit" name="command" value="removeUser">Remove user</button>
         </form>
 </ul>
 
@@ -33,7 +33,7 @@
     <h5>Telephone</h5>
     <label><input type="text" name="telephone"></label>
     <br />
-    <input type="submit" value="register" name="action" /><br />
+    <input type="submit" value="updateUser" name="command" /><br />
 </form>
 
 <br />

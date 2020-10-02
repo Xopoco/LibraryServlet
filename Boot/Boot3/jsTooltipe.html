@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+          integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+</head>
+<body>
+    <br>
+    <br>
+    <div class="container">
+        <a href="#" data-toggle="tooltip" title="Something wrong">Point at me</a>
+        <br>
+        <button data-toggle="tooltip" title="Tooltipe placement can be right top bottom left"
+                data-placement="right" class="btn btn-info">Point at me</button>
+        <br>
+        <button data-toggle="tooltip" title="Tooltipe placement can be right top bottom left"
+                data-placement="left" class="btn btn-info">Point at me</button>
+        <br>
+        <button data-toggle="tooltip" title="Tooltipe placement can be right top bottom left"
+                data-placement="bottom" class="btn btn-info">Point at me</button>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready (function(){
+        //$('a[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+</body>
+</html>

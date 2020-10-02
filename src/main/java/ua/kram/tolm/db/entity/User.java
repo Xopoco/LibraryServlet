@@ -1,7 +1,6 @@
 package ua.kram.tolm.db.entity;
 
 public class User extends Entity{
-    private static final long serialVersionUID = -7201225328937287368L;
 
     private String login;
     private String password;
