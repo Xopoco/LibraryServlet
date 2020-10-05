@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@include file="/WEB-INF/jspf/boot.jsp" %>
+<%@include file="/WEB-INF/jspf/head.jsp" %>
+<link rel="stylesheet" href="css/main.css">
 
 <html>
 <head>
@@ -9,46 +10,39 @@
     <title>Library</title>
 </head>
 <body>
-<!--Шапка-->
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-    <div class="container-fluid">
-        <a href="#" class="navbar-brand">
-            <i class="fas fa-archway"></i> Library
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <form action="manager">
-                    <a href="/"  class="nav-link active">Main</a>
-                    </form>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="jsp/register.jsp" class="nav-link">Command</a>
-                </li>
-            </ul>
+
+<!-- Slider-->
+<div id="carousel" class="carousel slide" data-ride="carousel" id="slides">
+    <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/wal12.jpg">
+            <div class="carousel-caption">
+                <h1 class="display-2">Library</h1>
+                <h3>Learn to code!</h3>
+                <button type="button" class="btn btn-warning btn-lg">Read more</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/wal22.jpg">
+        </div>
+        <div class="carousel-item">
+            <img src="img/wal32.jpg">
         </div>
     </div>
-</nav>
-
-<h2>Hello</h2>
-
-<form action="manager">
-    <br>
-    <button type="submit" name="command" value="show">Show all users</button>
-</form>
-<br />
-<form action="jsp/register.jsp">
-    <button type="submit" >Registration</button>
-</form>
+    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
 
 </body>
 </html>

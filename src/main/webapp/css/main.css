@@ -26,7 +26,7 @@ body, html {
     height: 100%;
 }
 
-@media (max-width: 450px) {
+@media (min-width: 450px) {
     .carousel-inner img {
         width: 100%;
     }

@@ -45,7 +45,6 @@ public class Controller extends HttpServlet {
     }
 
     private void perform (HttpServletRequest req, HttpServletResponse resp) throws UnsupportedEncodingException {
-
         req.setCharacterEncoding("UTF-8");
         resp.setCharacterEncoding("UTF-8");
 
@@ -54,9 +53,10 @@ public class Controller extends HttpServlet {
         try {
             String view = command.execute(req, resp);
 
+
             req.getRequestDispatcher(view).forward(req, resp);
         } catch (ServletException | IOException | GlobalException e) {
-            LOG.error("Some error : ", e);
+            LOG.error("Some error : " + e.getMessage(), e);
         }
     }
 

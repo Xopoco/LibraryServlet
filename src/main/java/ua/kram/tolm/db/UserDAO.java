@@ -12,11 +12,11 @@ public class UserDAO {
     private static final Logger LOG = Logger.getLogger(UserDAO.class);
 
     private static final String MYSQL_FIND_USER_BY_ID = "SELECT * FROM users WHERE " + DBFields.ENTITY_ID + "=?";
+    private static final String MYSQL_FIND_USER_BY_LOGIN = "SELECT * FROM users WHERE " + DBFields.USER_LOGIN + "=?";
     private static final String MYSQL_FIND_ALL_USERS = "SELECT * FROM users";
     private static final String MYSQL_DELETE_USER_BY_ID = "DELETE FROM users WHERE " + DBFields.ENTITY_ID + "=?";
     private static final String MYSQL_UPDATE_USER_BY_ID = "UPDATE users SET " +
             DBFields.USER_LOGIN + "=?, " +
-            DBFields.USER_PASSWORD + "=?, " +
             DBFields.USER_FIRST_NAME + "=?, " +
             DBFields.USER_LAST_NAME + "=?, " +
             DBFields.USER_EMAIL + "=?, " +
@@ -62,6 +62,36 @@ public class UserDAO {
     }
 
     /**
+     * Find and return user by login.
+     *
+     */
+    public static User findUserByLogin (String login) throws GlobalException {
+        LOG.info("#findUserByLogin");
+        Connection con = null;
+        User user = null;
+        try {
+            con = DBManager.getInstance().getConnection();
+            con.setAutoCommit(false);
+            PreparedStatement ps = con.prepareStatement(MYSQL_FIND_USER_BY_LOGIN);
+            ps.setString(1, login);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+                user = extractUser(rs);
+            }
+            rs.close();
+            ps.close();
+
+        } catch (SQLException ex) {
+            LOG.error("#findUserByLogin error", ex);
+            DBManager.getInstance().rollbackAndClose(con);
+            throw new GlobalException("Can't find user.");
+        } finally {
+            DBManager.getInstance().commitAndClose(con);
+        }
+        return user;
+    }
+
+    /**
      * Find and return all registered users.
      *
      * @return List of user item entities.
@@ -97,13 +127,13 @@ public class UserDAO {
             con = DBManager.getInstance().getConnection();
             con.setAutoCommit(false);
             PreparedStatement ps = con.prepareStatement(MYSQL_UPDATE_USER_BY_ID);
-            ps.setString(1, user.getLogin());
-            ps.setString(2, user.getPassword());
-            ps.setString(3, user.getFirstName());
-            ps.setString(4, user.getLastName());
-            ps.setString(5, user.getEmail());
-            ps.setString(6, user.getTelephone());
-            ps.setInt(7, user.getId());
+            int k = 1;
+            ps.setString(k++, user.getLogin());
+            ps.setString(k++, user.getFirstName());
+            ps.setString(k++, user.getLastName());
+            ps.setString(k++, user.getEmail());
+            ps.setString(k++, user.getTelephone());
+            ps.setInt(k, user.getId());
             ps.executeUpdate();
             ps.close();
 

@@ -1,6 +1,9 @@
 package ua.kram.tolm.web.command;
 
 import org.apache.log4j.Logger;
+import ua.kram.tolm.web.command.Admin.RemoveUserCommand;
+import ua.kram.tolm.web.command.Admin.ShowUpdateUserCommand;
+import ua.kram.tolm.web.command.Admin.UpdateUserCommand;
 
 import java.util.Map;
 import java.util.TreeMap;
@@ -14,11 +17,14 @@ public class CommandContainer {
         actionMap.put("register", new RegisterCommand());
         actionMap.put("show", new ShowCommand());
         actionMap.put("removeUser", new RemoveUserCommand());
+        actionMap.put("showUpdateUser", new ShowUpdateUserCommand());
         actionMap.put("updateUser", new UpdateUserCommand());
+        actionMap.put("login", new LoginCommand());
+        actionMap.put("showBooks", new ShowBooksCommand());
     }
 
     public static Command getCommand (String request){
-        LOG.info("CommandContainer #getCommand");
+        LOG.info("CommandContainer #getCommand  request --> " + request);
 
         return actionMap.get(request);
     }

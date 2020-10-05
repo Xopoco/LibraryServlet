@@ -58,7 +58,7 @@ public class DBManager {
 
 
     /**
-     * Commits and close the given connection.
+     * Commits if transaction and close the given connection.
      *
      * @param con Connection to be committed and closed.
      *

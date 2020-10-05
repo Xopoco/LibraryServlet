@@ -8,7 +8,7 @@ import javax.servlet.annotation.WebListener;
 
 @WebListener
 public class ContextListener implements ServletContextListener {
-    private static Logger LOG = Logger.getLogger(ContextListener.class);
+    private static final Logger LOG = Logger.getLogger(ContextListener.class);
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
