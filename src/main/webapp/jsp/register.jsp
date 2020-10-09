@@ -1,5 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="/WEB-INF/jspf/head.jsp" %>
+<link rel="stylesheet" href="css/main.css">
+
 <html>
 <head>
     <title>Library Registration</title>

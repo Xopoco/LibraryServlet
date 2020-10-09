@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
 <%@include file="/WEB-INF/jspf/head.jsp" %>
+<link rel="stylesheet" href="css/main.css">
 
 <html xmlns:c="http://www.w3.org/1999/html">
 <head>
@@ -17,6 +18,7 @@
       <li>Name: <c:out value="${user.firstName}" /> <c:out value="${user.lastName}" />
       <li>Email: <c:out value="${user.email}" />
       <li>Telephone: <c:out value="${user.telephone}" />
+      <li>RoleId: <c:out value="${user.id}" />
       <br/>
 <!--      remove-->
       <form action="${pageContext.request.contextPath}/manager">

@@ -4,7 +4,7 @@ public class Order extends Entity {
 
     private int userId;
     private int bookId;
-    private int price;
+    private int debt;
     private int dayCount;
     private String date;
 
@@ -32,12 +32,12 @@ public class Order extends Entity {
         this.bookId = bookId;
     }
 
-    public int getPrice() {
-        return price;
+    public int getDebt() {
+        return debt;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setDebt(int debt) {
+        this.debt = debt;
     }
 
     public String getDate() {

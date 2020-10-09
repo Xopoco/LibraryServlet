@@ -70,7 +70,7 @@ public class DBManager {
             }
             con.close();
         } catch (SQLException ex) {
-            ex.printStackTrace();
+            LOG.error(ex);
         }
     }
 
@@ -85,7 +85,7 @@ public class DBManager {
             con.rollback();
             con.close();
         } catch (SQLException ex) {
-            ex.printStackTrace();
+            LOG.error(ex);
         }
     }
 

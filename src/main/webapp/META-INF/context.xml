@@ -14,6 +14,7 @@
             initialSize="10"
             minEvictableIdleTimeMillis="30000"
             jmxEnabled="true"
+            useBodyEncodingForURI="true"
             username="addmin"
             password="12345"
             driverClassName="com.mysql.cj.jdbc.Driver"

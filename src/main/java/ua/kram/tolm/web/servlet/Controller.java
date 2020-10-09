@@ -45,8 +45,6 @@ public class Controller extends HttpServlet {
     }
 
     private void perform (HttpServletRequest req, HttpServletResponse resp) throws UnsupportedEncodingException {
-        req.setCharacterEncoding("UTF-8");
-        resp.setCharacterEncoding("UTF-8");
 
         String commandName = req.getParameter("command");
         Command command = CommandContainer.getCommand(commandName);

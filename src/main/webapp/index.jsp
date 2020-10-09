@@ -1,5 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="/WEB-INF/jspf/head.jsp" %>
+
+
 <link rel="stylesheet" href="css/main.css">
 
 <html>
@@ -11,27 +13,18 @@
 </head>
 <body>
 
+<h1><fmt:message key="AAAAAa" /></h1>
+
 <!-- Slider-->
 <div id="carousel" class="carousel slide" data-ride="carousel" id="slides">
-    <ul class="carousel-indicators">
-        <li data-target="#slides" data-slide-to="0" class="active"></li>
-        <li data-target="#slides" data-slide-to="1"></li>
-        <li data-target="#slides" data-slide-to="2"></li>
-    </ul>
+
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="img/wal12.jpg">
             <div class="carousel-caption">
                 <h1 class="display-2">Library</h1>
-                <h3>Learn to code!</h3>
-                <button type="button" class="btn btn-warning btn-lg">Read more</button>
+                <button type="button" class="btn btn-warning btn-lg">Enter</button>
             </div>
-        </div>
-        <div class="carousel-item">
-            <img src="img/wal22.jpg">
-        </div>
-        <div class="carousel-item">
-            <img src="img/wal32.jpg">
         </div>
     </div>
     <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
@@ -44,5 +37,33 @@
     </a>
 </div>
 
+<!--News-->
+<div class="container-fluid padding">
+    <br>
+    <br>
+    <div class="row padding">
+        <div class="offset-lg-2 col-lg-4">
+            <h2>ТОП-11 самых ожидаемых книг октября</h2>
+            <p>Чем на улице холоднее, тем приятнее достать любимые шерстяные носочки с дыркой на пятке и залечь в берлоге, наслаждаясь осенним чтением.
+                Тем более что в этом октябре издатели порадовали нас сразу несколькими громкими новинками. Сейчас расскажем!
+                <br><br>
+                Особенно счастье привалило любителям триллеров и детективов: новый Ю Несбё, новая Тана Френч, новая Лив Константин.
+                Нам продолжать, или вы уже убежали заказывать книги в интернет-магазине? Если хочется чего-то умного и смешного, обратите внимание
+                на «Гиперболу с половиной». Этот сборник мемов-комиксов от очень остроумной американской художницы Элли Брош писательница Элизабет Гилберт
+                назвала «Книгой года», а Билл Гейтс – своим личным антидепрессантом. Мы близки к тому, чтобы с ними согласиться, ведь чем мрачнее новостная
+                повестка, тем больше хочется читать что-то неглупое и обнадёживающее.
+                <br><br>
+                Впрочем, чем сто раз услышать, лучше перейти в нашу галерею и самим увидеть, какие новинки стоит выискивать глазами на полках магазинов в этом месяце.
+                news.. </p>
+            <br>
+            <a href="#" class="btn btn-danger">Read more</a>
+        </div>
+        <div class="col-lg-6">
+            <br>
+            <img src="img/news/news1.jpg" class="img-fluid">
+        </div>
+
+    </div>
+</div>
 </body>
 </html>

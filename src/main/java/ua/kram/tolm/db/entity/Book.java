@@ -8,8 +8,18 @@ public class Book extends Entity{
     private String edition;
     private String dateOfEdition;
     private String review;
+    private String picture;
     private int price;
     private int count;
+
+
+    public String getPicture() {
+        return picture;
+    }
+
+    public void setPicture(String picture) {
+        this.picture = picture;
+    }
 
     public String getReview() {
         return review;
@@ -43,11 +53,11 @@ public class Book extends Entity{
         this.author = author;
     }
 
-    public int getGanre() {
+    public int getGenre() {
         return genre;
     }
 
-    public void setGanre(int ganre) {
+    public void setGenre(int ganre) {
         this.genre = ganre;
     }
 
@@ -80,7 +90,7 @@ public class Book extends Entity{
         return "Book{" +
                 "name='" + name + '\'' +
                 ", author='" + author + '\'' +
-                ", ganre='" + genre + '\'' +
+                ", genre='" + genre + '\'' +
                 ", edition='" + edition + '\'' +
                 ", dateOfEdition='" + dateOfEdition + '\'' +
                 ", price=" + price +

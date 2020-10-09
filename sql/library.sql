@@ -26,7 +26,7 @@ create table books
   edition_date int not null,
   price int not null,
   genres_id int not null,
-  picture_address varchar(100) default 'default.jpg',
+  picture_address varchar(100) default 'img/books/default.jpg',
   review text,
   count int not null default 1,
   constraint id_UNIQUE unique (id),
@@ -49,27 +49,27 @@ create table users
   last_name varchar(20) not null,
   email varchar(100) not null unique,
   telephone varchar(15) not null unique,
-  role_id int,
-  debt int
+  role_id int not null default 2,
+  block_status int default 0
 );
 
-INSERT INTO users VALUES (null, 'admmin', '1234', 'Ad', 'min', 'admin@mail.ua', '9993452122', 0, 0);
-INSERT INTO users VALUES (null, 'librarian', '123', 'Антонина', 'Павловна', 'vnykzaregal@ya.ru', '123456789', 1, 0);
-INSERT INTO users VALUES (null, 'user', '12', 'Антон', 'Артс', 'aa@gmail.com', '0505557886', 2, 0);
-INSERT INTO users VALUES (null, 'user2', '12', 'Олег', 'Ортс', 'oo@gmail.com', '0507777777', 2, 0);
+INSERT INTO users VALUES (null, 'ad', '12', 'Ad', 'min', 'admin@mail.ua', '9993452122', 0, default);
+INSERT INTO users VALUES (null, 'librarian', '123', 'Антонина', 'Павловна', 'vnykzaregal@ya.ru', '123456789', 1, default);
+INSERT INTO users VALUES (null, 'us', '12', 'Антон', 'Артс', 'aa@gmail.com', '0505557886', 2, default);
+INSERT INTO users VALUES (null, 'user2', '12', 'Олег', 'Ортс', 'oo@gmail.com', '0507777777', 2, default);
 
 create table orders
 (
   id int not null auto_increment primary key,
   user_id int,
   book_id int references books (id) on delete cascade,
-  price int,
+  debt int,
   day_count int not null,
   order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   constraint fk_user_id foreign key(user_id) references users (id),
   constraint fk_book_id foreign key(book_id) references books (id) on delete cascade
 );
 
-INSERT INTO orders (user_id, book_id, price, day_count) VALUES (2, 2, 12, 2);
-INSERT INTO orders (user_id, book_id, price, day_count) VALUES (1, 3, 22, 1);
-INSERT INTO orders (user_id, book_id, price, day_count) VALUES (1, 1, 24, 5);
+INSERT INTO orders (user_id, book_id, debt, day_count) VALUES (2, 2, 12, 2);
+INSERT INTO orders (user_id, book_id, debt, day_count) VALUES (1, 3, 22, 1);
+INSERT INTO orders (user_id, book_id, debt, day_count) VALUES (1, 1, 24, 5);

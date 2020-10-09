@@ -1,5 +1,6 @@
-<%@ page contentType="text/html;charset=UTF-8"%>
 <%@include file="/WEB-INF/jspf/head.jsp" %>
+<%@ page contentType="text/html;charset=UTF-8"%>
+<link rel="stylesheet" href="css/main.css">
 
 <html>
 <head>

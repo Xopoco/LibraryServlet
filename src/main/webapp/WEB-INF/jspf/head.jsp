@@ -1,5 +1,6 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%@ page contentType="text/html;charset=UTF-8"%>
 
 <html>
@@ -37,32 +38,43 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-<!--                    <a href="${pageContext.request.contextPath}/"  class="nav-link active">Main</a>-->
-                    <form action="${pageContext.request.contextPath}/">
-                        <button type="submit" class="btn btn-light">Main</button>
-                    </form>
-                </li>
-                <li class="nav-item">
-                    <form action="${pageContext.request.contextPath}/manager">
-                        <button type="submit" class="btn btn btn-outline-dark" name="command" value="showBooks">Books</button>
-                    </form>
-                </li>
-                <li class="nav-item">
-                    <button class="btn btn-link">Link</button>
-                </li>
-                <li class="nav-item">
-                    <a href="jsp/register.jsp" class="nav-link">Command</a>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <form action="${pageContext.request.contextPath}/">
+                            <button type="submit" class="btn btn-link btn-lg">Main</button>
+                        </form>
+                        <form action="${pageContext.request.contextPath}/">
+                            <button type="submit" class="btn btn-link btn-lg">Location</button>
+                        </form>
+                        <form action="${pageContext.request.contextPath}/manager">
+                            <button type="submit" class="btn btn-link btn-lg" name="command" value="showBooks">Books</button>
+                            <c:if test="${(userId eq 1)  || (userId eq 2)}">
+                                <button class="btn btn-primary" type="submit" name="command" value="manager">Manager</button>
+                            </c:if>
+                        </form>
+                    </div>
                 </li>
             </ul>
-                <ul class="navbar-nav justify-content-end">
-                    <c:if test="${login eq null}">
-                        <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#registerModal">Registration</button>
-                        <button type="button" class="btn btn-warning btn-md" data-toggle="modal" data-target="#loginModal">Sign-In</button>
-                    </c:if>
-                    <c:if test="${login ne null}">
-                        <button type="button" class="btn btn-warning btn-md" data-toggle="modal" data-target="#loginModal"><c:out value="${login}" /></button>
-                    </c:if>
-                </ul>
+            <ul class="navbar-nav justify-content-end">
+                <c:if test="${login eq null}">
+                    <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#registerModal">Registration</button>
+                    <button type="button" class="btn btn-warning btn-md" data-toggle="modal" data-target="#loginModal">Sign-In</button>
+                </c:if>
+                <c:if test="${login ne null}">
+                    <form action="${pageContext.request.contextPath}/manager">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <c:out value="${login}" />
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Settings</button>
+                                <button class="dropdown-item" type="button">Orders</button>
+                                <div class="dropdown-divider"></div>
+                                <button class="dropdown-item" type="submit" name="command" value="logout">Logout</button>
+                            </div>
+                        </div>
+                    </form>
+                </c:if>
+            </ul>
         </div>
     </div>
 </nav>

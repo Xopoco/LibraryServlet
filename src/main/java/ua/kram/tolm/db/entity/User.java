@@ -9,14 +9,14 @@ public class User extends Entity{
     private String email;
     private String telephone;
     private int roleId;
-    private int debt;
+    private int blockStatus;
 
-    public int getDebt() {
-        return debt;
+    public int getBlockStatus() {
+        return blockStatus;
     }
 
-    public void setDebt(int debt) {
-        this.debt = debt;
+    public void setBlockStatus(int blockStatus) {
+        this.blockStatus = blockStatus;
     }
 
     public String getLogin() {
@@ -83,8 +83,8 @@ public class User extends Entity{
         user.lastName = lastName;
         user.email = email;
         user.telephone = telephone;
-        user.debt = 0;
         user.roleId = 2;
+        user.blockStatus = 0;
 
         return user;
     }
@@ -99,7 +99,6 @@ public class User extends Entity{
                 ", email='" + email + '\'' +
                 ", telephone=" + telephone +
                 ", roleId=" + roleId +
-                ", debt=" + debt +
                 '}';
     }
 }
