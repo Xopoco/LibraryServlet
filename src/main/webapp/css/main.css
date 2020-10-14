@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+
+.navbar-brand i {
+    color: red;
+    font-size: 40px;
+}
+
+.carousel-inner {
+    height: 400px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-85%);
+    text-shadow: 1px 1px 10px #000;
+}
