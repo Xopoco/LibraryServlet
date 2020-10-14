@@ -1,7 +1,7 @@
 package ua.kram.tolm.web.command;
 
 import org.apache.log4j.Logger;
-import ua.kram.tolm.db.DAO.UserDAO;
+import ua.kram.tolm.db.dao.UserDAO;
 import ua.kram.tolm.db.entity.User;
 import ua.kram.tolm.exception.GlobalException;
 import ua.kram.tolm.web.Link;

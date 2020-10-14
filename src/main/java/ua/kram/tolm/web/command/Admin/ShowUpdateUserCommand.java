@@ -1,7 +1,7 @@
-package ua.kram.tolm.web.command.Admin;
+package ua.kram.tolm.web.command.admin;
 
 import org.apache.log4j.Logger;
-import ua.kram.tolm.db.DAO.UserDAO;
+import ua.kram.tolm.db.dao.UserDAO;
 import ua.kram.tolm.db.entity.User;
 import ua.kram.tolm.exception.GlobalException;
 import ua.kram.tolm.web.Link;
@@ -17,8 +17,8 @@ public class ShowUpdateUserCommand extends Command {
     public String execute(HttpServletRequest req, HttpServletResponse resp) throws GlobalException {
         LOG.info("ShowUpdateUserAction #execute");
 
-        String userId = req.getParameter("userId");
-        User user = UserDAO.findUser(Integer.parseInt(userId));
+//        String userId = (String) req.getSession().getAttribute("userId");
+        User user = UserDAO.findUser((Integer) req.getSession().getAttribute("userId"));
         req.setAttribute("user", user);
 
         return Link.UPDATE_USER;

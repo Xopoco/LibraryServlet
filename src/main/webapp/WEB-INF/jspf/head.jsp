@@ -26,6 +26,12 @@
 </head>
 <body>
 
+<!--Lang-->
+<c:if test="${empty lang}">
+    <c:set var="lang" value="resources_en" />
+</c:if>
+<fmt:setBundle basename="${lang}"/>
+
 <!--Header-->
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
     <div class="container-fluid">
@@ -40,25 +46,41 @@
                 <li class="nav-item">
                     <div class="btn-group" role="group" aria-label="Basic example">
                         <form action="${pageContext.request.contextPath}/">
-                            <button type="submit" class="btn btn-link btn-lg">Main</button>
+                            <button type="submit" class="btn btn-link btn-lg"><fmt:message key="main" /></button>
                         </form>
-                        <form action="${pageContext.request.contextPath}/">
-                            <button type="submit" class="btn btn-link btn-lg">Location</button>
+                        <form action="${pageContext.request.contextPath}/jsp/location.jsp">
+                            <button type="submit" class="btn btn-link btn-lg"><fmt:message key="location" /></button>
                         </form>
                         <form action="${pageContext.request.contextPath}/manager">
-                            <button type="submit" class="btn btn-link btn-lg" name="command" value="showBooks">Books</button>
+                            <button type="submit" class="btn btn-link btn-lg" name="command" value="showBooks"><fmt:message key="books" /></button>
                             <c:if test="${(userId eq 1)  || (userId eq 2)}">
-                                <button class="btn btn-primary" type="submit" name="command" value="manager">Manager</button>
+                                <button class="btn btn-primary" type="submit" name="command" value="manager"><fmt:message key="manager" /></button>
                             </c:if>
                         </form>
                     </div>
                 </li>
             </ul>
             <ul class="navbar-nav justify-content-end">
+<!--    Language-->
+                <form action="${pageContext.request.contextPath}/manager">
+                    <input type="hidden" name="command" value="lang">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-light btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <fmt:message key="language" />
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <button class="dropdown-item" type="submit" name="value" value="resources_ru">Ru</button>
+                            <div class="dropdown-divider"></div>
+                            <button class="dropdown-item" type="submit" name="value" value="resources_en">En</button>
+                        </div>
+                    </div>
+                </form>
+<!--    Register / Sign-In-->
                 <c:if test="${login eq null}">
-                    <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#registerModal">Registration</button>
-                    <button type="button" class="btn btn-warning btn-md" data-toggle="modal" data-target="#loginModal">Sign-In</button>
+                    <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="modal" data-target="#registerModal"><fmt:message key="registration" /></button>
+                    <button type="button" class="btn btn-warning btn-md" data-toggle="modal" data-target="#loginModal"><fmt:message key="login" /></button>
                 </c:if>
+<!--    Settings-->
                 <c:if test="${login ne null}">
                     <form action="${pageContext.request.contextPath}/manager">
                         <div class="btn-group">
@@ -66,10 +88,10 @@
                                 <c:out value="${login}" />
                             </button>
                             <div class="dropdown-menu dropdown-menu-right">
-                                <button class="dropdown-item" type="button">Settings</button>
-                                <button class="dropdown-item" type="button">Orders</button>
+                                <button class="dropdown-item" type="submit" name="command" value="showUpdateUser"><fmt:message key="settings" /></button>
+                                <button class="dropdown-item" type="button"><fmt:message key="orders" /></button>
                                 <div class="dropdown-divider"></div>
-                                <button class="dropdown-item" type="submit" name="command" value="logout">Logout</button>
+                                <button class="dropdown-item" type="submit" name="command" value="logout"><fmt:message key="logout" /></button>
                             </div>
                         </div>
                     </form>
@@ -173,7 +195,6 @@
         </div>
     </div>
 </div>
-
 
 <script>
     $('input#Check').change(function () {

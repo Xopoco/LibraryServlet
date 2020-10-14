@@ -11,18 +11,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 
 @WebServlet("/manager")
 public class Controller extends HttpServlet {
-    private static final long serialVersionUID = 7002207372653790291L;
     private static final Logger LOG = Logger.getLogger(Controller.class);
 
 
     @Override
     public void init() {
         LOG.info("init");
-
     }
 
     @Override
@@ -33,18 +30,19 @@ public class Controller extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         LOG.info("doGet");
+
         perform(req, resp);
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) {
         LOG.info("doPost");
         perform(req, resp);
     }
 
-    private void perform (HttpServletRequest req, HttpServletResponse resp) throws UnsupportedEncodingException {
+    private void perform (HttpServletRequest req, HttpServletResponse resp) {
 
         String commandName = req.getParameter("command");
         Command command = CommandContainer.getCommand(commandName);

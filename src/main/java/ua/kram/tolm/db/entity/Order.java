@@ -6,7 +6,17 @@ public class Order extends Entity {
     private int bookId;
     private int debt;
     private int dayCount;
+    private int statusId;
     private String date;
+
+    public int getStatusId() {
+        return statusId;
+    }
+
+    public void setStatusId(int statusId) {
+        this.statusId = statusId;
+
+    }
 
     public int getDayCount() {
         return dayCount;

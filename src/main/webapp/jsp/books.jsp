@@ -23,7 +23,7 @@
                         <c:out value="${book.name}" />
                     </h5>
                     <div class="card-body">
-                        <h5 class="card-title"><c:out value="${book.author}" /></h5>
+                        <h5 class="card-title"><c:out value="${authors.get(book.authorId).firstName} ${authors.get(book.authorId).lastName} (${authors.get(book.authorId).dateOfBirth})" /></h5>
                         <p class="card-text"><c:out value="${book.review}" /></p>
                         <c:if test="${(userId gt 0)}">
                             <a href="#" class="btn btn-info">Order</a>

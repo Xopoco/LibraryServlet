@@ -4,35 +4,82 @@
 
 <html>
 <head>
-    <title>User update</title>
+    <title>Settings</title>
 </head>
 <body>
 <c:set var = "user" value = "${user}"/>
-<c:out value="${user.login}" />
-<c:out value="${user.id}" />
 
-<form method="post" action="${pageContext.request.contextPath}/manager">
-    <h5>Login</h5>
-    <label><input value="${user.login}" type="text" name="login"></label> <br>
-    <h5>First name</h5>
-    <label><input value="${user.firstName}" type="text" name="first_name"></label>
-    <h5>Last name</h5>
-    <label><input value="${user.lastName}" type="text" name="last_name"></label>
-    <h5>Email</h5>
-    <label><input value="${user.email}" type="text" name="email"></label>
-    <h5>Telephone</h5>
-    <label><input value="${user.telephone}" type="text" name="telephone"></label>
-    <br>
-    <input hidden name="userId" value="${user.id}">
-    <button type="submit" name="command" value="updateUser">Update</button>
-</form>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6">
+        <form class="needs-validation" novalidate method="post" action="${pageContext.request.contextPath}/manager">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="${user.login}" name="login" required minlength="3">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please choose a login.
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" value="${user.firstName}" name="first_name" required minlength="3">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" value="${user.lastName}" name="last_name" required minlength="3" title="Minimum 3 signs">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="${user.email}" name="email" required
+                       pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="John..Doe@example.com" />
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">+38</span>
+                </div>
+                <input type="tel" class="form-control" id="basic-url" placeholder="${user.telephone}" name="telephone"
+                       pattern="[0-9]{10}" maxlength="10" title="Ten digits code" required>
+            </div>
 
-<br />
+            <div class="modal-footer">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="updateCheck">
+                    <label class="form-check-label" for="updateCheck">Accept changes</label>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-warning" id="updateButton" name="command" value="updateUser" disabled="true">Update</button>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
 
-<form action="${pageContext.request.contextPath}/">
-    <br>
-    <button type="submit">Back to main menu</button>
-</form>
+<script>
+    $('input#updateCheck').change(function () {
+        if ($('input#updateCheck').is(':checked')) {
+            $('button#updateButton').prop( "disabled", false );
+        } else {
+            $('button#updateButton').prop( "disabled", true );
+        }
+    });
 
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+        var forms = document.getElementsByClassName('needs-validation');
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+</script>
 </body>
 </html>

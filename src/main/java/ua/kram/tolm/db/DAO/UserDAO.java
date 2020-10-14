@@ -1,4 +1,4 @@
-package ua.kram.tolm.db.DAO;
+package ua.kram.tolm.db.dao;
 
 import org.apache.log4j.Logger;
 import ua.kram.tolm.db.DBFields;
@@ -39,25 +39,23 @@ public class UserDAO {
      */
     public static User findUser (int userId) throws GlobalException {
         Connection con = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
         User user = null;
         try {
             con = DBManager.getInstance().getConnection();
-            con.setAutoCommit(false);
-            PreparedStatement ps = con.prepareStatement(MYSQL_FIND_USER_BY_ID);
+            ps = con.prepareStatement(MYSQL_FIND_USER_BY_ID);
             ps.setInt(1, userId);
-            ResultSet rs = ps.executeQuery();
+            rs = ps.executeQuery();
             if (rs.next()) {
                 user = extractUser(rs);
             }
-            rs.close();
-            ps.close();
-
         } catch (SQLException ex) {
             LOG.error("#findUser error", ex);
             DBManager.getInstance().rollbackAndClose(con);
             throw new GlobalException("Can't find user.");
         } finally {
-            DBManager.getInstance().commitAndClose(con);
+            DBManager.getInstance().close(con, ps, rs);
         }
         return user;
     }
@@ -67,27 +65,24 @@ public class UserDAO {
      *
      */
     public static User findUserByLogin (String login) throws GlobalException {
-        LOG.info("#findUserByLogin");
         Connection con = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
         User user = null;
         try {
             con = DBManager.getInstance().getConnection();
-            con.setAutoCommit(false);
-            PreparedStatement ps = con.prepareStatement(MYSQL_FIND_USER_BY_LOGIN);
+            ps = con.prepareStatement(MYSQL_FIND_USER_BY_LOGIN);
             ps.setString(1, login);
-            ResultSet rs = ps.executeQuery();
+            rs = ps.executeQuery();
             if (rs.next()) {
                 user = extractUser(rs);
             }
-            rs.close();
-            ps.close();
-
         } catch (SQLException ex) {
             LOG.error("#findUserByLogin error", ex);
             DBManager.getInstance().rollbackAndClose(con);
             throw new GlobalException("Can't find user.");
         } finally {
-            DBManager.getInstance().commitAndClose(con);
+            DBManager.getInstance().close(con, ps, rs);
         }
         return user;
     }
@@ -100,10 +95,12 @@ public class UserDAO {
     public static List<User> findAllUsers() throws GlobalException {
         List <User> userList = new ArrayList<>();
         Connection con = null;
+        Statement stmt = null;
+        ResultSet rs = null;
         try {
             con = DBManager.getInstance().getConnection();
-            Statement stmt = con.createStatement();
-            ResultSet rs = stmt.executeQuery(MYSQL_FIND_ALL_USERS);
+            stmt = con.createStatement();
+            rs = stmt.executeQuery(MYSQL_FIND_ALL_USERS);
             while (rs.next()) {
                 userList.add(extractUser(rs));
             }
@@ -112,7 +109,7 @@ public class UserDAO {
             DBManager.getInstance().rollbackAndClose(con);
             throw new GlobalException("Can't find users.");
         } finally {
-            DBManager.getInstance().commitAndClose(con);
+            DBManager.getInstance().close(con, stmt, rs);
         }
         return userList;
     }
@@ -124,10 +121,11 @@ public class UserDAO {
      */
     public static void updateUser(User user) throws GlobalException {
         Connection con = null;
+        PreparedStatement ps = null;
         try {
             con = DBManager.getInstance().getConnection();
             con.setAutoCommit(false);
-            PreparedStatement ps = con.prepareStatement(MYSQL_UPDATE_USER_BY_ID);
+            ps = con.prepareStatement(MYSQL_UPDATE_USER_BY_ID);
             int k = 1;
             ps.setString(k++, user.getLogin());
             ps.setString(k++, user.getFirstName());
@@ -136,14 +134,14 @@ public class UserDAO {
             ps.setString(k++, user.getTelephone());
             ps.setInt(k, user.getId());
             ps.executeUpdate();
-            ps.close();
 
+            con.commit();
         } catch (SQLException ex) {
             LOG.error("#updateUser error", ex);
             DBManager.getInstance().rollbackAndClose(con);
             throw new GlobalException("Can't update user.");
         } finally {
-            DBManager.getInstance().commitAndClose(con);
+            DBManager.getInstance().close(con, ps);
         }
     }
 
@@ -154,19 +152,18 @@ public class UserDAO {
      */
     public static void deleteUser (int userId) throws GlobalException {
         Connection con = null;
+        PreparedStatement ps = null;
         try {
             con = DBManager.getInstance().getConnection();
-            con.setAutoCommit(false);
-            PreparedStatement ps = con.prepareStatement(MYSQL_DELETE_USER_BY_ID);
+            ps = con.prepareStatement(MYSQL_DELETE_USER_BY_ID);
             ps.setInt(1, userId);
             ps.executeUpdate();
-            ps.close();
         } catch (SQLException ex) {
             LOG.error("#deleteUser error", ex);
             DBManager.getInstance().rollbackAndClose(con);
             throw new GlobalException("Can't delete user.");
         } finally {
-            DBManager.getInstance().commitAndClose(con);
+            DBManager.getInstance().close(con, ps);
         }
     }
 
@@ -177,26 +174,28 @@ public class UserDAO {
      */
     public static void insertUser(User user) throws GlobalException {
         Connection con = null;
+        PreparedStatement ps = null;
         try {
             con = DBManager.getInstance().getConnection();
             con.setAutoCommit(false);
-            PreparedStatement pstmt = con.prepareStatement(MYSQL_INSERT_USER);
-            pstmt.setString(1, user.getLogin());
-            pstmt.setString(4, user.getPassword());
-            pstmt.setString(2, user.getFirstName());
-            pstmt.setString(3, user.getLastName());
-            pstmt.setString(5, user.getEmail());
-            pstmt.setString(6, user.getTelephone());
-            pstmt.setInt(7, user.getRoleId());
-            pstmt.executeUpdate();
-            pstmt.close();
+            ps = con.prepareStatement(MYSQL_INSERT_USER);
+            int k = 1;
+            ps.setString(k++, user.getLogin());
+            ps.setString(k++, user.getPassword());
+            ps.setString(k++, user.getFirstName());
+            ps.setString(k++, user.getLastName());
+            ps.setString(k++, user.getEmail());
+            ps.setString(k++, user.getTelephone());
+            ps.setInt(k++, user.getRoleId());
+            ps.executeUpdate();
 
+            con.commit();
         } catch (SQLException ex) {
             LOG.error("#insertUser error", ex);
             DBManager.getInstance().rollbackAndClose(con);
             throw new GlobalException("Can't insert user.");
         } finally {
-            DBManager.getInstance().commitAndClose(con);
+            DBManager.getInstance().close(con, ps);
         }
     }
 
@@ -216,5 +215,7 @@ public class UserDAO {
         return user;
     }
 
-
+    private UserDAO(){
+        throw new IllegalStateException("Utility class");
+    }
 }

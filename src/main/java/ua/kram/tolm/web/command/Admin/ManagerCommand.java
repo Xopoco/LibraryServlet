@@ -1,12 +1,8 @@
-package ua.kram.tolm.web.command.Admin;
+package ua.kram.tolm.web.command.admin;
 
 import org.apache.log4j.Logger;
-import ua.kram.tolm.db.DAO.BooksDAO;
-import ua.kram.tolm.db.DAO.OrderDAO;
-import ua.kram.tolm.db.DAO.UserDAO;
-import ua.kram.tolm.db.entity.Book;
-import ua.kram.tolm.db.entity.Order;
-import ua.kram.tolm.db.entity.User;
+import ua.kram.tolm.db.dao.*;
+import ua.kram.tolm.db.entity.*;
 import ua.kram.tolm.exception.GlobalException;
 import ua.kram.tolm.web.Link;
 import ua.kram.tolm.web.command.Command;
@@ -26,8 +22,14 @@ public class ManagerCommand extends Command {
     public String execute(HttpServletRequest req, HttpServletResponse resp) throws GlobalException {
         LOG.info("ManagerCommand#execute");
 
+        Map<Integer, Author> authors = AuthorDAO.findAllAuthors();
+        req.setAttribute("authors", authors);
+
         List<User> users = UserDAO.findAllUsers();
         req.setAttribute("users", users);
+
+        Map<Integer, User> userMap = getOrderUserMap(users);
+        req.setAttribute("userMap", userMap);
 
         List<Order> orders = OrderDAO.findAllOrders();
         req.setAttribute("orders", orders);
@@ -38,11 +40,14 @@ public class ManagerCommand extends Command {
         List<Book> books = BooksDAO.findAllBooks();
         req.setAttribute("books", books);
 
-        Map<Order, Book> orderBookMap = getOrderBookMap(orders, books);
-        req.setAttribute("orderBookMap", orderBookMap);
+        Map<Integer, Book> bookMap = getOrderBookMap(books);
+        req.setAttribute("bookMap", bookMap);
 
-        Map<Order, User> orderUserMap = getOrderUserMap(orders, users);
-        req.setAttribute("orderUserMap", orderUserMap);
+        Map<Integer, Genre> genreMap = GenreDAO.findAllGenres();
+        req.setAttribute("genreMap", genreMap);
+
+        Map<Integer, Status> statusMap = StatusDAO.findAllStatuses();
+        req.setAttribute("statusMap", statusMap);
 
         return Link.MANAGER;
     }
@@ -59,43 +64,21 @@ public class ManagerCommand extends Command {
         return result;
     }
 
-    private Map<Order, Book> getOrderBookMap (List<Order> orders, List<Book> books) throws GlobalException {
-        Map<Order, Book> orderBookMap = new HashMap<>();
+    private Map<Integer, Book> getOrderBookMap (List<Book> books) {
+        Map<Integer, Book> orderBookMap = new HashMap<>();
 
-        for (Order o : orders) {
-            Book book = null;
-
-            for (Book b : books) {
-                if (b.getId() == o.getBookId()){
-                    book = b;
-                }
-            }
-            if (book == null) {
-                throw new GlobalException("Order error.");
-            }
-
-            orderBookMap.put(o, book);
+        for (Book b : books){
+            orderBookMap.put(b.getId(), b);
         }
 
         return orderBookMap;
     }
 
-    private Map<Order, User> getOrderUserMap (List<Order> orders, List<User> users) throws GlobalException {
-        Map<Order, User> orderBookMap = new HashMap<>();
+    private Map<Integer, User> getOrderUserMap (List<User> users){
+        Map<Integer, User> orderBookMap = new HashMap<>();
 
-        for (Order o : orders) {
-            User user = null;
-
-            for (User u : users) {
-                if (u.getId() == o.getBookId()){
-                    user = u;
-                }
-            }
-            if (user == null) {
-                throw new GlobalException("Order error.");
-            }
-
-            orderBookMap.put(o, user);
+        for (User u : users) {
+            orderBookMap.put(u.getId(), u);
         }
 
         return orderBookMap;

@@ -7,9 +7,7 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.SQLException;
-
+import java.sql.*;
 
 /**
  * DB manager.
@@ -22,8 +20,16 @@ import java.sql.SQLException;
 public class DBManager {
     private static final Logger LOG =Logger.getLogger(DBManager.class);
     private static DBManager instance;
+    private Context ic ;
+    private DataSource ds;
 
     private DBManager() {
+        try {
+            ic = new InitialContext();
+            ds = (DataSource) ic.lookup("java:comp/env/jdbc/library");
+        } catch (NamingException e) {
+            LOG.error("DBManager initialize error.", e);
+        }
     }
 
     public static synchronized DBManager getInstance() {
@@ -40,14 +46,9 @@ public class DBManager {
      * @return  DB connection.
      */
     public Connection getConnection() throws SQLException, GlobalException {
-        Connection con = null;
-        try {
-            Context ic = new InitialContext();
-            DataSource ds = (DataSource) ic.lookup("java:comp/env/jdbc/library");
-            con = ds.getConnection();
-        } catch (NamingException e) {
-            LOG.error(e);
-        }
+
+        Connection con = ds.getConnection();;
+
         if (con == null){
             LOG.error("Connection is null!");
             throw new GlobalException("Database connection failed");
@@ -58,23 +59,6 @@ public class DBManager {
 
 
     /**
-     * Commits if transaction and close the given connection.
-     *
-     * @param con Connection to be committed and closed.
-     *
-     */
-    public void commitAndClose(Connection con) {
-        try {
-            if (!con.getAutoCommit()) {
-                con.commit();
-            }
-            con.close();
-        } catch (SQLException ex) {
-            LOG.error(ex);
-        }
-    }
-
-    /**
      * Rollbacks and close the given connection.
      *
      * @param con  Connection to be rollbacked and closed.
@@ -82,11 +66,67 @@ public class DBManager {
      */
     public void rollbackAndClose(Connection con) {
         try {
-            con.rollback();
-            con.close();
+            if (con != null) {
+                con.rollback();
+                con.close();
+            }
         } catch (SQLException ex) {
             LOG.error(ex);
         }
     }
+
+    /**
+     * Close the given connection.
+     *
+     * @param con Connection to be closed.
+     *
+     */
+
+
+    public void close(Connection con, PreparedStatement ps, ResultSet rs) {
+        try {
+            if (rs != null) {
+                rs.close();
+            }
+            if (ps != null) {
+                ps.close();
+            }
+            if (con != null) {
+                con.close();
+            }
+        } catch (SQLException ex) {
+            LOG.error(ex);
+        }
+    }
+
+    public void close(Connection con, PreparedStatement ps) {
+        try {
+            if (ps != null) {
+                ps.close();
+            }
+            if (con != null) {
+                con.close();
+            }
+        } catch (SQLException ex) {
+            LOG.error(ex);
+        }
+    }
+
+    public void close(Connection con, Statement stmt, ResultSet rs) {
+        try {
+            if (rs != null) {
+                rs.close();
+            }
+            if (stmt != null) {
+                stmt.close();
+            }
+            if (con != null) {
+                con.close();
+            }
+        } catch (SQLException ex) {
+            LOG.error(ex);
+        }
+    }
+
 
 }

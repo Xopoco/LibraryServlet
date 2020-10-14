@@ -1,4 +1,4 @@
-package ua.kram.tolm.db.DAO;
+package ua.kram.tolm.db.dao;
 
 import org.apache.log4j.Logger;
 import ua.kram.tolm.db.DBFields;
@@ -18,7 +18,7 @@ public class BooksDAO {
     private static final String MYSQL_DELETE_BOOK_BY_ID = "DELETE FROM books WHERE " + DBFields.ENTITY_ID + "=?";
     private static final String MYSQL_UPDATE_BOOK_BY_ID = "UPDATE books SET " +
             DBFields.BOOK_NAME + "=?, " +
-            DBFields.BOOK_AUTHOR + "=?, " +
+            DBFields.BOOK_AUTHOR_ID + "=?, " +
             DBFields.BOOK_GENRE_ID + "=?, " +
             DBFields.BOOK_EDITION + "=?, " +
             DBFields.BOOK_EDITION_DATE + "=?, " +
@@ -27,7 +27,7 @@ public class BooksDAO {
             DBFields.BOOK_COUNT + "=? WHERE id=?";
     private static final String MYSQL_INSERT_BOOK = "INSERT INTO books (" +
             DBFields.BOOK_NAME + ", " +
-            DBFields.BOOK_AUTHOR + ", " +
+            DBFields.BOOK_AUTHOR_ID + ", " +
             DBFields.BOOK_GENRE_ID + ", " +
             DBFields.BOOK_EDITION + ", " +
             DBFields.BOOK_EDITION_DATE + ", " +
@@ -42,24 +42,24 @@ public class BooksDAO {
      */
     public static Book findBook (int bookId) throws GlobalException {
         Connection con = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
         Book book = null;
         try {
             con = DBManager.getInstance().getConnection();
-            PreparedStatement ps = con.prepareStatement(MYSQL_FIND_BOOK_BY_ID);
+            ps = con.prepareStatement(MYSQL_FIND_BOOK_BY_ID);
             ps.setInt(1, bookId);
-            ResultSet rs = ps.executeQuery();
+            rs = ps.executeQuery();
             if (rs.next()) {
                 book = extractBook(rs);
             }
-            rs.close();
-            ps.close();
 
         } catch (SQLException ex) {
             LOG.error("#findBook error", ex);
             DBManager.getInstance().rollbackAndClose(con);
             throw new GlobalException("Can't find book.");
         } finally {
-            DBManager.getInstance().commitAndClose(con);
+            DBManager.getInstance().close(con, ps, rs);
         }
         return book;
     }
@@ -72,10 +72,12 @@ public class BooksDAO {
     public static List<Book> findAllBooks() throws GlobalException {
         List <Book> bookList = new ArrayList<>();
         Connection con = null;
+        Statement stmt = null;
+        ResultSet rs = null;
         try {
             con = DBManager.getInstance().getConnection();
-            Statement stmt = con.createStatement();
-            ResultSet rs = stmt.executeQuery(MYSQL_FIND_ALL_BOOKS);
+            stmt = con.createStatement();
+            rs = stmt.executeQuery(MYSQL_FIND_ALL_BOOKS);
             while (rs.next()) {
                 bookList.add(extractBook(rs));
             }
@@ -84,7 +86,7 @@ public class BooksDAO {
             DBManager.getInstance().rollbackAndClose(con);
             throw new GlobalException("Can't find book.");
         } finally {
-            DBManager.getInstance().commitAndClose(con);
+            DBManager.getInstance().close(con, stmt, rs);
         }
         return bookList;
     }
@@ -96,12 +98,13 @@ public class BooksDAO {
      */
     public static void updateBook(Book book) throws GlobalException {
         Connection con = null;
+        PreparedStatement ps = null;
         try {
             con = DBManager.getInstance().getConnection();
-            PreparedStatement ps = con.prepareStatement(MYSQL_UPDATE_BOOK_BY_ID);
+            ps = con.prepareStatement(MYSQL_UPDATE_BOOK_BY_ID);
             ps.setString(1, book.getName());
-            ps.setString(2, book.getAuthor());
-            ps.setInt(3, book.getGenre());
+            ps.setInt(2, book.getAuthorId());
+            ps.setInt(3, book.getGenreId());
             ps.setString(4, book.getEdition());
             ps.setString(5, book.getDateOfEdition());
             ps.setString(6, book.getReview());
@@ -109,14 +112,13 @@ public class BooksDAO {
             ps.setInt(8, book.getCount());
             ps.setInt(9, book.getId());
             ps.executeUpdate();
-            ps.close();
 
         } catch (SQLException ex) {
             LOG.error("#updateBook error", ex);
             DBManager.getInstance().rollbackAndClose(con);
             throw new GlobalException("Can't update book.");
         } finally {
-            DBManager.getInstance().commitAndClose(con);
+            DBManager.getInstance().close(con, ps);
         }
     }
 
@@ -127,18 +129,18 @@ public class BooksDAO {
      */
     public static void deleteBook (int bookId) throws GlobalException {
         Connection con = null;
+        PreparedStatement ps = null;
         try {
             con = DBManager.getInstance().getConnection();
-            PreparedStatement ps = con.prepareStatement(MYSQL_DELETE_BOOK_BY_ID);
+            ps = con.prepareStatement(MYSQL_DELETE_BOOK_BY_ID);
             ps.setInt(1, bookId);
             ps.executeUpdate();
-            ps.close();
         } catch (SQLException ex) {
             LOG.error("#deleteBook error", ex);
             DBManager.getInstance().rollbackAndClose(con);
             throw new GlobalException("Can't delete book.");
         } finally {
-            DBManager.getInstance().commitAndClose(con);
+            DBManager.getInstance().close(con, ps);
         }
     }
 
@@ -149,26 +151,26 @@ public class BooksDAO {
      */
     public static void insertBook(Book book) throws GlobalException {
         Connection con = null;
+        PreparedStatement ps = null;
         try {
             con = DBManager.getInstance().getConnection();
-            PreparedStatement pstmt = con.prepareStatement(MYSQL_INSERT_BOOK);
+            ps = con.prepareStatement(MYSQL_INSERT_BOOK);
             int k = 1;
-            pstmt.setString(k++, book.getName());
-            pstmt.setString(k++, book.getAuthor());
-            pstmt.setInt(k++, book.getGenre());
-            pstmt.setString(k++, book.getEdition());
-            pstmt.setString(k++, book.getDateOfEdition());
-            pstmt.setString(k++, book.getReview());
-            pstmt.setInt(k++, book.getPrice());
-            pstmt.setInt(k++, book.getCount());
-            pstmt.executeUpdate();
-            pstmt.close();
+            ps.setString(k++, book.getName());
+            ps.setInt(k++, book.getAuthorId());
+            ps.setInt(k++, book.getGenreId());
+            ps.setString(k++, book.getEdition());
+            ps.setString(k++, book.getDateOfEdition());
+            ps.setString(k++, book.getReview());
+            ps.setInt(k++, book.getPrice());
+            ps.setInt(k++, book.getCount());
+            ps.executeUpdate();
         } catch (SQLException ex) {
             LOG.error("#insertBook error", ex);
             DBManager.getInstance().rollbackAndClose(con);
             throw new GlobalException("Can't insert book.");
         } finally {
-            DBManager.getInstance().commitAndClose(con);
+            DBManager.getInstance().close(con, ps);
         }
     }
 
@@ -178,8 +180,8 @@ public class BooksDAO {
         Book book = new Book();
         book.setId(rs.getInt(DBFields.ENTITY_ID));
         book.setName(rs.getString(DBFields.BOOK_NAME));
-        book.setAuthor(rs.getString(DBFields.BOOK_AUTHOR));
-        book.setGenre(rs.getInt(DBFields.BOOK_GENRE_ID));
+        book.setAuthorId(rs.getInt(DBFields.BOOK_AUTHOR_ID));
+        book.setGenreId(rs.getInt(DBFields.BOOK_GENRE_ID));
         book.setEdition(rs.getString(DBFields.BOOK_EDITION));
         book.setDateOfEdition(rs.getString(DBFields.BOOK_EDITION_DATE));
         book.setPicture(rs.getString(DBFields.BOOK_PICTURE));
@@ -190,5 +192,8 @@ public class BooksDAO {
         return book;
     }
 
+    private BooksDAO() {
+        throw new IllegalStateException("Utility class");
+    }
 
 }

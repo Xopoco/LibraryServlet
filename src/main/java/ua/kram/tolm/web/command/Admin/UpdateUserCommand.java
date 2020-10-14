@@ -1,7 +1,7 @@
-package ua.kram.tolm.web.command.Admin;
+package ua.kram.tolm.web.command.admin;
 
 import org.apache.log4j.Logger;
-import ua.kram.tolm.db.DAO.UserDAO;
+import ua.kram.tolm.db.dao.UserDAO;
 import ua.kram.tolm.db.entity.User;
 import ua.kram.tolm.exception.GlobalException;
 import ua.kram.tolm.web.Link;
@@ -10,7 +10,6 @@ import ua.kram.tolm.web.command.ShowCommand;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.UnsupportedEncodingException;
 
 public class UpdateUserCommand extends Command {
     private static final Logger LOG = Logger.getLogger(UpdateUserCommand.class);
@@ -33,7 +32,6 @@ public class UpdateUserCommand extends Command {
 
         UserDAO.updateUser(u);
 
-        new ShowCommand().execute(req, resp);
-        return Link.ADMIN_PAGE_JSP;
+        return new ShowCommand().execute(req, resp);
     }
 }

@@ -85,7 +85,7 @@
         <configuration>
           <scanIntervalSeconds>10</scanIntervalSeconds>
           <webApp>
-            <contextPath>/my-app</contextPath>
+            <contextPath>/myapp</contextPath>
           </webApp>
         </configuration>
       </plugin>

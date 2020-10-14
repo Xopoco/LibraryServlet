@@ -1,4 +1,4 @@
-package ua.kram.tolm.db.DAO;
+package ua.kram.tolm.db.dao;
 
 import org.apache.log4j.Logger;
 import ua.kram.tolm.db.DBFields;
@@ -7,8 +7,8 @@ import ua.kram.tolm.db.entity.Genre;
 import ua.kram.tolm.exception.GlobalException;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class GenreDAO {
     private static final Logger LOG = Logger.getLogger(GenreDAO.class);
@@ -25,26 +25,25 @@ public class GenreDAO {
      */
     public static Genre findGenre(int genreId) throws GlobalException {
         Connection con = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
         Genre genre = null;
         try {
             con = DBManager.getInstance().getConnection();
-            PreparedStatement ps = con.prepareStatement(MYSQL_FIND_GENRE_BY_ID);
+            ps = con.prepareStatement(MYSQL_FIND_GENRE_BY_ID);
             ps.setInt(1, genreId);
-            ResultSet rs = ps.executeQuery();
+            rs = ps.executeQuery();
             if (rs.next()) {
                 genre = new Genre();
                 genre.setId(rs.getInt(DBFields.ENTITY_ID));
                 genre.setName(rs.getString(DBFields.GENRE_NAME));
             }
-            rs.close();
-            ps.close();
-
         } catch (SQLException ex) {
             LOG.error("#findGenre error", ex);
             DBManager.getInstance().rollbackAndClose(con);
             throw new GlobalException("Can't find genre.");
         } finally {
-            DBManager.getInstance().commitAndClose(con);
+            DBManager.getInstance().close(con, ps, rs);
         }
         return genre;
     }
@@ -56,18 +55,18 @@ public class GenreDAO {
      */
     public static void deleteGenre (int genreId) throws GlobalException {
         Connection con = null;
+        PreparedStatement ps = null;
         try {
             con = DBManager.getInstance().getConnection();
-            PreparedStatement ps = con.prepareStatement(MYSQL_DELETE_GENRE_BY_ID);
+            ps = con.prepareStatement(MYSQL_DELETE_GENRE_BY_ID);
             ps.setInt(1, genreId);
             ps.executeUpdate();
-            ps.close();
         } catch (SQLException ex) {
             LOG.error("#deleteGenre error", ex);
             DBManager.getInstance().rollbackAndClose(con);
             throw new GlobalException("Can't delete genre.");
         } finally {
-            DBManager.getInstance().commitAndClose(con);
+            DBManager.getInstance().close(con, ps);
         }
     }
 
@@ -78,48 +77,48 @@ public class GenreDAO {
      */
     public static void insertGenre(Genre genre) throws GlobalException {
         Connection con = null;
+        PreparedStatement ps = null;
         try {
             con = DBManager.getInstance().getConnection();
-            con.setAutoCommit(false);
-            PreparedStatement pstmt = con.prepareStatement(MYSQL_INSERT_GENRE);
-            pstmt.setString(1, genre.getName());
-            pstmt.executeUpdate();
-            pstmt.close();
+            ps = con.prepareStatement(MYSQL_INSERT_GENRE);
+            ps.setString(1, genre.getName());
+            ps.executeUpdate();
         } catch (SQLException ex) {
             LOG.error("#insertGenre error", ex);
             DBManager.getInstance().rollbackAndClose(con);
             throw new GlobalException("Can't insert genre.");
         } finally {
-            DBManager.getInstance().commitAndClose(con);
+            DBManager.getInstance().close(con, ps);
         }
     }
 
     /**
      * Find and return all genres.
      *
-     * @return List of book item entities.
+     * @return Map of genres item entities.
      */
-    public static List<Genre> findAllGenres() throws GlobalException {
-        List <Genre> genreList = new ArrayList<>();
+    public static Map<Integer, Genre> findAllGenres() throws GlobalException {
+        Map<Integer, Genre> statusMap = new HashMap<>();
         Connection con = null;
+        Statement stmt = null;
+        ResultSet rs = null;
         try {
             con = DBManager.getInstance().getConnection();
-            Statement stmt = con.createStatement();
-            ResultSet rs = stmt.executeQuery(MYSQL_FIND_ALL_GENRES);
+            stmt = con.createStatement();
+            rs = stmt.executeQuery(MYSQL_FIND_ALL_GENRES);
             while (rs.next()) {
-                Genre genre = new Genre();
-                genre.setId(rs.getInt(DBFields.ENTITY_ID));
-                genre.setName(rs.getString(DBFields.GENRE_NAME));
-                genreList.add(genre);
+                Genre genre = extractGenre(rs);
+                statusMap.put(genre.getId(), genre);
             }
         } catch (SQLException ex) {
             LOG.error("#findAllGenres error", ex);
             DBManager.getInstance().rollbackAndClose(con);
-            throw new GlobalException("Can't find genre.");
+            throw new GlobalException("Can't find genres.");
+
         } finally {
-            DBManager.getInstance().commitAndClose(con);
+            DBManager.getInstance().close(con, stmt, rs);
         }
-        return genreList;
+        return statusMap;
     }
 
     /**
@@ -129,21 +128,33 @@ public class GenreDAO {
      */
     public static void updateGenre(Genre genre) throws GlobalException {
         Connection con = null;
+        PreparedStatement ps = null;
         try {
             con = DBManager.getInstance().getConnection();
             con.setAutoCommit(false);
-            PreparedStatement ps = con.prepareStatement(MYSQL_UPDATE_GENRE_BY_ID);
+            ps = con.prepareStatement(MYSQL_UPDATE_GENRE_BY_ID);
             ps.setString(1, genre.getName());
             ps.setInt(1, genre.getId());
             ps.executeUpdate();
-            ps.close();
 
+            con.commit();
         } catch (SQLException ex) {
             LOG.error("#updateBook error", ex);
             DBManager.getInstance().rollbackAndClose(con);
             throw new GlobalException("Can't update book.");
         } finally {
-            DBManager.getInstance().commitAndClose(con);
+            DBManager.getInstance().close(con, ps);
         }
+    }
+
+    private static Genre extractGenre(ResultSet rs) throws SQLException {
+        Genre genre = new Genre();
+        genre.setId(rs.getInt(DBFields.ENTITY_ID));
+        genre.setName(rs.getString(DBFields.GENRE_NAME));
+        return genre;
+    }
+
+    private GenreDAO() {
+        throw new IllegalStateException("Utility class");
     }
 }

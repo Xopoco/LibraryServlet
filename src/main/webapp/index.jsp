@@ -13,8 +13,6 @@
 </head>
 <body>
 
-<h1><fmt:message key="AAAAAa" /></h1>
-
 <!-- Slider-->
 <div id="carousel" class="carousel slide" data-ride="carousel" id="slides">
 

@@ -3,12 +3,12 @@ package ua.kram.tolm.db.entity;
 public class Book extends Entity{
 
     private String name;
-    private String author;
-    private int genre;
     private String edition;
     private String dateOfEdition;
     private String review;
     private String picture;
+    private int genreId;
+    private int authorId;
     private int price;
     private int count;
 
@@ -45,20 +45,20 @@ public class Book extends Entity{
         this.name = name;
     }
 
-    public String getAuthor() {
-        return author;
+    public int getAuthorId() {
+        return authorId;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public void setAuthorId(int authorId) {
+        this.authorId = authorId;
     }
 
-    public int getGenre() {
-        return genre;
+    public int getGenreId() {
+        return genreId;
     }
 
-    public void setGenre(int ganre) {
-        this.genre = ganre;
+    public void setGenreId(int ganre) {
+        this.genreId = ganre;
     }
 
     public String getEdition() {
@@ -89,8 +89,6 @@ public class Book extends Entity{
     public String toString() {
         return "Book{" +
                 "name='" + name + '\'' +
-                ", author='" + author + '\'' +
-                ", genre='" + genre + '\'' +
                 ", edition='" + edition + '\'' +
                 ", dateOfEdition='" + dateOfEdition + '\'' +
                 ", price=" + price +
