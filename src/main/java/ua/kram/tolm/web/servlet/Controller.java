@@ -16,7 +16,6 @@ import java.io.IOException;
 public class Controller extends HttpServlet {
     private static final Logger LOG = Logger.getLogger(Controller.class);
 
-
     @Override
     public void init() {
         LOG.info("init");
@@ -30,27 +29,30 @@ public class Controller extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
         LOG.info("doGet");
-
-        perform(req, resp);
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) {
-        LOG.info("doPost");
-        perform(req, resp);
-    }
-
-    private void perform (HttpServletRequest req, HttpServletResponse resp) {
 
         String commandName = req.getParameter("command");
         Command command = CommandContainer.getCommand(commandName);
         try {
             String view = command.execute(req, resp);
 
-
             req.getRequestDispatcher(view).forward(req, resp);
+        } catch (ServletException | IOException | GlobalException e) {
+            LOG.error("Some error : " + e.getMessage(), e);
+        }
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) {
+        LOG.info("doPost");
+
+        String commandName = req.getParameter("command");
+        Command command = CommandContainer.getCommand(commandName);
+        try {
+            String view = command.execute(req, resp);
+
+            resp.sendRedirect(view);
         } catch (ServletException | IOException | GlobalException e) {
             LOG.error("Some error : " + e.getMessage(), e);
         }

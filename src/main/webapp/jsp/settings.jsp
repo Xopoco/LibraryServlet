@@ -34,5 +34,7 @@
     <button type="submit">Back to main menu</button>
 </form>
 
+
+<%@include file="/WEB-INF/jspf/footer.jsp" %>
 </body>
 </html>

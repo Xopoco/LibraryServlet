@@ -7354,3 +7354,728 @@ Caused by: javax.el.PropertyNotFoundException: Property 'LastName' not found on 
 2020-10-14 17:23:07 INFO  AuthFilter:20 - AuthFilter#doFilter
 2020-10-14 17:24:04 INFO  AuthFilter:20 - AuthFilter#doFilter
 2020-10-14 17:24:04 INFO  AuthFilter:20 - AuthFilter#doFilter
+2020-10-14 21:06:37 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:07:50 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:09:14 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:09:16 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:15:50 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:17:25 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:18:14 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:20:47 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:20:50 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:22:26 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:22:29 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:24:10 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:24:11 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:25:08 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:25:10 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:28:41 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:28:42 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:29:04 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:29:54 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:29:55 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:30:08 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:31:03 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:31:05 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:31:32 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:31:34 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:33:32 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:33:34 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:33:34 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:34:16 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:34:17 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:34:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:35:01 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:35:01 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:41:38 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:41:39 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:41:39 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:41:39 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:41:39 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:41:39 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:42:40 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:42:41 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:42:41 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:42:41 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:42:41 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:45:17 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:45:18 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:45:18 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:45:18 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:45:18 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:45:18 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:46:58 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:46:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:46:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:46:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:46:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:48:58 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:48:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:48:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:48:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:48:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:48:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:48:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:50:27 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:50:29 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:50:29 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:50:29 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:50:29 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:51:40 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:51:42 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:51:42 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:51:42 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:51:42 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:51:42 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:51:42 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:52:24 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:52:26 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:52:26 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:53:06 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:53:09 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:53:09 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:53:09 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:53:09 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:53:09 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:55:57 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:55:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:55:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:55:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:55:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:55:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:55:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:55:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:57:27 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:57:29 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:57:29 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:57:30 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:58:40 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:58:40 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:58:40 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:58:41 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:58:41 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:58:41 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:58:41 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:58:41 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:58:45 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:59:06 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:59:07 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:59:48 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:59:50 INFO  LocalFilter:20 - #doFilter
+2020-10-14 21:59:50 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:01:06 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:01:09 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:01:09 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:01:09 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:01:09 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:01:09 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:01:09 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:02:28 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:02:31 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:02:31 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:02:31 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:03:24 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:03:27 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:03:27 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:03:27 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:03:27 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:03:27 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:03:27 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:04:42 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:04:45 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:04:45 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:05:39 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:05:41 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:05:41 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:05:41 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:06:56 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:06:58 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:06:58 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:06:58 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:06:58 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:06:58 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:07:34 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:07:37 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:08:10 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:08:13 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:08:13 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:08:37 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:08:40 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:08:40 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:12:23 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:12:24 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:12:24 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:12:24 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:12:24 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:12:24 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:12:24 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:12:24 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:12:24 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:14:52 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:14:54 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:14:54 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:14:54 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:16:21 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:16:24 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:16:24 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:16:24 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:16:24 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:16:24 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:16:24 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:16:24 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:17:32 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:17:34 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:17:35 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:17:35 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:20:34 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:20:36 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:20:36 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:20:36 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:20:36 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:20:36 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:20:36 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:20:36 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:21:40 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:21:43 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:21:44 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:21:44 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:28:14 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:28:15 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:28:15 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:28:15 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:28:15 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:28:15 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:28:15 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:28:15 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:28:15 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:31:55 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:31:57 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:31:58 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:31:58 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:33:47 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:33:49 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:33:49 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:33:49 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:33:49 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:33:49 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:33:49 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:34:33 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:34:36 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:34:36 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:35:28 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:35:30 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:35:56 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:35:57 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:35:57 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:36:17 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:36:18 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:36:33 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:36:33 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:36:45 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:37:03 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:37:04 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:37:04 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:38:30 INFO  Controller:22 - init
+2020-10-14 22:38:30 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:38:30 INFO  Controller:34 - doGet
+2020-10-14 22:38:30 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> showBooks
+2020-10-14 22:38:30 INFO  ShowBooksCommand:21 - #execute
+2020-10-14 22:38:30 ERROR DBManager:31 - DBManager initialize error.
+javax.naming.NameNotFoundException: jdbc is not bound; remaining name 'jdbc/library'
+	at org.eclipse.jetty.jndi.NamingContext.getContext(NamingContext.java:241)
+	at org.eclipse.jetty.jndi.NamingContext.lookup(NamingContext.java:491)
+	at org.eclipse.jetty.jndi.NamingContext.lookup(NamingContext.java:491)
+	at org.eclipse.jetty.jndi.NamingContext.lookup(NamingContext.java:491)
+	at org.eclipse.jetty.jndi.NamingContext.lookup(NamingContext.java:505)
+	at org.eclipse.jetty.jndi.java.javaRootURLContext.lookup(javaRootURLContext.java:101)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at ua.kram.tolm.db.DBManager.<init>(DBManager.java:29)
+	at ua.kram.tolm.db.DBManager.getInstance(DBManager.java:37)
+	at ua.kram.tolm.db.dao.AuthorDAO.findAllAuthors(AuthorDAO.java:69)
+	at ua.kram.tolm.web.command.ShowBooksCommand.execute(ShowBooksCommand.java:23)
+	at ua.kram.tolm.web.servlet.Controller.perform(Controller.java:50)
+	at ua.kram.tolm.web.servlet.Controller.doGet(Controller.java:36)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at ua.kram.tolm.web.servlet.Controller.service(Controller.java:27)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsyncServlet.service(ServletHolder.java:1411)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:763)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1651)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:226)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1638)
+	at ua.kram.tolm.web.filter.LocalFilter.doFilter(LocalFilter.java:24)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1630)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:567)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1377)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:507)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1292)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:501)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-10-14 22:38:41 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:38:41 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:38:41 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:41:19 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:41:19 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:41:19 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:41:20 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:41:20 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:41:20 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:41:20 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:41:20 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:41:37 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:42:07 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:42:08 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:42:27 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:42:45 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:42:57 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:42:58 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:44:15 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:44:16 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:44:16 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:45:44 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:45:47 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:45:47 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:48:44 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:48:47 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:48:47 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:48:47 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:48:47 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:48:47 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:48:47 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:49:23 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:49:24 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:49:24 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:49:40 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:49:42 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:49:51 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:50:17 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:50:18 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:50:18 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:50:50 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:50:51 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:51:11 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:51:12 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:51:29 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:51:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:52:00 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:53:19 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:53:20 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:53:20 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:53:54 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:53:55 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:54:24 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:54:25 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:55:12 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:55:13 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:55:54 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:55:55 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:55:55 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:55:55 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:57:30 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:57:32 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:57:32 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:57:32 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:58:08 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:58:10 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:58:10 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:58:46 INFO  Controller:22 - init
+2020-10-14 22:58:46 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:58:46 INFO  Controller:34 - doGet
+2020-10-14 22:58:46 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> showBooks
+2020-10-14 22:58:46 INFO  ShowBooksCommand:21 - #execute
+2020-10-14 22:58:46 ERROR DBManager:31 - DBManager initialize error.
+javax.naming.NameNotFoundException: jdbc is not bound; remaining name 'jdbc/library'
+	at org.eclipse.jetty.jndi.NamingContext.getContext(NamingContext.java:241)
+	at org.eclipse.jetty.jndi.NamingContext.lookup(NamingContext.java:491)
+	at org.eclipse.jetty.jndi.NamingContext.lookup(NamingContext.java:491)
+	at org.eclipse.jetty.jndi.NamingContext.lookup(NamingContext.java:491)
+	at org.eclipse.jetty.jndi.NamingContext.lookup(NamingContext.java:505)
+	at org.eclipse.jetty.jndi.java.javaRootURLContext.lookup(javaRootURLContext.java:101)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at ua.kram.tolm.db.DBManager.<init>(DBManager.java:29)
+	at ua.kram.tolm.db.DBManager.getInstance(DBManager.java:37)
+	at ua.kram.tolm.db.dao.AuthorDAO.findAllAuthors(AuthorDAO.java:69)
+	at ua.kram.tolm.web.command.ShowBooksCommand.execute(ShowBooksCommand.java:23)
+	at ua.kram.tolm.web.servlet.Controller.perform(Controller.java:50)
+	at ua.kram.tolm.web.servlet.Controller.doGet(Controller.java:36)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at ua.kram.tolm.web.servlet.Controller.service(Controller.java:27)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsyncServlet.service(ServletHolder.java:1411)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:763)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1651)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:226)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1638)
+	at ua.kram.tolm.web.filter.LocalFilter.doFilter(LocalFilter.java:24)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1630)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:567)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1377)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:507)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1292)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:501)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-10-14 22:59:22 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:59:23 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:59:58 INFO  LocalFilter:20 - #doFilter
+2020-10-14 22:59:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:00:40 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:00:41 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:00:41 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:00:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:00:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:01:06 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:01:38 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:02:27 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:02:29 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:03:57 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:03:58 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:03:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:03:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:03:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:03:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:06:01 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:06:02 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:06:02 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:06:02 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:07:58 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:07:58 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:07:58 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:08:32 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:09:53 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:09:54 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:09:54 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:13:04 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:13:06 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:13:06 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:13:06 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:13:06 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:13:39 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:13:41 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:14:53 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:14:55 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:14:55 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:15:36 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:15:39 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:15:39 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:15:39 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:15:39 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:15:39 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:15:39 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:15:39 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:15:39 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:15:44 INFO  Controller:22 - init
+2020-10-14 23:15:44 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:15:44 INFO  Controller:41 - doPost
+2020-10-14 23:15:44 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> login
+2020-10-14 23:15:44 INFO  LoginCommand:17 - LoginCommand#execute
+2020-10-14 23:15:44 DEBUG LoginCommand:20 - Request parameter: login --> ad
+2020-10-14 23:15:45 INFO  Controller:28 - service
+2020-10-14 23:15:45 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:21:54 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:21:57 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:22:43 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:22:46 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:22:46 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:22:55 INFO  Controller:22 - init
+2020-10-14 23:22:55 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:22:55 INFO  Controller:41 - doPost
+2020-10-14 23:22:55 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> login
+2020-10-14 23:22:55 INFO  LoginCommand:17 - LoginCommand#execute
+2020-10-14 23:22:55 DEBUG LoginCommand:20 - Request parameter: login --> ad
+2020-10-14 23:22:55 INFO  Controller:28 - service
+2020-10-14 23:22:56 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:23:58 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:24:01 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:24:01 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:24:01 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:24:01 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:24:01 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:24:02 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:24:02 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:24:02 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:24:37 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:27:51 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:27:54 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:27:54 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:27:54 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:27:54 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:27:54 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:27:54 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:27:54 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:29:53 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:29:57 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:30:08 INFO  Controller:22 - init
+2020-10-14 23:30:08 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:30:08 INFO  Controller:41 - doPost
+2020-10-14 23:30:08 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> login
+2020-10-14 23:30:08 INFO  LoginCommand:17 - LoginCommand#execute
+2020-10-14 23:30:08 DEBUG LoginCommand:20 - Request parameter: login --> ad
+2020-10-14 23:30:08 INFO  Controller:28 - service
+2020-10-14 23:30:09 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:31:14 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:31:17 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:40:04 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:40:08 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:40:08 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:40:08 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:40:09 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:40:09 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:40:09 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:40:09 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:40:09 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:41:21 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:41:24 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:41:32 INFO  Controller:22 - init
+2020-10-14 23:41:32 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:41:32 INFO  Controller:41 - doPost
+2020-10-14 23:41:32 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> login
+2020-10-14 23:41:32 INFO  LoginCommand:17 - LoginCommand#execute
+2020-10-14 23:41:32 DEBUG LoginCommand:20 - Request parameter: login --> ad
+2020-10-14 23:41:32 INFO  Controller:28 - service
+2020-10-14 23:43:18 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:43:21 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:45:15 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:45:18 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:46:35 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:46:38 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:49:02 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:49:05 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:49:05 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:50:39 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:50:42 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:53:26 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:53:28 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:53:28 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:53:28 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:53:28 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:53:28 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:53:28 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:54:46 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:54:48 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:55:01 INFO  Controller:22 - init
+2020-10-14 23:55:01 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:55:01 INFO  Controller:34 - doGet
+2020-10-14 23:55:01 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> lang
+2020-10-14 23:55:01 INFO  LangCommand:18 - #execute
+2020-10-14 23:55:01 INFO  Controller:28 - service
+2020-10-14 23:55:01 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:55:09 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:55:09 INFO  Controller:41 - doPost
+2020-10-14 23:55:09 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> login
+2020-10-14 23:55:09 INFO  LoginCommand:17 - LoginCommand#execute
+2020-10-14 23:55:09 DEBUG LoginCommand:20 - Request parameter: login --> ad
+2020-10-14 23:55:09 INFO  Controller:28 - service
+2020-10-14 23:55:10 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:55:13 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:55:13 INFO  Controller:34 - doGet
+2020-10-14 23:55:13 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> lang
+2020-10-14 23:55:13 INFO  LangCommand:18 - #execute
+2020-10-14 23:55:13 INFO  Controller:28 - service
+2020-10-14 23:55:13 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:55:14 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:55:14 INFO  Controller:34 - doGet
+2020-10-14 23:55:14 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> lang
+2020-10-14 23:55:14 INFO  LangCommand:18 - #execute
+2020-10-14 23:55:14 INFO  Controller:28 - service
+2020-10-14 23:55:24 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:55:24 INFO  Controller:34 - doGet
+2020-10-14 23:55:24 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> manager
+2020-10-14 23:55:24 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-14 23:55:25 INFO  Controller:28 - service
+2020-10-14 23:55:25 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:55:58 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:55:58 INFO  Controller:34 - doGet
+2020-10-14 23:55:58 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> showUpdateUser
+2020-10-14 23:55:58 INFO  ShowUpdateUserCommand:18 - ShowUpdateUserAction #execute
+2020-10-14 23:55:59 INFO  Controller:28 - service
+2020-10-14 23:55:59 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:56:06 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:56:06 INFO  Controller:34 - doGet
+2020-10-14 23:56:06 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> showBooks
+2020-10-14 23:56:06 INFO  ShowBooksCommand:21 - #execute
+2020-10-14 23:56:07 INFO  Controller:28 - service
+2020-10-14 23:56:07 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:56:19 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:56:19 INFO  Controller:34 - doGet
+2020-10-14 23:56:19 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> manager
+2020-10-14 23:56:19 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-14 23:56:19 INFO  Controller:28 - service
+2020-10-14 23:56:19 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:56:30 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:56:30 INFO  Controller:34 - doGet
+2020-10-14 23:56:30 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> logout
+2020-10-14 23:56:30 INFO  LogoutCommand:16 - LogoutCommand#execute
+2020-10-14 23:56:30 INFO  Controller:28 - service
+2020-10-14 23:56:30 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:57:13 INFO  LocalFilter:20 - #doFilter
+2020-10-14 23:57:13 INFO  Controller:34 - doGet
+2020-10-14 23:57:13 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> showBooks
+2020-10-14 23:57:13 INFO  ShowBooksCommand:21 - #execute
+2020-10-14 23:57:13 INFO  Controller:28 - service
+2020-10-14 23:57:13 INFO  LocalFilter:20 - #doFilter
+2020-10-15 00:04:23 INFO  LocalFilter:20 - #doFilter
+2020-10-15 00:04:23 INFO  LocalFilter:20 - #doFilter
+2020-10-15 00:04:24 INFO  LocalFilter:20 - #doFilter
+2020-10-15 00:04:41 INFO  Controller:22 - init
+2020-10-15 00:04:41 INFO  LocalFilter:20 - #doFilter
+2020-10-15 00:04:41 INFO  Controller:34 - doGet
+2020-10-15 00:04:42 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> showBooks
+2020-10-15 00:04:42 INFO  ShowBooksCommand:21 - #execute
+2020-10-15 00:04:42 INFO  Controller:28 - service
+2020-10-15 11:52:57 DEBUG ContextListener:20 - contextDestroyed do nothing by default
+2020-10-15 11:55:19 DEBUG ContextListener:20 - contextDestroyed do nothing by default
+2020-10-15 17:25:22 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:25:22 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:25:22 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:25:22 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:25:22 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:25:22 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:25:22 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:25:22 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:25:23 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:25:34 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:25:36 INFO  Controller:21 - init
+2020-10-15 17:25:36 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:25:36 INFO  Controller:33 - doGet
+2020-10-15 17:25:36 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> showBooks
+2020-10-15 17:25:36 INFO  ShowBooksCommand:21 - #execute
+2020-10-15 17:25:36 INFO  Controller:27 - service
+2020-10-15 17:25:58 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:25:58 INFO  Controller:48 - doPost
+2020-10-15 17:25:58 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> login
+2020-10-15 17:25:58 INFO  LoginCommand:17 - LoginCommand#execute
+2020-10-15 17:25:58 DEBUG LoginCommand:20 - Request parameter: login --> ad
+2020-10-15 17:25:58 INFO  Controller:27 - service
+2020-10-15 17:26:01 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:26:01 INFO  Controller:33 - doGet
+2020-10-15 17:26:01 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> showBooks
+2020-10-15 17:26:01 INFO  ShowBooksCommand:21 - #execute
+2020-10-15 17:26:01 INFO  Controller:27 - service
+2020-10-15 17:26:20 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:26:20 INFO  Controller:33 - doGet
+2020-10-15 17:26:20 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> lang
+2020-10-15 17:26:20 INFO  LangCommand:18 - #execute
+2020-10-15 17:26:20 INFO  Controller:27 - service
+2020-10-15 17:26:30 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:26:30 INFO  Controller:33 - doGet
+2020-10-15 17:26:30 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> showUpdateUser
+2020-10-15 17:26:30 INFO  ShowUpdateUserCommand:18 - ShowUpdateUserAction #execute
+2020-10-15 17:26:30 INFO  Controller:27 - service
+2020-10-15 17:26:42 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:26:42 INFO  Controller:33 - doGet
+2020-10-15 17:26:42 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> manager
+2020-10-15 17:26:42 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-15 17:26:42 INFO  Controller:27 - service
+2020-10-15 17:26:46 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:26:46 INFO  Controller:33 - doGet
+2020-10-15 17:26:46 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> lang
+2020-10-15 17:26:46 INFO  LangCommand:18 - #execute
+2020-10-15 17:26:46 INFO  Controller:27 - service
+2020-10-15 17:26:48 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:26:48 INFO  Controller:33 - doGet
+2020-10-15 17:26:48 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> manager
+2020-10-15 17:26:48 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-15 17:26:48 INFO  Controller:27 - service
+2020-10-15 17:27:39 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:28:04 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:28:04 INFO  Controller:33 - doGet
+2020-10-15 17:28:04 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> logout
+2020-10-15 17:28:04 INFO  LogoutCommand:16 - LogoutCommand#execute
+2020-10-15 17:28:04 INFO  Controller:27 - service
+2020-10-15 17:28:52 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:28:52 INFO  Controller:48 - doPost
+2020-10-15 17:28:52 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> register
+2020-10-15 17:28:52 INFO  RegisterCommand:18 - RegisterAction #execute start
+2020-10-15 17:28:52 INFO  Controller:27 - service
+2020-10-15 17:29:14 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:29:14 INFO  Controller:33 - doGet
+2020-10-15 17:29:14 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> showBooks
+2020-10-15 17:29:14 INFO  ShowBooksCommand:21 - #execute
+2020-10-15 17:29:14 INFO  Controller:27 - service
+2020-10-15 17:32:10 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:32:36 INFO  Controller:21 - init
+2020-10-15 17:32:36 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:32:36 INFO  Controller:48 - doPost
+2020-10-15 17:32:36 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> register
+2020-10-15 17:32:36 INFO  RegisterCommand:18 - RegisterAction #execute start
+2020-10-15 17:32:36 INFO  Controller:27 - service
+2020-10-15 17:32:37 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:32:43 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:32:43 INFO  Controller:48 - doPost
+2020-10-15 17:32:43 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> login
+2020-10-15 17:32:43 INFO  LoginCommand:17 - LoginCommand#execute
+2020-10-15 17:32:43 DEBUG LoginCommand:20 - Request parameter: login --> usr
+2020-10-15 17:32:43 INFO  Controller:27 - service
+2020-10-15 17:32:43 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:32:49 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:32:49 INFO  Controller:33 - doGet
+2020-10-15 17:32:49 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> showBooks
+2020-10-15 17:32:49 INFO  ShowBooksCommand:21 - #execute
+2020-10-15 17:32:51 INFO  Controller:27 - service
+2020-10-15 17:32:57 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:33:10 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:33:10 INFO  Controller:33 - doGet
+2020-10-15 17:33:10 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> logout
+2020-10-15 17:33:10 INFO  LogoutCommand:16 - LogoutCommand#execute
+2020-10-15 17:33:10 INFO  Controller:27 - service
+2020-10-15 17:33:15 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:33:15 INFO  Controller:48 - doPost
+2020-10-15 17:33:15 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> login
+2020-10-15 17:33:15 INFO  LoginCommand:17 - LoginCommand#execute
+2020-10-15 17:33:15 DEBUG LoginCommand:20 - Request parameter: login --> ad
+2020-10-15 17:33:15 INFO  Controller:27 - service
+2020-10-15 17:33:15 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:33:17 INFO  LocalFilter:20 - #doFilter
+2020-10-15 17:33:17 INFO  Controller:33 - doGet
+2020-10-15 17:33:17 INFO  CommandContainer:31 - CommandContainer #getCommand  request --> manager
+2020-10-15 17:33:17 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-15 17:33:17 INFO  Controller:27 - service

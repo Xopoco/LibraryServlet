@@ -46,13 +46,16 @@
                 <li class="nav-item">
                     <div class="btn-group" role="group" aria-label="Basic example">
                         <form action="${pageContext.request.contextPath}/">
-                            <button type="submit" class="btn btn-link btn-lg"><fmt:message key="main" /></button>
-                        </form>
-                        <form action="${pageContext.request.contextPath}/jsp/location.jsp">
-                            <button type="submit" class="btn btn-link btn-lg"><fmt:message key="location" /></button>
+                            <button type="submit" class="btn btn-secondary btn-lg">
+                                <i class="fas fa-book"></i>
+                                <fmt:message key="main" />
+                            </button>
                         </form>
                         <form action="${pageContext.request.contextPath}/manager">
-                            <button type="submit" class="btn btn-link btn-lg" name="command" value="showBooks"><fmt:message key="books" /></button>
+                            <button type="submit" class="btn btn-secondary btn-lg " name="command" value="showBooks">
+                                <i class="fas fa-book-open"></i>
+                                <fmt:message key="books" />
+                            </button>
                             <c:if test="${(userId eq 1)  || (userId eq 2)}">
                                 <button class="btn btn-primary" type="submit" name="command" value="manager"><fmt:message key="manager" /></button>
                             </c:if>

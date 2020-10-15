@@ -37,5 +37,7 @@
     <hr />
 </c:forEach>
 
+
+<%@include file="/WEB-INF/jspf/footer.jsp" %>
 </body>
 </html>
