@@ -4,40 +4,73 @@
 
 <html>
 <head>
+    <title>Books</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Books</title>
+
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" class="init">
+
+        $(document).ready(function() {
+			$('#booksTable').DataTable();
+		} );
+
+    </script>
 </head>
 <body>
 
-<c:forEach var="book" items="${requestScope.books}">
-    <ul>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-                <img src="${book.picture}" class="img-fluid">
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-                <div class="card bg-light mb-3 w-50 text-center">
-                    <h5 class="card-header">
-                        <c:out value="${book.name}" />
-                    </h5>
-                    <div class="card-body">
-                        <h5 class="card-title"><c:out value="${authors.get(book.authorId).firstName} ${authors.get(book.authorId).lastName} (${authors.get(book.authorId).dateOfBirth})" /></h5>
-                        <p class="card-text"><c:out value="${book.review}" /></p>
-                        <c:if test="${(userId gt 0)}">
-                            <a href="#" class="btn btn-info">Order</a>
-                        </c:if>
-                        <footer class="blockquote-footer">Price by day: <cite title="Price"><c:out value="${book.price}" /></cite></footer>
-                    </div>
-                </div>
+<div class="container">
+    <div class="row">
+<!--All books-->
+    <table id="booksTable" class="table">
+        <thead>
+        <tr>
+                <th scope="col">Book</th>
+                <th scope="col">Author</th>
+                <th scope="col">Review</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <c:forEach var="book" items="${requestScope.books}">
+            <tr>
+                <th scope="row"><c:out value="${book.name}" /></th>
+                <td><c:out value="${authors.get(book.authorId).firstName} ${authors.get(book.authorId).lastName} (${authors.get(book.authorId).dateOfBirth})" /></td>
+                <td><c:out value="${book.review}" /></td>
+                <td>
+                    <c:if test="${(userId gt 0)}">
+                        <form action="${pageContext.request.contextPath}/manager">
+                            <input type="hidden" name="bookId" value="${book.id}">
+                            <button id="orderButton" type="submit" class="btn btn-warning" name="command" value="orderBook">Order</button>
+                        </form>
+                    </c:if>
+                    <c:if test="${(userId eq null)}">
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#notRegisteredUserModal">Order</button>
+                    </c:if>
+                </td>
+                <td><img src="${book.picture}" class="img-fluids" alt="some description"></td>
+            </tr>
+
+        </c:forEach>
+        </tbody>
+    </table>
+    </div>
+</div>
+
+<div class="modal fade" id="notRegisteredUserModal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" >You need to sign-in to order the book.</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">x</span>
+                </button>
             </div>
         </div>
-    </ul>
-    <hr />
-</c:forEach>
+    </div>
+</div>
 
-
-<%@include file="/WEB-INF/jspf/footer.jsp" %>
 </body>
 </html>

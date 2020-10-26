@@ -7,34 +7,80 @@
     <title>User update</title>
 </head>
 <body>
-<c:set var = "user" value = "${user}"/>
-<c:out value="${user.login}" />
-<c:out value="${user.id}" />
+<div class="container">
 
-<form method="post" action="${pageContext.request.contextPath}/manager">
-    <h5>Login</h5>
-    <label><input value="${user.login}" type="text" name="login"></label> <br>
-    <h5>First name</h5>
-    <label><input value="${user.firstName}" type="text" name="first_name"></label>
-    <h5>Last name</h5>
-    <label><input value="${user.lastName}" type="text" name="last_name"></label>
-    <h5>Email</h5>
-    <label><input value="${user.email}" type="text" name="email"></label>
-    <h5>Telephone</h5>
-    <label><input value="${user.telephone}" type="text" name="telephone"></label>
-    <br>
-    <input hidden name="userId" value="${user.id}">
-    <button type="submit" name="command" value="updateUser">Update</button>
-</form>
+    <form method="post" action="${pageContext.request.contextPath}/manager">
+        <div class="form-group">
+            <input class="form-control" type="text" value="${user.login}" name="login" minlength="3" maxlength="19"
+                   pattern="^(?=\S+$).{3,19}$" required/>
+        </div>
+        <div class="form-group">
+            <input id="passwordReg" type="password" class="form-control" value="${user.password}" minlength="6" maxlength="100"
+                   pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{6,}$" required />
+        </div>
+        <div class="form-group">
+            <input name="first_name" type="text" class="form-control" value="${user.firstName}" minlength="1" maxlength="19" required />
+        </div>
+        <div class="form-group">
+            <input name="last_name" type="text" class="form-control" value="${user.lastName}" minlength="1" maxlength="19" required />
+        </div>
+        <div class="form-group">
+            <input name="email" type="email" class="form-control"  value="${user.email}"
+                   pattern="\b[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}\b" required/>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">+38</span>
+            </div>
+            <input name="telephone" type="tel" class="form-control" value="${user.telephone}" minlength="10" maxlength="10"
+                   pattern="[0-9]+" required />
+        </div>
 
-<br />
+        <div class="modal-footer">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="checkUpdate">
+                <label class="form-check-label" for="checkUpdate">Confirm changes</label>
+            </div>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <input hidden name="userId" value="${user.id}">
+            <button class="btn btn-warning" id="updateButton" type="submit" name="command" value="updateSettings" disabled="true">Update</button>
+        </div>
+    </form>
 
-<form action="${pageContext.request.contextPath}/">
-    <br>
-    <button type="submit">Back to main menu</button>
-</form>
+    <hr />
+    <h2>My orders</h2>
+    <table id="ordersTable" class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <th scope="col">Book</th>
+            <th scope="col">When</th>
+            <th scope="col">How long</th>
+            <th scope="col">Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <c:forEach var="order" items="${requestScope.orders}">
+            <tr>
+                <th scope="row"><c:out value="${bookMap.get(order.bookId).name}" /></th>
+                <td><c:out value="${order.date}" /></td>
+                <td><c:out value="${order.dayCount}" /></td>
+                <td><c:out value="${statusMap.get(order.statusId).value}" /></td>
+            </tr>
+        </c:forEach>
+        </tbody>
+    </table>
 
+</div>
 
-<%@include file="/WEB-INF/jspf/footer.jsp" %>
+<script>
+    $('input#checkUpdate').change(function () {
+    if ($('input#checkUpdate').is(':checked')) {
+        $('button#updateButton').prop( "disabled", false );
+    } else {
+        $('button#updateButton').prop( "disabled", true );
+    }
+});
+</script>
+
 </body>
 </html>

@@ -29,9 +29,7 @@ public class OrderDAO {
             DBFields.ORDER_USER_ID + ", " +
             DBFields.ORDER_BOOK_ID + ", " +
             DBFields.ORDER_STATUS_ID + ", " +
-            DBFields.ORDER_DEBT + ", " +
-            DBFields.ORDER_DAY_COUNT + ", " +
-            DBFields.ORDER_DATE + ") VALUES (?, ?, ?, ?, ?, ?)";
+            DBFields.ORDER_DAY_COUNT + ") VALUES (?, ?, ?, ?)";
 
 
 
@@ -132,9 +130,7 @@ public class OrderDAO {
             ps.setInt(k++, order.getUserId());
             ps.setInt(k++, order.getBookId());
             ps.setInt(k++, order.getStatusId());
-            ps.setInt(k++, order.getDebt());
             ps.setInt(k++, order.getDayCount());
-            ps.setString(k++, order.getDate());
             ps.executeUpdate();
 
             con.commit();

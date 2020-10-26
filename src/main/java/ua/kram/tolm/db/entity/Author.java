@@ -28,4 +28,11 @@ public class Author extends Entity{
     public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
+
+    @Override
+    public String toString() {
+        return "Author: " +
+                "Name='" + firstName + " " + lastName + '\'' +
+                ", dateOfBirth='" + dateOfBirth;
+    }
 }

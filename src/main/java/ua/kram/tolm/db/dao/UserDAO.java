@@ -15,8 +15,12 @@ public class UserDAO {
 
     private static final String MYSQL_FIND_USER_BY_ID = "SELECT * FROM users WHERE " + DBFields.ENTITY_ID + "=?";
     private static final String MYSQL_FIND_USER_BY_LOGIN = "SELECT * FROM users WHERE " + DBFields.USER_LOGIN + "=?";
+    private static final String MYSQL_FIND_USER_BY_EMAIL = "SELECT * FROM users WHERE " + DBFields.USER_EMAIL + "=?";
+    private static final String MYSQL_FIND_USER_BY_TELEPHONE = "SELECT * FROM users WHERE " + DBFields.USER_TELEPHONE + "=?";
     private static final String MYSQL_FIND_ALL_USERS = "SELECT * FROM users";
     private static final String MYSQL_DELETE_USER_BY_ID = "DELETE FROM users WHERE " + DBFields.ENTITY_ID + "=?";
+    private static final String MYSQL_UPDATE_USER_BLOCK_STATUS_BY_ID = "UPDATE users SET " + DBFields.USER_BLOCK_STATUS + "=? WHERE id=?";
+    private static final String MYSQL_UPDATE_USER_ROLE_BY_ID = "UPDATE users SET " + DBFields.USER_ROLE_ID + "=? WHERE id=?";
     private static final String MYSQL_UPDATE_USER_BY_ID = "UPDATE users SET " +
             DBFields.USER_LOGIN + "=?, " +
             DBFields.USER_FIRST_NAME + "=?, " +
@@ -88,6 +92,60 @@ public class UserDAO {
     }
 
     /**
+     * Find and return user by email.
+     *
+     */
+    public static User findUserByEmail (String email) throws GlobalException {
+        Connection con = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        User user = null;
+        try {
+            con = DBManager.getInstance().getConnection();
+            ps = con.prepareStatement(MYSQL_FIND_USER_BY_EMAIL);
+            ps.setString(1, email);
+            rs = ps.executeQuery();
+            if (rs.next()) {
+                user = extractUser(rs);
+            }
+        } catch (SQLException ex) {
+            LOG.error("#findUserByEmail error", ex);
+            DBManager.getInstance().rollbackAndClose(con);
+            throw new GlobalException("Can't find user.");
+        } finally {
+            DBManager.getInstance().close(con, ps, rs);
+        }
+        return user;
+    }
+
+    /**
+     * Find and return user by telephone.
+     *
+     */
+    public static User findUserByTelephone (String telephone) throws GlobalException {
+        Connection con = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        User user = null;
+        try {
+            con = DBManager.getInstance().getConnection();
+            ps = con.prepareStatement(MYSQL_FIND_USER_BY_TELEPHONE);
+            ps.setString(1, telephone);
+            rs = ps.executeQuery();
+            if (rs.next()) {
+                user = extractUser(rs);
+            }
+        } catch (SQLException ex) {
+            LOG.error("#findUserByTelephone error", ex);
+            DBManager.getInstance().rollbackAndClose(con);
+            throw new GlobalException("Can't find user.");
+        } finally {
+            DBManager.getInstance().close(con, ps, rs);
+        }
+        return user;
+    }
+
+    /**
      * Find and return all registered users.
      *
      * @return List of user item entities.
@@ -140,6 +198,60 @@ public class UserDAO {
             LOG.error("#updateUser error", ex);
             DBManager.getInstance().rollbackAndClose(con);
             throw new GlobalException("Can't update user.");
+        } finally {
+            DBManager.getInstance().close(con, ps);
+        }
+    }
+
+    /**
+     * Update user block status.
+     * @param userId user id to update.
+     *
+     */
+    public static void updateUserBlockStatus(int userId, int statusId) throws GlobalException {
+        Connection con = null;
+        PreparedStatement ps = null;
+        try {
+            con = DBManager.getInstance().getConnection();
+            con.setAutoCommit(false);
+            ps = con.prepareStatement(MYSQL_UPDATE_USER_BLOCK_STATUS_BY_ID);
+            int k = 1;
+            ps.setInt(k++, statusId);
+            ps.setInt(k, userId);
+            ps.executeUpdate();
+
+            con.commit();
+        } catch (SQLException ex) {
+            LOG.error("#updateUserBlockStatus error", ex);
+            DBManager.getInstance().rollbackAndClose(con);
+            throw new GlobalException("Can't update user block status.");
+        } finally {
+            DBManager.getInstance().close(con, ps);
+        }
+    }
+
+    /**
+     * Update user role.
+     * @param userId user id to update.
+     *
+     */
+    public static void updateUserRole(int userId, int roleId) throws GlobalException {
+        Connection con = null;
+        PreparedStatement ps = null;
+        try {
+            con = DBManager.getInstance().getConnection();
+            con.setAutoCommit(false);
+            ps = con.prepareStatement(MYSQL_UPDATE_USER_ROLE_BY_ID);
+            int k = 1;
+            ps.setInt(k++, roleId);
+            ps.setInt(k, userId);
+            ps.executeUpdate();
+
+            con.commit();
+        } catch (SQLException ex) {
+            LOG.error("#updateUserRole error", ex);
+            DBManager.getInstance().rollbackAndClose(con);
+            throw new GlobalException("Can't update user role.");
         } finally {
             DBManager.getInstance().close(con, ps);
         }

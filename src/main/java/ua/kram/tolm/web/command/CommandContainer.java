@@ -1,10 +1,7 @@
 package ua.kram.tolm.web.command;
 
 import org.apache.log4j.Logger;
-import ua.kram.tolm.web.command.admin.ManagerCommand;
-import ua.kram.tolm.web.command.admin.RemoveUserCommand;
-import ua.kram.tolm.web.command.admin.ShowUpdateUserCommand;
-import ua.kram.tolm.web.command.admin.UpdateUserCommand;
+import ua.kram.tolm.web.command.admin.*;
 
 import java.util.Map;
 import java.util.TreeMap;
@@ -15,16 +12,23 @@ public class CommandContainer {
     private static final Map<String, Command> actionMap = new TreeMap<>();
 
     static {
-        actionMap.put("register", new RegisterCommand());
         actionMap.put("show", new ShowCommand());
         actionMap.put("removeUser", new RemoveUserCommand());
         actionMap.put("showUpdateUser", new ShowUpdateUserCommand());
         actionMap.put("updateUser", new UpdateUserCommand());
-        actionMap.put("login", new LoginCommand());
         actionMap.put("showBooks", new ShowBooksCommand());
         actionMap.put("logout", new LogoutCommand());
         actionMap.put("manager", new ManagerCommand());
         actionMap.put("lang", new LangCommand());
+        actionMap.put("createOrder", new CreateOrderCommand());
+        actionMap.put("orderBook", new OrderBookCommand());
+        actionMap.put("showSettings", new ShowSettingsCommand());
+        actionMap.put("updateSettings", new UpdateSettingsCommand());
+        actionMap.put("showOrder", new ShowOrderCommand());
+        actionMap.put("blockUser", new BlockCommand());
+        actionMap.put("updateRole", new UpdateRoleCommand());
+        actionMap.put("createBook", new CreateBookCommand());
+        actionMap.put("createAuthor", new CreateAuthorCommand());
     }
 
     public static Command getCommand (String request){

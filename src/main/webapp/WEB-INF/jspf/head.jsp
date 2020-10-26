@@ -23,6 +23,7 @@
             crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/73f5baf37a.js"
             crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -91,8 +92,7 @@
                                 <c:out value="${login}" />
                             </button>
                             <div class="dropdown-menu dropdown-menu-right">
-                                <button class="dropdown-item" type="submit" name="command" value="showUpdateUser"><fmt:message key="settings" /></button>
-                                <button class="dropdown-item" type="button"><fmt:message key="orders" /></button>
+                                <button class="dropdown-item" type="submit" name="command" value="showSettings"><fmt:message key="settings" /></button>
                                 <div class="dropdown-divider"></div>
                                 <button class="dropdown-item" type="submit" name="command" value="logout"><fmt:message key="logout" /></button>
                             </div>
@@ -104,7 +104,7 @@
     </div>
 </nav>
 
-<!-- Registration -->
+<!-- Modal Registration -->
 <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -115,40 +115,56 @@
                 </button>
             </div>
             <div class="modal-body">
-
-                <form class="needs-validation" novalidate method="post" action="${pageContext.request.contextPath}/manager">
+                <form class="needs-validation" novalidate>
+                    <div id="registr-info"></div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Login" name="login" required minlength="3">
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
+                        <input class="form-control" type="text" placeholder="Login" id="loginReg" minlength="3" maxlength="19"
+                               pattern="^(?=\S+$).{3,19}$" required/>
                         <div class="invalid-feedback">
                             Please choose a login.
                         </div>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Password" name="password" aria-describedby="passwordHelpBlock" required>
-                        <small id="passwordHelpBlock" class="form-text text-muted">
-                            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
-                        </small>
+                        <input id="passwordReg" type="password" class="form-control" placeholder="Password" minlength="6" maxlength="100"
+                               pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{6,}$" required />
+                        <div class="invalid-feedback">
+                            <ul>
+                            <li> a digit must occur at least once </li>
+                            <li> a lower case letter must occur at least once </li>
+                            <li> an upper case letter must occur at least once </li>
+                            <li> no whitespace allowed in the entire string </li>
+                            <li> at least 8 characters </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="First name" name="first_name" required minlength="3">
+                        <input id="firstNameReg" type="text" class="form-control" placeholder="First name" minlength="1" maxlength="19" required />
+                        <div class="invalid-feedback">
+                            Enter correct first name
+                        </div>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Last name" name="last_name" required minlength="3" title="Minimum 3 signs">
+                        <input id="lastNameReg" type="text" class="form-control" placeholder="Last name" minlength="1" maxlength="19" required />
+                        <div class="invalid-feedback">
+                            Enter correct last name
+                        </div>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" name="email" required
-                               pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="John..Doe@example.com" />
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <input id="emailReg" type="email" class="form-control"  placeholder="Enter email"
+                               pattern="\b[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}\b" required/>
+                        <div class="invalid-feedback">
+                            Enter correct email
+                        </div>
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text">+38</span>
                         </div>
-                        <input type="tel" class="form-control" id="basic-url" placeholder="Telephone" name="telephone"
-                               pattern="[0-9]{10}" maxlength="10" title="Ten digits code" required>
+                        <input id="telephoneReg" type="tel" class="form-control" placeholder="Telephone" minlength="10" maxlength="10"
+                               pattern="[0-9]+" required />
+                        <div class="invalid-feedback">
+                            Telephone is invalid
+                        </div>
                     </div>
 
                     <div class="modal-footer">
@@ -160,7 +176,7 @@
                             </div>
                         </div>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-warning" id="regisButton" name="command" value="register" disabled="true">Register</button>
+                        <button class="btn btn-warning" id="regisButton" disabled="true">Register</button>
                     </div>
                 </form>
             </div>
@@ -168,7 +184,7 @@
     </div>
 </div>
 
-<!--  Login-->
+<!-- Modal Login-->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -178,52 +194,30 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form method="post" action="${pageContext.request.contextPath}/manager">
+            <form>
                 <div class="modal-body">
-                        <div class="form-group">
-                            <input name="login" type="text" class="form-control" placeholder="Login" required>
-                        </div>
-                        <div class="form-group">
-                            <input name="password" type="password" class="form-control" placeholder="Password" required>
-                        </div>
+                    <div id="auth-info"></div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Login" id="loginLog"/>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="password" placeholder="Password" id="passwordLog"/>
+                    </div>
                 </div>
+            </form>
                 <div class="modal-footer">
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input" id="stayLogin">
                         <label class="form-check-label" for="Check">Remember me</label>
                     </div>
-                    <button type="submit" class="btn btn-warning" name="command" value="login">Login</button>
+                    <button class="btn btn-warning" id="button">Login</button>
                 </div>
-            </form>
         </div>
     </div>
 </div>
 
-<script>
-    $('input#Check').change(function () {
-        if ($('input#Check').is(':checked')) {
-            $('button#regisButton').prop( "disabled", false );
-        } else {
-            $('button#regisButton').prop( "disabled", true );
-        }
-    });
 
-    (function() {
-        'use strict';
-        window.addEventListener('load', function() {
-        var forms = document.getElementsByClassName('needs-validation');
-        var validation = Array.prototype.filter.call(forms, function(form) {
-          form.addEventListener('submit', function(event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
-</script>
-
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript" src="js/registr.js"></script>
 </body>
 </html>

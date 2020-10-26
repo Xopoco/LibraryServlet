@@ -69,9 +69,9 @@ create table users
 );
 
 INSERT INTO users VALUES (null, 'ad', '12', 'Ad', 'min', 'admin@mail.ua', '9993452122', 0, default);
-INSERT INTO users VALUES (null, 'librarian', '123', 'Антонина', 'Павловна', 'vnykzaregal@ya.ru', '123456789', 1, default);
+INSERT INTO users VALUES (null, 'lib', '12', 'Антонина', 'Павловна', 'vnykzaregal@ya.ru', '123456789', 1, default);
 INSERT INTO users VALUES (null, 'us', '12', 'Антон', 'Артс', 'aa@gmail.com', '0505557886', 2, default);
-INSERT INTO users VALUES (null, 'user2', '12', 'Олег', 'Ортс', 'oo@gmail.com', '0507777777', 2, default);
+INSERT INTO users VALUES (null, 'us2', '12', 'Олег', 'Ортс', 'oo@gmail.com', '0507777777', 2, default);
 
 create table order_status
 (
@@ -92,7 +92,7 @@ create table orders
   user_id int,
   book_id int references books (id) on delete cascade,
   status_id int not null default 1,
-  debt int,
+  debt int default 0,
   day_count int not null,
   order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   constraint fk_user_id foreign key(user_id) references users (id),

@@ -58,4 +58,13 @@ public class Order extends Entity {
         this.date = date;
     }
 
+    @Override
+    public String toString() {
+        return "Order{" +
+                "userId=" + userId +
+                ", bookId=" + bookId +
+                ", dayCount=" + dayCount +
+                ", statusId=" + statusId +
+                '}';
+    }
 }

@@ -15,6 +15,10 @@
 			$('#usersTable').DataTable();
 		} );
 
+        $(document).ready(function() {
+			$('#processingOrdersTable').DataTable();
+		} );
+
 		$(document).ready(function() {
 			$('#usersWithOrdersTable').DataTable();
 		} );
@@ -48,7 +52,7 @@
 <div class="accordion" id="accordionExample">
 
 <!--    Orders-->
-    <div class="card">
+<div class="card">
         <div class="card-header" id="headingThree">
             <h5 class="mb-0">
                 <button class="btn btn-info btn-lg collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -61,13 +65,14 @@
                 <p>
                     <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#allOrders" aria-expanded="false" aria-controls="allOrders">All orders</button>
                     <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#outOfTimeOrders" aria-expanded="false" aria-controls="outOfTimeOrders">Overdue orders</button>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#processingOrders" aria-expanded="false" aria-controls="processingOrders">Orders in processing</button>
                     <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#newOrderModal">New order</button>
                 </p>
                 <div class="container">
 <!--All orders-->
                     <div class="collapse multi-collapse" id="allOrders">
                         <div class="card card-body">
-                            <table id="ordersTable" class="table table-striped">
+                            <table id="ordersTable" class="table table-striped table-hover">
                                 <thead>
                                 <tr>
                                     <th scope="col">User</th>
@@ -76,6 +81,7 @@
                                     <th scope="col">How long</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">Status id</th>
+                                    <th scope="col"></th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -87,6 +93,12 @@
                                         <td><c:out value="${order.dayCount}" /></td>
                                         <td><c:out value="${statusMap.get(order.statusId).value}" /></td>
                                         <td><c:out value="${statusMap.get(order.statusId).id}" /></td>
+                                        <td>
+                                            <form method="post" action="${pageContext.request.contextPath}/manager">
+                                                <input hidden name="orderId" value="${order.id}">
+                                                <button class="btn btn-info" id="updateOrderButton" type="submit" name="command" value="showOrder">Update</button>
+                                            </form>
+                                        </td>
                                     </tr>
                                 </c:forEach>
                                 </tbody>
@@ -121,14 +133,41 @@
                                 </tbody>
                             </table>
                         </div>
+                </div>
+<!-- Orders in processing-->
+                <div class="collapse multi-collapse" id="processingOrders">
+                    <div class="card card-body">
+                        <table id="processingOrdersTable" class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">User</th>
+                                <th scope="col">Book</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <c:forEach var="order" items="${requestScope.orders}">
+                                <c:if test="${order.statusId eq 1}">
+                                    <tr>
+                                        <th scope="row"><c:out value="${userMap.get(order.userId).firstName} ${userMap.get(order.userId).lastName}" /></th>
+                                        <td><c:out value="${bookMap.get(order.bookId).name}" /></td>
+                                        <td><c:out value="${order.date}" /></td>
+                                        <td><c:out value="${statusMap.get(order.statusId).value}" /></td>
+                                    </tr>
+                                </c:if>
+                            </c:forEach>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 <!--    Books-->
-    <div class="card">
+<div class="card">
         <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
                 <button class="btn btn-info btn-lg collapsed" type="button" data-toggle="collapse" data-target="#bookCollapse" aria-expanded="false" aria-controls="bookCollapse">
@@ -142,6 +181,10 @@
                     <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#allBooksCollapse" aria-expanded="false" aria-controls="multiCollapseExample2">All books</button>
                     <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#readingRoomBooks" aria-expanded="false" aria-controls="multiCollapseExample2">Books in reading room</button>
                     <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#outBooks" aria-expanded="false" aria-controls="multiCollapseExample2">Books out</button>
+                    <c:if test="${(userId eq 1)}">
+                        <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#newBookModal">New book</button>
+                        <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#newAuthorModal">New author</button>
+                    </c:if>
                 </p>
                 <div class="container">
     <!-- All books-->
@@ -171,7 +214,7 @@
                                         <td>
                                             <form>
                                                 <input type="hidden" name="userId" value="${user.id}">
-                                                <button class="btn btn-danger" type="submit" name="command" value="updateBook">Update user</button>
+                                                <button class="btn btn-danger" type="submit" name="command" value="updateBook">Update book</button>
                                             </form>
                                         </td>
                                     </tr>
@@ -241,7 +284,7 @@
     </div>
 
 <!--    Users-->
-    <div class="card">
+<div class="card">
         <div class="card-header" id="headingOne">
             <h5 class="mb-0">
                 <button class="btn btn-info btn-lg collapsed" type="button" data-toggle="collapse" data-target="#userCollapse" aria-expanded="false" aria-controls="userCollapse">
@@ -254,7 +297,6 @@
             <div class="card-body">
                 <p>
                     <a class="btn btn-primary collapsed" data-toggle="collapse" href="#allUsersCollapse" role="button" aria-expanded="false" aria-controls="allUsersCollapse">All users</a>
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#orderUsers" aria-expanded="false" aria-controls="orderUsers">Users with orders</button>
                 </p>
                 <div class="container">
 <!-- All users-->
@@ -268,7 +310,10 @@
                                     <th scope="col">Email</th>
                                     <th scope="col">Phone</th>
                                     <th scope="col">Block</th>
-                                    <th scope="col">Up</th>
+                                    <th scope="col">Role id</th>
+                                    <c:if test="${(userId eq 1)}">
+                                        <th scope="col">Update</th>
+                                    </c:if>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -280,18 +325,21 @@
                                                 <td><c:out value="${user.telephone}" /></td>
                                                 <td>
                                                     <c:if test="${(user.blockStatus eq 0)}">
-                                                        ok
+                                                        not blocked
                                                     </c:if>
                                                     <c:if test="${(user.blockStatus ne 0)}">
                                                         blocked
                                                     </c:if>
                                                 </td>
+                                                <td><c:out value="${user.roleId}" /></td>
+                                                <c:if test="${(userId eq 1)}">
                                                 <td>
-                                                    <form>
+                                                    <form action="${pageContext.request.contextPath}/manager">
                                                         <input type="hidden" name="userId" value="${user.id}">
                                                         <button class="btn btn-danger" type="submit" name="command" value="showUpdateUser">Update user</button>
                                                     </form>
                                                 </td>
+                                                </c:if>
                                             </tr>
                                     </c:forEach>
                                 </tbody>
@@ -302,7 +350,6 @@
             </div>
         </div>
     </div>
-
 </div>
 
 <!-- New order -->
@@ -310,63 +357,257 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalLongTitle">New order</h5>
+                <h5 class="modal-title" >New order</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">x</span>
                 </button>
             </div>
             <div class="modal-body">
 
-                <form class="needs-validation" novalidate method="post" action="${pageContext.request.contextPath}/manager">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Login" name="login" required minlength="3">
-                        <div class="valid-feedback">
-                            Looks good!
+                <div class="accordion" id="newOrder">
+<!--        OUT-->
+                    <div class="card">
+                        <div class="card-header" id="out">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOut" aria-expanded="true" aria-controls="collapseOut">
+                                    Out
+                                </button>
+                            </h5>
                         </div>
-                        <div class="invalid-feedback">
-                            Please choose a login.
+                        <div id="collapseOut" class="collapse show" aria-labelledby="out" data-parent="#newOrder">
+                            <div class="card-body">
+                                <form action="${pageContext.request.contextPath}/manager">
+                                    <input type="hidden" name="statusId" value="3">
+
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="inputGroupSelect01">User</label>
+                                            </div>
+                                            <select name="userId" class="custom-select" id="inputGroupSelect01">
+                                                <option selected>Choose...</option>
+                                                <c:forEach var="user" items="${requestScope.users}">
+                                                    <option value="${user.id}">
+                                                        <c:out value="${user.email}" />
+                                                    </option>
+                                                </c:forEach>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="inputGroupSelect02">Book</label>
+                                            </div>
+                                            <select name="bookId" class="custom-select" id="inputGroupSelect02">
+                                                <option selected>Choose...</option>
+                                                <c:forEach var="book" items="${requestScope.books}">
+                                                    <option value="${book.id}">
+                                                        <c:out value="${book.name}" />
+                                                    </option>
+                                                </c:forEach>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="inputGroupSelect03">How long</label>
+                                            </div>
+                                            <select name="count" class="custom-select" id="inputGroupSelect03">
+                                                <option selected>Choose...</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-warning" name="command" value="createOrder">Create order</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+<!--        READING ROOM-->
+                    <div class="card">
+                        <div class="card-header" id="readingRoom">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseRoom" aria-expanded="false" aria-controls="collapseRoom">
+                                    Reading room
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseRoom" class="collapse" aria-labelledby="readingRoom" data-parent="#newOrder">
+                            <div class="card-body">
+                                <form action="${pageContext.request.contextPath}/manager">
+                                    <input type="hidden" name="statusId" value="2">
+                                    <input type="hidden" name="count" value="0">
+
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="roomSelect">User</label>
+                                            </div>
+                                            <select name="userId" class="custom-select" id="roomSelect">
+                                                <option selected>Choose...</option>
+                                                <c:forEach var="user" items="${requestScope.users}">
+                                                    <option value="${user.id}">
+                                                        <c:out value="${user.email}" />
+                                                    </option>
+                                                </c:forEach>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="roomSelect02">Book</label>
+                                            </div>
+                                            <select name="bookId" class="custom-select" id="roomSelect02">
+                                                <option selected>Choose...</option>
+                                                <c:forEach var="book" items="${requestScope.books}">
+                                                    <option value="${book.id}">
+                                                        <c:out value="${book.name}" />
+                                                    </option>
+                                                </c:forEach>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-warning" name="command" value="createOrder">Create order</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- New book-->
+<div class="modal fade" id="newBookModal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="title">New book</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">x</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="${pageContext.request.contextPath}/manager">
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Title of the book" name="bookTitle" minlength="2" maxlength="99" required/>
+                    </div>
+                    <div class="form-group">
+                        <input name="bookEdition" type="text" class="form-control" placeholder="Edition" minlength="2" maxlength="99" required />
+                    </div>
+                    <div class="form-group">
+                        <input name="editionDate" type="text" class="form-control" placeholder="Year of edition" minlength="4" maxlength="4" pattern="[0-9]+" required />
+                    </div>
+                    <div class="form-group">
+                        <input name="bookReview" type="text" class="form-control" placeholder="Book review" minlength="1" required />
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Author</label>
+                            </div>
+                            <select name="authorId" class="custom-select" id="authorsGroup">
+                                <option selected>Choose...</option>
+                                <c:forEach var="author" items="${requestScope.authors}">
+                                    <option value="${author.getValue().id}">
+                                        <c:out value="${author.getValue().firstName}" /> <c:out value="${author.getValue().lastName}" />
+                                    </option>
+                                </c:forEach>
+                            </select>
                         </div>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Password" name="password" aria-describedby="passwordHelpBlock" required>
-                        <small id="passwordHelpBlock" class="form-text text-muted">
-                            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
-                        </small>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="First name" name="first_name" required minlength="3">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Last name" name="last_name" required minlength="3" title="Minimum 3 signs">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" name="email" required
-                               pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="John..Doe@example.com" />
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">+38</span>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Genre</label>
+                            </div>
+                            <select name="genreId" class="custom-select" id="genresGroup">
+                                <option selected>Choose...</option>
+                                <c:forEach var="genre" items="${requestScope.genreMap}">
+                                    <option value="${genre.getValue().id}">
+                                        <c:out value="${genre.getValue().name}" />
+                                    </option>
+                                </c:forEach>
+                            </select>
                         </div>
-                        <input type="tel" class="form-control" id="basic-url" placeholder="Telephone" name="telephone"
-                               pattern="[0-9]{10}" maxlength="10" title="Ten digits code" required>
+                    </div>
+                    <div class="form-group">
+                        <input name="bookPrice" type="text" class="form-control" placeholder="Price" minlength="3" maxlength="9" pattern="[0-9]+" required />
                     </div>
 
                     <div class="modal-footer">
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="Check">
-                            <label class="form-check-label" for="Check">Some conditions</label>
-                            <div class="invalid-feedback">
-                                You must agree before submitting.
-                            </div>
-                        </div>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-warning" id="regisButton" name="command" value="register" disabled="true">Register</button>
+                        <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#newAuthorModal">New author</button>
+                        <button type="submit" class="btn btn-warning" name="command" value="createBook">Create book</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
+
+<!-- New author-->
+<div class="modal fade" id="newAuthorModal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="newAuthorTitle">New author</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">x</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="${pageContext.request.contextPath}/manager">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Name</span>
+                            </div>
+                            <input name="authorFirstName" type="text" aria-label="First name" placeholder="First name" class="form-control" required >
+                            <input name="authorLastName" type="text" aria-label="Last name" placeholder="Last name" class="form-control" required >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Date of birthday</span>
+                            </div>
+                            <input name="year" type="text" aria-label="Year" placeholder="Year" class="form-control" minlength="4" maxlength="4" pattern="[0-9]+" required >
+                            <input name="month" type="text" aria-label="Last name" placeholder="Month" class="form-control" minlength="2" maxlength="2" pattern="[0-9]+" required >
+                            <input name="day" type="text" aria-label="Last name" placeholder="Day" class="form-control" minlength="2" maxlength="2" pattern="[0-9]+" required >
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-warning" name="command" value="createAuthor">Create author</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

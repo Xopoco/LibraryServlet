@@ -9,77 +9,91 @@
 <body>
 <c:set var = "user" value = "${user}"/>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-6">
-        <form class="needs-validation" novalidate method="post" action="${pageContext.request.contextPath}/manager">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="${user.login}" name="login" required minlength="3">
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
-                <div class="invalid-feedback">
-                    Please choose a login.
-                </div>
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" value="${user.firstName}" name="first_name" required minlength="3">
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" value="${user.lastName}" name="last_name" required minlength="3" title="Minimum 3 signs">
-            </div>
-            <div class="form-group">
-                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="${user.email}" name="email" required
-                       pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="John..Doe@example.com" />
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">+38</span>
-                </div>
-                <input type="tel" class="form-control" id="basic-url" placeholder="${user.telephone}" name="telephone"
-                       pattern="[0-9]{10}" maxlength="10" title="Ten digits code" required>
-            </div>
-
-            <div class="modal-footer">
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="updateCheck">
-                    <label class="form-check-label" for="updateCheck">Accept changes</label>
-                    <div class="invalid-feedback">
-                        You must agree before submitting.
+<div class="container">
+    <div class="form-group row">
+        <div class="col-sm-10 col-form-label">
+            <form >
+                <div class="form-group row">
+                    <label for="staticLogin" class="col-sm-2 col-form-label">Login</label>
+                    <div class="col-sm-10">
+                        <input type="text" readonly class="form-control-plaintext" id="staticLogin" value="${user.login}">
                     </div>
                 </div>
-                <button type="submit" class="btn btn-warning" id="updateButton" name="command" value="updateUser" disabled="true">Update</button>
-            </div>
-        </form>
+                <div class="form-group row">
+                    <label for="staticName" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" readonly class="form-control-plaintext" id="staticName" value="${user.firstName} ${user.lastName}">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="${user.email}">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="staticTelephone" class="col-sm-2 col-form-label">Telephone</label>
+                    <div class="col-sm-10">
+                        <input type="text" readonly class="form-control-plaintext" id="staticTelephone" value="${user.telephone}">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-2 col-form-label">
+            <form method="post" action="${pageContext.request.contextPath}/manager">
+                <input hidden name="userId" value="${user.id}">
+                <c:if test="${user.blockStatus eq 0}">
+                    <input hidden name="blockId" value="1">
+                    <button class="btn btn-warning" id="blockUserButton" type="submit" name="command" value="blockUser">Block</button>
+                </c:if>
+                <c:if test="${user.blockStatus ne 0}">
+                    <input hidden name="blockId" value="0">
+                    <button class="btn btn-info" id="unblockUserButton" type="submit" name="command" value="blockUser">Unblock</button>
+                </c:if>
+                <hr />
+                <c:if test="${user.roleId eq 1}">
+                    <input hidden name="roleId" value="2">
+                    <button class="btn btn-warning" id="removeLibrarianButton" type="submit" name="command" value="updateRole">Remove librarian</button>
+                </c:if>
+                <c:if test="${user.roleId gt 1}">
+                    <input hidden name="roleId" value="1">
+                    <button class="btn btn-warning" id="createLibrarianButton" type="submit" name="command" value="updateRole">Create librarian</button>
+                </c:if>
+            </form>
         </div>
     </div>
+
+    <hr/>
+
+    <h2>Orders</h2>
+    <table id="ordersTable" class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <th scope="col">Book</th>
+            <th scope="col">When</th>
+            <th scope="col">How long</th>
+            <th scope="col">Status</th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <c:forEach var="order" items="${requestScope.orders}">
+            <tr>
+                <th scope="row"><c:out value="${bookMap.get(order.bookId).name}" /></th>
+                <td><c:out value="${order.date}" /></td>
+                <td><c:out value="${order.dayCount}" /></td>
+                <td><c:out value="${statusMap.get(order.statusId).value}" /></td>
+                <td>
+                    <form method="post" action="${pageContext.request.contextPath}/manager">
+                        <input hidden name="orderId" value="${order.id}">
+                        <button class="btn btn-info" id="updateOrderButton" type="submit" name="command" value="showOrder">Update</button>
+                    </form>
+                </td>
+            </tr>
+        </c:forEach>
+        </tbody>
+    </table>
 </div>
 
-<script>
-    $('input#updateCheck').change(function () {
-        if ($('input#updateCheck').is(':checked')) {
-            $('button#updateButton').prop( "disabled", false );
-        } else {
-            $('button#updateButton').prop( "disabled", true );
-        }
-    });
-
-    (function() {
-        'use strict';
-        window.addEventListener('load', function() {
-        var forms = document.getElementsByClassName('needs-validation');
-        var validation = Array.prototype.filter.call(forms, function(form) {
-          form.addEventListener('submit', function(event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
-</script>
 </body>
 </html>

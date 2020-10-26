@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<footer class="container-fluid">
+<footer class="footer">
     <div class="container-fluid">
         <div class="row padding text-center">
             <div class="col-6">
@@ -25,7 +25,6 @@
                 <p>E-mail:  info@library.kharkov.ua</p>
                 <p>Skype:  library1951</p>
             </div>
-
 
         </div>
     </div>
