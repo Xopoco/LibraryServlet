@@ -43,6 +43,9 @@ public class ManagerCommand extends Command {
         Map<Integer, Book> bookMap = getOrderBookMap(books);
         req.setAttribute("bookMap", bookMap);
 
+        Map<Integer, Integer> booksCount = getBooksCount(orders);
+        req.setAttribute("booksCount", booksCount);
+
         Map<Integer, Genre> genreMap = GenreDAO.findAllGenres();
         req.setAttribute("genreMap", genreMap);
 
@@ -50,6 +53,18 @@ public class ManagerCommand extends Command {
         req.setAttribute("statusMap", statusMap);
 
         return Link.MANAGER;
+    }
+
+    private Map<Integer, Integer> getBooksCount (List<Order> orders) {
+        Map<Integer, Integer> map = new HashMap<>();
+            for (Order o : orders) {
+                if (map.containsKey(o.getUserId())) {
+                    map.put(o.getUserId(), map.get(o.getUserId()) + 1);
+                } else {
+                    map.put(o.getUserId(), 1);
+                }
+            }
+        return map;
     }
 
     private List<Order> getOutOfTimeOrders(List<Order> orders) {

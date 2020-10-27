@@ -311,6 +311,7 @@
                                     <th scope="col">Phone</th>
                                     <th scope="col">Block</th>
                                     <th scope="col">Role id</th>
+                                    <th scope="col">Books count</th>
                                     <c:if test="${(userId eq 1)}">
                                         <th scope="col">Update</th>
                                     </c:if>
@@ -332,6 +333,9 @@
                                                     </c:if>
                                                 </td>
                                                 <td><c:out value="${user.roleId}" /></td>
+                                                <td>
+                                                    <c:out value="${booksCount.get(user.id)}" />
+                                                </td>
                                                 <c:if test="${(userId eq 1)}">
                                                 <td>
                                                     <form action="${pageContext.request.contextPath}/manager">

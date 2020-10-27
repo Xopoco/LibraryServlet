@@ -1,6 +1,6 @@
 <%@include file="/WEB-INF/jspf/head.jsp" %>
 <%@ page contentType="text/html;charset=UTF-8"%>
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/main.css" xmlns:c="http://www.w3.org/1999/XSL/Transform">
 
 <html>
 <head>

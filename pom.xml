@@ -74,7 +74,7 @@
         <server>TomcatServer</server>
         <username>admin</username>
         <password>1234</password>
-        <path>/myapp</path>
+        <path>/my-app</path>
       </configuration>
       </plugin>
 

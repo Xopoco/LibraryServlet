@@ -3018,3 +3018,651 @@ ua.kram.tolm.exception.GlobalException: Can't insert author.
 2020-10-27 00:36:24 INFO  Controller:22 - doGet
 2020-10-27 00:36:24 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showBooks
 2020-10-27 00:36:24 INFO  ShowBooksCommand:21 - #execute
+2020-10-27 00:46:08 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:46:11 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:46:11 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:46:11 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:46:11 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:46:11 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:46:11 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:46:11 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:46:11 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:46:11 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:46:11 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:46:21 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:46:21 INFO  LoginServlet:35 - #doPost
+2020-10-27 00:46:21 INFO  LoginServlet:45 - #process
+2020-10-27 00:46:21 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2020-10-27 00:46:21 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:46:24 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:46:24 INFO  Controller:22 - doGet
+2020-10-27 00:46:24 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 00:46:24 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 00:46:26 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:46:26 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:46:26 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:47:53 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:47:53 INFO  Controller:38 - doPost
+2020-10-27 00:47:53 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showOrder
+2020-10-27 00:47:53 INFO  ShowOrderCommand:18 - #execute
+2020-10-27 00:47:53 INFO  ShowOrderCommand:21 - order id ==> 2
+2020-10-27 00:47:53 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:47:54 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:47:54 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:47:54 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:47:54 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:47:54 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:47:54 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:47:58 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:47:58 INFO  Controller:22 - doGet
+2020-10-27 00:47:58 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 00:47:58 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 00:47:58 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:47:58 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:47:58 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:48:02 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:48:02 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:48:02 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:48:02 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:48:02 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:48:02 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:48:02 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:48:02 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:48:06 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:48:06 INFO  Controller:22 - doGet
+2020-10-27 00:48:06 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showSettings
+2020-10-27 00:48:06 INFO  ShowSettingsCommand:26 - #execute
+2020-10-27 00:48:32 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:48:32 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:48:32 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:48:32 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:48:32 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:48:32 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:48:32 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:48:32 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:48:32 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:48:32 INFO  LocalFilter:20 - #doFilter
+2020-10-27 00:48:32 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:33 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:34 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:34 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:34 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:34 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:34 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:34 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:34 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:34 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:34 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:34 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:41 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:41 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:41 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:41 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:42 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:42 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:42 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:42 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:42 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:42 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:42 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:51 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:51 INFO  LoginServlet:35 - #doPost
+2020-10-27 09:59:51 INFO  LoginServlet:45 - #process
+2020-10-27 09:59:51 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2020-10-27 09:59:51 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:55 INFO  LocalFilter:20 - #doFilter
+2020-10-27 09:59:55 INFO  Controller:22 - doGet
+2020-10-27 09:59:56 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 09:59:56 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 10:00:03 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:00:03 INFO  Controller:38 - doPost
+2020-10-27 10:00:03 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showOrder
+2020-10-27 10:00:03 INFO  ShowOrderCommand:27 - #execute
+2020-10-27 10:00:03 INFO  ShowOrderCommand:30 - order id ==> 3
+2020-10-27 10:00:03 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:00:04 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:00:04 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:00:04 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:00:04 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:00:04 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:00:04 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:02:13 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:02:55 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:03:00 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:03:00 INFO  LoginServlet:35 - #doPost
+2020-10-27 10:03:00 INFO  LoginServlet:45 - #process
+2020-10-27 10:03:00 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2020-10-27 10:03:00 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:03:01 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:03:01 INFO  Controller:22 - doGet
+2020-10-27 10:03:01 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 10:03:01 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 10:03:10 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:03:10 INFO  Controller:38 - doPost
+2020-10-27 10:03:10 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showOrder
+2020-10-27 10:03:10 INFO  ShowOrderCommand:27 - #execute
+2020-10-27 10:03:10 INFO  ShowOrderCommand:30 - order id ==> 3
+2020-10-27 10:03:10 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:03:11 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:03:11 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:03:11 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:03:11 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:03:11 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:03:11 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:03:16 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:04:17 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:04:24 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:04:24 INFO  Controller:22 - doGet
+2020-10-27 10:04:24 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showSettings
+2020-10-27 10:04:24 INFO  ShowSettingsCommand:26 - #execute
+2020-10-27 10:04:32 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:04:32 INFO  Controller:22 - doGet
+2020-10-27 10:04:32 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 10:04:32 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 10:04:36 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:04:36 INFO  Controller:22 - doGet
+2020-10-27 10:04:36 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showUpdateUser
+2020-10-27 10:04:36 INFO  ShowUpdateUserCommand:27 - ShowUpdateUserAction #execute
+2020-10-27 10:04:36 INFO  ShowUpdateUserCommand:30 - userId = > 2
+2020-10-27 10:04:47 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:04:47 INFO  Controller:38 - doPost
+2020-10-27 10:04:47 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showOrder
+2020-10-27 10:04:47 INFO  ShowOrderCommand:27 - #execute
+2020-10-27 10:04:47 INFO  ShowOrderCommand:30 - order id ==> 1
+2020-10-27 10:04:47 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:04:47 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:04:47 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:04:47 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:04:47 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:04:47 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:04:47 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:08:28 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:08:33 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:08:33 INFO  LoginServlet:35 - #doPost
+2020-10-27 10:08:33 INFO  LoginServlet:45 - #process
+2020-10-27 10:08:33 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2020-10-27 10:08:33 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:08:34 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:08:34 INFO  Controller:22 - doGet
+2020-10-27 10:08:34 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 10:08:34 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 10:08:38 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:08:38 INFO  Controller:38 - doPost
+2020-10-27 10:08:38 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showOrder
+2020-10-27 10:08:38 INFO  ShowOrderCommand:27 - #execute
+2020-10-27 10:08:38 INFO  ShowOrderCommand:30 - order id ==> 3
+2020-10-27 10:08:38 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:08:39 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:08:39 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:08:39 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:08:39 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:08:39 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:08:39 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:08:45 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:10:04 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:10:08 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:10:08 INFO  LoginServlet:35 - #doPost
+2020-10-27 10:10:08 INFO  LoginServlet:45 - #process
+2020-10-27 10:10:08 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2020-10-27 10:10:08 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:10:10 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:10:10 INFO  Controller:22 - doGet
+2020-10-27 10:10:10 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 10:10:10 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 10:10:15 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:10:15 INFO  Controller:38 - doPost
+2020-10-27 10:10:15 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showOrder
+2020-10-27 10:10:15 INFO  ShowOrderCommand:27 - #execute
+2020-10-27 10:10:15 INFO  ShowOrderCommand:30 - order id ==> 3
+2020-10-27 10:10:15 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:10:17 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:10:17 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:10:17 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:10:17 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:10:17 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:10:17 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:10:22 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:11:51 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:11:53 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:11:53 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:11:53 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:11:53 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:11:53 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:11:53 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:11:53 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:11:53 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:11:53 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:11:53 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:11:59 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:11:59 INFO  LoginServlet:35 - #doPost
+2020-10-27 10:11:59 INFO  LoginServlet:45 - #process
+2020-10-27 10:11:59 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2020-10-27 10:11:59 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:12:00 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:12:00 INFO  Controller:22 - doGet
+2020-10-27 10:12:00 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 10:12:00 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 10:12:04 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:12:04 INFO  Controller:38 - doPost
+2020-10-27 10:12:04 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showOrder
+2020-10-27 10:12:04 INFO  ShowOrderCommand:27 - #execute
+2020-10-27 10:12:04 INFO  ShowOrderCommand:30 - order id ==> 3
+2020-10-27 10:12:04 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:12:05 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:12:05 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:12:05 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:12:05 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:12:05 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:12:05 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:12:12 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:29:59 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:29:59 INFO  Controller:22 - doGet
+2020-10-27 10:29:59 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> logout
+2020-10-27 10:29:59 INFO  LogoutCommand:16 - LogoutCommand#execute
+2020-10-27 10:38:11 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:38:11 INFO  LoginServlet:35 - #doPost
+2020-10-27 10:38:11 INFO  LoginServlet:45 - #process
+2020-10-27 10:38:11 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2020-10-27 10:38:11 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:38:13 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:38:13 INFO  Controller:22 - doGet
+2020-10-27 10:38:13 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 10:38:13 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 10:38:21 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:38:21 INFO  Controller:38 - doPost
+2020-10-27 10:38:21 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showOrder
+2020-10-27 10:38:21 INFO  ShowOrderCommand:27 - #execute
+2020-10-27 10:38:21 INFO  ShowOrderCommand:30 - order id ==> 3
+2020-10-27 10:38:21 INFO  ShowOrderCommand:36 - book id => 1
+2020-10-27 10:38:21 INFO  ShowOrderCommand:40 - user id => 1
+2020-10-27 10:38:21 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:38:23 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:38:23 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:38:23 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:38:23 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:38:23 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:38:23 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:41:08 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:41:13 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:41:13 INFO  LoginServlet:35 - #doPost
+2020-10-27 10:41:13 INFO  LoginServlet:45 - #process
+2020-10-27 10:41:13 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2020-10-27 10:41:13 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:41:15 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:41:15 INFO  Controller:22 - doGet
+2020-10-27 10:41:15 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 10:41:15 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 10:41:19 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:41:19 INFO  Controller:38 - doPost
+2020-10-27 10:41:19 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showOrder
+2020-10-27 10:41:19 INFO  ShowOrderCommand:27 - #execute
+2020-10-27 10:41:19 INFO  ShowOrderCommand:30 - order id ==> 3
+2020-10-27 10:41:19 INFO  ShowOrderCommand:36 - book id => 1
+2020-10-27 10:41:19 INFO  ShowOrderCommand:40 - user id => 1
+2020-10-27 10:41:20 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:41:21 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:41:21 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:41:21 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:41:21 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:41:21 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:41:21 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:41:25 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:43:02 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:43:09 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:43:09 INFO  LoginServlet:35 - #doPost
+2020-10-27 10:43:09 INFO  LoginServlet:45 - #process
+2020-10-27 10:43:09 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2020-10-27 10:43:09 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:43:11 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:43:11 INFO  Controller:22 - doGet
+2020-10-27 10:43:12 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 10:43:12 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 10:43:15 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:43:15 INFO  Controller:38 - doPost
+2020-10-27 10:43:15 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showOrder
+2020-10-27 10:43:15 INFO  ShowOrderCommand:27 - #execute
+2020-10-27 10:43:15 INFO  ShowOrderCommand:30 - order id ==> 2
+2020-10-27 10:43:15 INFO  ShowOrderCommand:36 - book id => 3
+2020-10-27 10:43:15 INFO  ShowOrderCommand:40 - user id => 1
+2020-10-27 10:43:15 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:43:16 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:43:16 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:43:16 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:43:16 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:43:16 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:43:16 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:43:20 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:45:07 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:45:12 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:45:12 INFO  LoginServlet:35 - #doPost
+2020-10-27 10:45:12 INFO  LoginServlet:45 - #process
+2020-10-27 10:45:12 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2020-10-27 10:45:12 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:45:13 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:45:13 INFO  Controller:22 - doGet
+2020-10-27 10:45:13 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 10:45:13 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 10:45:17 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:45:17 INFO  Controller:38 - doPost
+2020-10-27 10:45:17 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showOrder
+2020-10-27 10:45:17 INFO  ShowOrderCommand:27 - #execute
+2020-10-27 10:45:17 INFO  ShowOrderCommand:30 - order id ==> 3
+2020-10-27 10:45:17 INFO  ShowOrderCommand:36 - book id => 1
+2020-10-27 10:45:17 INFO  ShowOrderCommand:40 - user id => 1
+2020-10-27 10:45:17 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:45:18 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:45:18 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:45:18 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:45:18 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:45:18 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:45:18 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:45:26 INFO  LocalFilter:20 - #doFilter
+2020-10-27 10:50:46 DEBUG ContextListener:20 - contextDestroyed do nothing by default
+2020-10-27 10:51:31 DEBUG ContextListener:20 - contextDestroyed do nothing by default
+2020-10-27 10:52:47 DEBUG ContextListener:20 - contextDestroyed do nothing by default
+2020-10-27 10:53:53 DEBUG ContextListener:20 - contextDestroyed do nothing by default
+2020-10-27 10:56:17 INFO  Controller:22 - doGet
+2020-10-27 10:56:18 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showBooks
+2020-10-27 10:56:18 INFO  ShowBooksCommand:21 - #execute
+2020-10-27 10:56:50 INFO  Controller:22 - doGet
+2020-10-27 10:56:50 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> lang
+2020-10-27 10:56:50 INFO  LangCommand:18 - #execute
+2020-10-27 10:57:17 INFO  RegistrationServlet:37 - #doPost
+2020-10-27 10:57:17 INFO  RegistrationServlet:47 - #process
+2020-10-27 10:57:45 INFO  LoginServlet:35 - #doPost
+2020-10-27 10:57:45 INFO  LoginServlet:45 - #process
+2020-10-27 10:57:45 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2020-10-27 10:57:53 INFO  Controller:22 - doGet
+2020-10-27 10:57:53 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showBooks
+2020-10-27 10:57:53 INFO  ShowBooksCommand:21 - #execute
+2020-10-27 10:57:58 INFO  Controller:22 - doGet
+2020-10-27 10:57:58 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> orderBook
+2020-10-27 10:57:58 INFO  OrderBookCommand:17 - #execute
+2020-10-27 10:57:58 INFO  ShowBooksCommand:21 - #execute
+2020-10-27 10:58:03 INFO  Controller:22 - doGet
+2020-10-27 10:58:03 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showSettings
+2020-10-27 10:58:03 INFO  ShowSettingsCommand:26 - #execute
+2020-10-27 10:58:29 INFO  Controller:22 - doGet
+2020-10-27 10:58:29 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 10:58:29 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 10:59:26 INFO  Controller:22 - doGet
+2020-10-27 10:59:26 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> createOrder
+2020-10-27 10:59:26 INFO  CreateOrderCommand:17 - #execute
+2020-10-27 10:59:26 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 11:01:13 INFO  Controller:22 - doGet
+2020-10-27 11:01:13 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showUpdateUser
+2020-10-27 11:01:13 INFO  ShowUpdateUserCommand:27 - ShowUpdateUserAction #execute
+2020-10-27 11:01:13 INFO  ShowUpdateUserCommand:30 - userId = > 2
+2020-10-27 11:01:25 INFO  Controller:38 - doPost
+2020-10-27 11:01:25 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> blockUser
+2020-10-27 11:01:25 INFO  BlockCommand:16 - #execute
+2020-10-27 11:01:25 INFO  Controller:22 - doGet
+2020-10-27 11:01:25 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 11:01:25 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 11:01:51 INFO  Controller:22 - doGet
+2020-10-27 11:01:51 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> logout
+2020-10-27 11:01:51 INFO  LogoutCommand:16 - LogoutCommand#execute
+2020-10-27 11:01:57 INFO  LoginServlet:35 - #doPost
+2020-10-27 11:01:57 INFO  LoginServlet:45 - #process
+2020-10-27 11:01:57 DEBUG LoginServlet:50 - Request parameter: login --> lib
+2020-10-27 11:02:52 INFO  Controller:22 - doGet
+2020-10-27 11:02:52 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showUpdateUser
+2020-10-27 11:02:52 INFO  ShowUpdateUserCommand:27 - ShowUpdateUserAction #execute
+2020-10-27 11:02:52 INFO  ShowUpdateUserCommand:30 - userId = > 2
+2020-10-27 11:02:54 INFO  Controller:38 - doPost
+2020-10-27 11:02:54 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> blockUser
+2020-10-27 11:02:54 INFO  BlockCommand:16 - #execute
+2020-10-27 11:02:54 INFO  Controller:22 - doGet
+2020-10-27 11:02:54 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 11:02:54 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 11:03:04 INFO  LoginServlet:35 - #doPost
+2020-10-27 11:03:04 INFO  LoginServlet:45 - #process
+2020-10-27 11:03:04 DEBUG LoginServlet:50 - Request parameter: login --> lib
+2020-10-27 11:04:22 INFO  LoginServlet:35 - #doPost
+2020-10-27 11:04:22 INFO  LoginServlet:45 - #process
+2020-10-27 11:04:22 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2020-10-27 11:04:25 INFO  Controller:22 - doGet
+2020-10-27 11:04:25 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 11:04:25 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 11:04:30 INFO  Controller:22 - doGet
+2020-10-27 11:04:30 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showUpdateUser
+2020-10-27 11:04:30 INFO  ShowUpdateUserCommand:27 - ShowUpdateUserAction #execute
+2020-10-27 11:04:30 INFO  ShowUpdateUserCommand:30 - userId = > 3
+2020-10-27 11:04:37 INFO  Controller:22 - doGet
+2020-10-27 11:04:37 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showUpdateUser
+2020-10-27 11:04:37 INFO  ShowUpdateUserCommand:27 - ShowUpdateUserAction #execute
+2020-10-27 11:04:37 INFO  ShowUpdateUserCommand:30 - userId = > 1
+2020-10-27 11:04:50 INFO  Controller:22 - doGet
+2020-10-27 11:04:50 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 11:04:50 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 11:20:44 INFO  LoginServlet:35 - #doPost
+2020-10-27 11:20:44 INFO  LoginServlet:45 - #process
+2020-10-27 11:20:44 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2020-10-27 11:20:48 INFO  Controller:22 - doGet
+2020-10-27 11:20:48 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 11:20:48 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 11:20:51 ERROR Controller:31 - Some error : An exception occurred processing JSP page /jsp/admin/manager.jsp at line 337
+
+334:                                                 </td>
+335:                                                 <td><c:out value="${user.roleId}" /></td>
+336:                                                 <td>
+337:                                                     <c:out value="${booksCount.get(user.id).value}" />
+338:                                                 </td>
+339:                                                 <c:if test="${(userId eq 1)}">
+340:                                                 <td>
+
+
+Stacktrace:
+org.apache.jasper.JasperException: An exception occurred processing JSP page /jsp/admin/manager.jsp at line 337
+
+334:                                                 </td>
+335:                                                 <td><c:out value="${user.roleId}" /></td>
+336:                                                 <td>
+337:                                                     <c:out value="${booksCount.get(user.id).value}" />
+338:                                                 </td>
+339:                                                 <c:if test="${(userId eq 1)}">
+340:                                                 <td>
+
+
+Stacktrace:
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:568)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:470)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:749)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:487)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:412)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:339)
+	at ua.kram.tolm.web.servlet.Controller.doGet(Controller.java:29)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at ua.kram.tolm.web.filter.LocalFilter.doFilter(LocalFilter.java:23)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: javax.el.PropertyNotFoundException: Property 'value' not found on type java.lang.Integer
+	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:229)
+	at javax.el.BeanELResolver$BeanProperties.access$400(BeanELResolver.java:206)
+	at javax.el.BeanELResolver.property(BeanELResolver.java:317)
+	at javax.el.BeanELResolver.getValue(BeanELResolver.java:85)
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:104)
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:183)
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:185)
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:1026)
+	at org.apache.jsp.jsp.admin.manager_jsp._jspx_meth_c_005fout_005f36(manager_jsp.java:2617)
+	at org.apache.jsp.jsp.admin.manager_jsp._jspx_meth_c_005fforEach_005f6(manager_jsp.java:2407)
+	at org.apache.jsp.jsp.admin.manager_jsp._jspService(manager_jsp.java:592)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	... 37 more
+2020-10-27 11:23:33 INFO  LoginServlet:35 - #doPost
+2020-10-27 11:23:33 INFO  LoginServlet:45 - #process
+2020-10-27 11:23:33 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2020-10-27 11:23:35 INFO  Controller:22 - doGet
+2020-10-27 11:23:35 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 11:23:35 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 11:23:37 ERROR Controller:31 - Some error : An exception occurred processing JSP page /jsp/admin/manager.jsp at line 338
+
+335:                                                 <td><c:out value="${user.roleId}" /></td>
+336:                                                 <td>
+337:                                                     <c:out value="${user.id}" />
+338: <!--                                                    <c:out value="${booksCount.get(user.id).value}" />-->
+339:                                                 </td>
+340:                                                 <c:if test="${(userId eq 1)}">
+341:                                                 <td>
+
+
+Stacktrace:
+org.apache.jasper.JasperException: An exception occurred processing JSP page /jsp/admin/manager.jsp at line 338
+
+335:                                                 <td><c:out value="${user.roleId}" /></td>
+336:                                                 <td>
+337:                                                     <c:out value="${user.id}" />
+338: <!--                                                    <c:out value="${booksCount.get(user.id).value}" />-->
+339:                                                 </td>
+340:                                                 <c:if test="${(userId eq 1)}">
+341:                                                 <td>
+
+
+Stacktrace:
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:568)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:470)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:749)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:487)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:412)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:339)
+	at ua.kram.tolm.web.servlet.Controller.doGet(Controller.java:29)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at ua.kram.tolm.web.filter.LocalFilter.doFilter(LocalFilter.java:23)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: javax.el.PropertyNotFoundException: Property 'value' not found on type java.lang.Integer
+	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:229)
+	at javax.el.BeanELResolver$BeanProperties.access$400(BeanELResolver.java:206)
+	at javax.el.BeanELResolver.property(BeanELResolver.java:317)
+	at javax.el.BeanELResolver.getValue(BeanELResolver.java:85)
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:104)
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:183)
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:185)
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:1026)
+	at org.apache.jsp.jsp.admin.manager_jsp._jspx_meth_c_005fout_005f37(manager_jsp.java:2640)
+	at org.apache.jsp.jsp.admin.manager_jsp._jspx_meth_c_005fforEach_005f6(manager_jsp.java:2411)
+	at org.apache.jsp.jsp.admin.manager_jsp._jspService(manager_jsp.java:592)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	... 37 more
+2020-10-27 11:24:27 INFO  LoginServlet:35 - #doPost
+2020-10-27 11:24:27 INFO  LoginServlet:45 - #process
+2020-10-27 11:24:27 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2020-10-27 11:24:28 INFO  Controller:22 - doGet
+2020-10-27 11:24:28 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 11:24:28 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 11:26:48 INFO  LoginServlet:35 - #doPost
+2020-10-27 11:26:48 INFO  LoginServlet:45 - #process
+2020-10-27 11:26:48 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2020-10-27 11:26:49 INFO  Controller:22 - doGet
+2020-10-27 11:26:49 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 11:26:49 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 11:27:03 INFO  Controller:22 - doGet
+2020-10-27 11:27:03 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showBooks
+2020-10-27 11:27:03 INFO  ShowBooksCommand:21 - #execute
+2020-10-27 11:27:06 INFO  Controller:22 - doGet
+2020-10-27 11:27:06 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> orderBook
+2020-10-27 11:27:06 INFO  OrderBookCommand:17 - #execute
+2020-10-27 11:27:06 INFO  ShowBooksCommand:21 - #execute
+2020-10-27 11:27:07 INFO  Controller:22 - doGet
+2020-10-27 11:27:07 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 11:27:07 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 11:27:18 INFO  Controller:22 - doGet
+2020-10-27 11:27:18 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> logout
+2020-10-27 11:27:18 INFO  LogoutCommand:16 - LogoutCommand#execute
+2020-10-27 11:27:23 INFO  LoginServlet:35 - #doPost
+2020-10-27 11:27:23 INFO  LoginServlet:45 - #process
+2020-10-27 11:27:23 DEBUG LoginServlet:50 - Request parameter: login --> us
+2020-10-27 11:27:24 INFO  Controller:22 - doGet
+2020-10-27 11:27:24 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showBooks
+2020-10-27 11:27:24 INFO  ShowBooksCommand:21 - #execute
+2020-10-27 11:27:26 INFO  Controller:22 - doGet
+2020-10-27 11:27:26 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> orderBook
+2020-10-27 11:27:26 INFO  OrderBookCommand:17 - #execute
+2020-10-27 11:27:26 INFO  ShowBooksCommand:21 - #execute
+2020-10-27 11:27:27 INFO  Controller:22 - doGet
+2020-10-27 11:27:27 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> orderBook
+2020-10-27 11:27:27 INFO  OrderBookCommand:17 - #execute
+2020-10-27 11:27:27 INFO  ShowBooksCommand:21 - #execute
+2020-10-27 11:27:30 INFO  Controller:22 - doGet
+2020-10-27 11:27:30 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> logout
+2020-10-27 11:27:30 INFO  LogoutCommand:16 - LogoutCommand#execute
+2020-10-27 11:27:35 INFO  LoginServlet:35 - #doPost
+2020-10-27 11:27:35 INFO  LoginServlet:45 - #process
+2020-10-27 11:27:35 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2020-10-27 11:27:36 INFO  Controller:22 - doGet
+2020-10-27 11:27:36 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 11:27:36 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 11:42:46 INFO  Controller:22 - doGet
+2020-10-27 11:42:46 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 11:42:46 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 11:42:55 INFO  Controller:22 - doGet
+2020-10-27 11:42:55 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showBooks
+2020-10-27 11:42:55 INFO  ShowBooksCommand:21 - #execute
+2020-10-27 11:42:57 INFO  Controller:22 - doGet
+2020-10-27 11:42:57 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> orderBook
+2020-10-27 11:42:57 INFO  OrderBookCommand:17 - #execute
+2020-10-27 11:42:57 INFO  ShowBooksCommand:21 - #execute
+2020-10-27 11:42:59 INFO  Controller:22 - doGet
+2020-10-27 11:42:59 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 11:42:59 INFO  ManagerCommand:23 - ManagerCommand#execute
