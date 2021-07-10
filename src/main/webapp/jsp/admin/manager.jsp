@@ -329,7 +329,7 @@
                                                         not blocked
                                                     </c:if>
                                                     <c:if test="${(user.blockStatus ne 0)}">
-                                                        blocked
+                                                        <div style="color:#00FF00">blocked</div>
                                                     </c:if>
                                                 </td>
                                                 <td><c:out value="${user.roleId}" /></td>

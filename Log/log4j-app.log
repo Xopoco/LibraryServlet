@@ -3666,3 +3666,441 @@ Caused by: javax.el.PropertyNotFoundException: Property 'value' not found on typ
 2020-10-27 11:42:59 INFO  Controller:22 - doGet
 2020-10-27 11:42:59 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
 2020-10-27 11:42:59 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 11:53:47 INFO  Controller:22 - doGet
+2020-10-27 11:53:47 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2020-10-27 11:53:47 INFO  ManagerCommand:23 - ManagerCommand#execute
+2020-10-27 11:53:49 INFO  Controller:22 - doGet
+2020-10-27 11:53:49 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> logout
+2020-10-27 11:53:49 INFO  LogoutCommand:16 - LogoutCommand#execute
+2020-10-27 11:54:00 INFO  LoginServlet:35 - #doPost
+2020-10-27 11:54:00 INFO  LoginServlet:45 - #process
+2020-10-27 11:54:00 DEBUG LoginServlet:50 - Request parameter: login --> us
+2020-10-27 12:06:54 INFO  Controller:22 - doGet
+2020-10-27 12:06:54 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showBooks
+2020-10-27 12:06:54 INFO  ShowBooksCommand:21 - #execute
+2020-10-27 12:07:57 INFO  Controller:22 - doGet
+2020-10-27 12:07:57 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> lang
+2020-10-27 12:07:57 INFO  LangCommand:18 - #execute
+2021-07-10 21:39:58 INFO  Controller:22 - doGet
+2021-07-10 21:39:58 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> lang
+2021-07-10 21:39:58 INFO  LangCommand:18 - #execute
+2021-07-10 21:40:04 INFO  Controller:22 - doGet
+2021-07-10 21:40:04 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> lang
+2021-07-10 21:40:04 INFO  LangCommand:18 - #execute
+2021-07-10 21:40:09 INFO  Controller:22 - doGet
+2021-07-10 21:40:09 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> lang
+2021-07-10 21:40:09 INFO  LangCommand:18 - #execute
+2021-07-10 21:55:49 INFO  Controller:22 - doGet
+2021-07-10 21:55:49 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showBooks
+2021-07-10 21:55:49 INFO  ShowBooksCommand:21 - #execute
+2021-07-10 21:57:23 INFO  LoginServlet:35 - #doPost
+2021-07-10 21:57:23 INFO  LoginServlet:45 - #process
+2021-07-10 21:57:23 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2021-07-10 21:57:26 INFO  Controller:22 - doGet
+2021-07-10 21:57:26 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2021-07-10 21:57:26 INFO  ManagerCommand:23 - ManagerCommand#execute
+2021-07-10 21:57:48 INFO  Controller:22 - doGet
+2021-07-10 21:57:48 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showUpdateUser
+2021-07-10 21:57:48 INFO  ShowUpdateUserCommand:27 - ShowUpdateUserAction #execute
+2021-07-10 21:57:48 INFO  ShowUpdateUserCommand:30 - userId = > 1
+2021-07-10 21:58:46 INFO  Controller:38 - doPost
+2021-07-10 21:58:46 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> blockUser
+2021-07-10 21:58:46 INFO  BlockCommand:16 - #execute
+2021-07-10 21:58:46 INFO  Controller:22 - doGet
+2021-07-10 21:58:46 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2021-07-10 21:58:46 INFO  ManagerCommand:23 - ManagerCommand#execute
+2021-07-10 21:58:52 INFO  Controller:22 - doGet
+2021-07-10 21:58:52 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> logout
+2021-07-10 21:58:52 INFO  LogoutCommand:16 - LogoutCommand#execute
+2021-07-10 21:58:58 INFO  LoginServlet:35 - #doPost
+2021-07-10 21:58:58 INFO  LoginServlet:45 - #process
+2021-07-10 21:58:58 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2021-07-10 21:59:18 INFO  LoginServlet:35 - #doPost
+2021-07-10 21:59:18 INFO  LoginServlet:45 - #process
+2021-07-10 21:59:18 DEBUG LoginServlet:50 - Request parameter: login --> lib
+2021-07-10 21:59:22 INFO  Controller:22 - doGet
+2021-07-10 21:59:22 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2021-07-10 21:59:22 INFO  ManagerCommand:23 - ManagerCommand#execute
+2021-07-10 22:00:57 INFO  Controller:22 - doGet
+2021-07-10 22:00:57 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> logout
+2021-07-10 22:00:57 INFO  LogoutCommand:16 - LogoutCommand#execute
+2021-07-10 22:01:02 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:01:02 INFO  LoginServlet:45 - #process
+2021-07-10 22:01:02 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2021-07-10 22:01:26 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:01:26 INFO  LoginServlet:45 - #process
+2021-07-10 22:01:26 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2021-07-10 22:01:28 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:01:28 INFO  LoginServlet:45 - #process
+2021-07-10 22:01:28 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2021-07-10 22:01:35 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:01:35 INFO  LoginServlet:45 - #process
+2021-07-10 22:01:35 DEBUG LoginServlet:50 - Request parameter: login --> ads
+2021-07-10 22:01:36 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:01:36 INFO  LoginServlet:45 - #process
+2021-07-10 22:01:36 DEBUG LoginServlet:50 - Request parameter: login --> ads
+2021-07-10 22:01:46 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:01:46 INFO  LoginServlet:45 - #process
+2021-07-10 22:01:46 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2021-07-10 22:01:47 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:01:47 INFO  LoginServlet:45 - #process
+2021-07-10 22:01:47 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2021-07-10 22:01:47 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:01:47 INFO  LoginServlet:45 - #process
+2021-07-10 22:01:47 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2021-07-10 22:02:02 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:02:02 INFO  LoginServlet:45 - #process
+2021-07-10 22:02:02 DEBUG LoginServlet:50 - Request parameter: login --> admin
+2021-07-10 22:02:02 ERROR UserDAO:85 - #findUserByLogin error
+java.sql.SQLException: Column 'telephone' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:556)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:863)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+	at ua.kram.tolm.db.dao.UserDAO.extractUser(UserDAO.java:324)
+	at ua.kram.tolm.db.dao.UserDAO.findUserByLogin(UserDAO.java:82)
+	at ua.kram.tolm.web.servlet.LoginServlet.processRequest(LoginServlet.java:53)
+	at ua.kram.tolm.web.servlet.LoginServlet.doPost(LoginServlet.java:37)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at ua.kram.tolm.web.filter.LocalFilter.doFilter(LocalFilter.java:23)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-07-10 22:02:02 ERROR DBManager:74 - java.sql.SQLNonTransientConnectionException: Can't call rollback when autocommit=true
+2021-07-10 22:02:02 ERROR LoginServlet:39 - #doPost error
+2021-07-10 22:02:52 INFO  Controller:22 - doGet
+2021-07-10 22:02:52 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> logout
+2021-07-10 22:02:52 INFO  LogoutCommand:16 - LogoutCommand#execute
+2021-07-10 22:03:04 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:03:04 INFO  LoginServlet:45 - #process
+2021-07-10 22:03:04 DEBUG LoginServlet:50 - Request parameter: login --> admin
+2021-07-10 22:03:04 ERROR UserDAO:85 - #findUserByLogin error
+java.sql.SQLException: Column 'telephone' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:556)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:863)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+	at ua.kram.tolm.db.dao.UserDAO.extractUser(UserDAO.java:324)
+	at ua.kram.tolm.db.dao.UserDAO.findUserByLogin(UserDAO.java:82)
+	at ua.kram.tolm.web.servlet.LoginServlet.processRequest(LoginServlet.java:53)
+	at ua.kram.tolm.web.servlet.LoginServlet.doPost(LoginServlet.java:37)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at ua.kram.tolm.web.filter.LocalFilter.doFilter(LocalFilter.java:23)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-07-10 22:03:04 ERROR DBManager:74 - java.sql.SQLNonTransientConnectionException: Can't call rollback when autocommit=true
+2021-07-10 22:03:04 ERROR LoginServlet:39 - #doPost error
+2021-07-10 22:03:40 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:03:40 INFO  LoginServlet:45 - #process
+2021-07-10 22:03:40 DEBUG LoginServlet:50 - Request parameter: login --> admin@example.com
+2021-07-10 22:04:16 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:04:16 INFO  LoginServlet:45 - #process
+2021-07-10 22:04:16 DEBUG LoginServlet:50 - Request parameter: login --> admin
+2021-07-10 22:04:16 ERROR UserDAO:85 - #findUserByLogin error
+java.sql.SQLException: Column 'telephone' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:556)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:863)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+	at ua.kram.tolm.db.dao.UserDAO.extractUser(UserDAO.java:324)
+	at ua.kram.tolm.db.dao.UserDAO.findUserByLogin(UserDAO.java:82)
+	at ua.kram.tolm.web.servlet.LoginServlet.processRequest(LoginServlet.java:53)
+	at ua.kram.tolm.web.servlet.LoginServlet.doPost(LoginServlet.java:37)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at ua.kram.tolm.web.filter.LocalFilter.doFilter(LocalFilter.java:23)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-07-10 22:04:16 ERROR DBManager:74 - java.sql.SQLNonTransientConnectionException: Can't call rollback when autocommit=true
+2021-07-10 22:04:16 ERROR LoginServlet:39 - #doPost error
+2021-07-10 22:04:59 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:04:59 INFO  LoginServlet:45 - #process
+2021-07-10 22:04:59 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2021-07-10 22:04:59 ERROR UserDAO:85 - #findUserByLogin error
+java.sql.SQLException: Column 'telephone' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:556)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:863)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+	at ua.kram.tolm.db.dao.UserDAO.extractUser(UserDAO.java:324)
+	at ua.kram.tolm.db.dao.UserDAO.findUserByLogin(UserDAO.java:82)
+	at ua.kram.tolm.web.servlet.LoginServlet.processRequest(LoginServlet.java:53)
+	at ua.kram.tolm.web.servlet.LoginServlet.doPost(LoginServlet.java:37)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at ua.kram.tolm.web.filter.LocalFilter.doFilter(LocalFilter.java:23)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-07-10 22:04:59 ERROR DBManager:74 - java.sql.SQLNonTransientConnectionException: Can't call rollback when autocommit=true
+2021-07-10 22:04:59 ERROR LoginServlet:39 - #doPost error
+2021-07-10 22:05:01 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:05:01 INFO  LoginServlet:45 - #process
+2021-07-10 22:05:01 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2021-07-10 22:05:01 ERROR UserDAO:85 - #findUserByLogin error
+java.sql.SQLException: Column 'telephone' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:556)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:863)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+	at ua.kram.tolm.db.dao.UserDAO.extractUser(UserDAO.java:324)
+	at ua.kram.tolm.db.dao.UserDAO.findUserByLogin(UserDAO.java:82)
+	at ua.kram.tolm.web.servlet.LoginServlet.processRequest(LoginServlet.java:53)
+	at ua.kram.tolm.web.servlet.LoginServlet.doPost(LoginServlet.java:37)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at ua.kram.tolm.web.filter.LocalFilter.doFilter(LocalFilter.java:23)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-07-10 22:05:01 ERROR DBManager:74 - java.sql.SQLNonTransientConnectionException: Can't call rollback when autocommit=true
+2021-07-10 22:05:01 ERROR LoginServlet:39 - #doPost error
+2021-07-10 22:05:01 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:05:01 INFO  LoginServlet:45 - #process
+2021-07-10 22:05:01 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2021-07-10 22:05:01 ERROR UserDAO:85 - #findUserByLogin error
+java.sql.SQLException: Column 'telephone' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:556)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:863)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+	at ua.kram.tolm.db.dao.UserDAO.extractUser(UserDAO.java:324)
+	at ua.kram.tolm.db.dao.UserDAO.findUserByLogin(UserDAO.java:82)
+	at ua.kram.tolm.web.servlet.LoginServlet.processRequest(LoginServlet.java:53)
+	at ua.kram.tolm.web.servlet.LoginServlet.doPost(LoginServlet.java:37)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at ua.kram.tolm.web.filter.LocalFilter.doFilter(LocalFilter.java:23)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-07-10 22:05:01 ERROR DBManager:74 - java.sql.SQLNonTransientConnectionException: Can't call rollback when autocommit=true
+2021-07-10 22:05:01 ERROR LoginServlet:39 - #doPost error
+2021-07-10 22:06:59 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:06:59 INFO  LoginServlet:45 - #process
+2021-07-10 22:06:59 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2021-07-10 22:07:12 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:07:12 INFO  LoginServlet:45 - #process
+2021-07-10 22:07:12 DEBUG LoginServlet:50 - Request parameter: login --> admin
+2021-07-10 22:07:16 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:07:16 INFO  LoginServlet:45 - #process
+2021-07-10 22:07:16 DEBUG LoginServlet:50 - Request parameter: login --> admin
+2021-07-10 22:07:21 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:07:21 INFO  LoginServlet:45 - #process
+2021-07-10 22:07:21 DEBUG LoginServlet:50 - Request parameter: login --> admin
+2021-07-10 22:07:28 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:07:28 INFO  LoginServlet:45 - #process
+2021-07-10 22:07:28 DEBUG LoginServlet:50 - Request parameter: login --> admin
+2021-07-10 22:07:29 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:07:29 INFO  LoginServlet:45 - #process
+2021-07-10 22:07:29 DEBUG LoginServlet:50 - Request parameter: login --> admin
+2021-07-10 22:07:29 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:07:29 INFO  LoginServlet:45 - #process
+2021-07-10 22:07:29 DEBUG LoginServlet:50 - Request parameter: login --> admin
+2021-07-10 22:07:29 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:07:29 INFO  LoginServlet:45 - #process
+2021-07-10 22:07:29 DEBUG LoginServlet:50 - Request parameter: login --> admin
+2021-07-10 22:07:34 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:07:34 INFO  LoginServlet:45 - #process
+2021-07-10 22:07:34 DEBUG LoginServlet:50 - Request parameter: login --> user
+2021-07-10 22:07:34 ERROR UserDAO:85 - #findUserByLogin error
+java.sql.SQLException: Column 'block_status' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:556)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:818)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+	at ua.kram.tolm.db.dao.UserDAO.extractUser(UserDAO.java:326)
+	at ua.kram.tolm.db.dao.UserDAO.findUserByLogin(UserDAO.java:82)
+	at ua.kram.tolm.web.servlet.LoginServlet.processRequest(LoginServlet.java:53)
+	at ua.kram.tolm.web.servlet.LoginServlet.doPost(LoginServlet.java:37)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at ua.kram.tolm.web.filter.LocalFilter.doFilter(LocalFilter.java:23)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-07-10 22:07:34 ERROR DBManager:74 - java.sql.SQLNonTransientConnectionException: Can't call rollback when autocommit=true
+2021-07-10 22:07:34 ERROR LoginServlet:39 - #doPost error
+2021-07-10 22:08:21 INFO  LoginServlet:35 - #doPost
+2021-07-10 22:08:21 INFO  LoginServlet:45 - #process
+2021-07-10 22:08:21 DEBUG LoginServlet:50 - Request parameter: login --> ad
+2021-07-10 22:08:30 INFO  Controller:22 - doGet
+2021-07-10 22:08:30 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2021-07-10 22:08:30 INFO  ManagerCommand:23 - ManagerCommand#execute
+2021-07-10 22:08:42 INFO  Controller:22 - doGet
+2021-07-10 22:08:42 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> showUpdateUser
+2021-07-10 22:08:42 INFO  ShowUpdateUserCommand:27 - ShowUpdateUserAction #execute
+2021-07-10 22:08:42 INFO  ShowUpdateUserCommand:30 - userId = > 3
+2021-07-10 22:08:46 INFO  Controller:38 - doPost
+2021-07-10 22:08:46 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> blockUser
+2021-07-10 22:08:46 INFO  BlockCommand:16 - #execute
+2021-07-10 22:08:46 INFO  Controller:22 - doGet
+2021-07-10 22:08:46 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2021-07-10 22:08:46 INFO  ManagerCommand:23 - ManagerCommand#execute
+2021-07-10 22:14:23 INFO  Controller:22 - doGet
+2021-07-10 22:14:23 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2021-07-10 22:14:23 INFO  ManagerCommand:23 - ManagerCommand#execute
+2021-07-10 22:15:55 INFO  Controller:22 - doGet
+2021-07-10 22:15:55 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2021-07-10 22:15:55 INFO  ManagerCommand:23 - ManagerCommand#execute
+2021-07-10 22:17:54 INFO  Controller:22 - doGet
+2021-07-10 22:17:55 INFO  CommandContainer:35 - CommandContainer #getCommand  request --> manager
+2021-07-10 22:17:55 INFO  ManagerCommand:23 - ManagerCommand#execute
